@@ -1,0 +1,113 @@
+# Titles
+defined_text = {
+    name = get_super_event_title
+
+    text = {
+        trigger = { has_global_flag = hks_shipment }
+        localization_key = "sp_hks_shipment"
+    }
+    text = {
+        trigger = { has_global_flag = hks_hkslandia }
+        localization_key = "sp_hks_hkslandia"
+    }
+    text = {
+        trigger = { has_global_flag = hks_border_war }
+        localization_key = "sp_hks_border_war"
+    }
+    text = {
+        trigger = { has_global_flag = hks_ww3 }
+        localization_key = "sp_hks_ww3"
+    }
+    text = {
+        trigger = { has_global_flag = hks_ceasefire }
+        localization_key = "sp_hks_ceasefire"
+    }
+    text = {
+        trigger = { has_global_flag = hks_united_front }
+        localization_key = "sp_hks_united_front"
+    }
+    text = {
+        trigger = { has_global_flag = hks_final_hour }
+        localization_key = "sp_hks_final_hour"
+    }
+    text = {
+        trigger = { has_global_flag = hks_hkslandia_defeated }
+        localization_key = "sp_hks_hkslandia_defeated"
+    }
+}
+
+# Remarks
+defined_text = {
+    name = get_super_event_remark
+
+    text = {
+        trigger = { has_global_flag = hks_shipment }
+        localization_key = "sp_hks_shipment_REMARK"
+    }
+    text = {
+        trigger = { has_global_flag = hks_hkslandia }
+        localization_key = "sp_hks_hkslandia_REMARK"
+    }
+    text = {
+        trigger = { has_global_flag = hks_border_war }
+        localization_key = "sp_hks_border_war_REMARK"
+    }
+    text = {
+        trigger = { has_global_flag = hks_ww3 }
+        localization_key = "sp_hks_ww3_REMARK"
+    }
+    text = {
+        trigger = { has_global_flag = hks_ceasefire }
+        localization_key = "sp_hks_ceasefire_REMARK"
+    }
+    text = {
+        trigger = { has_global_flag = hks_united_front }
+        localization_key = "sp_hks_united_front_REMARK"
+    }
+    text = {
+        trigger = { has_global_flag = hks_final_hour }
+        localization_key = "sp_hks_final_hour_REMARK"
+    }
+    text = {
+        trigger = { has_global_flag = hks_united_front }
+        localization_key = "sp_hks_hkslandia_defeated_REMARK"
+    }
+}
+
+# Quotes
+defined_text = {
+    name = get_super_event_quote
+
+    text = {
+        trigger = { has_global_flag = hks_shipment }
+        localization_key = "sp_hks_shipment_QUOTE"
+    }
+    text = {
+        trigger = { has_global_flag = hks_hkslandia }
+        localization_key = "sp_hks_hkslandia_QUOTE"
+    }
+    text = {
+        trigger = { has_global_flag = hks_border_war }
+        localization_key = "sp_hks_border_war_QUOTE"
+    }
+    text = {
+        trigger = { has_global_flag = hks_ww3 }
+        localization_key = "sp_hks_ww3_QUOTE"
+    }
+    text = {
+        trigger = { has_global_flag = hks_ceasefire }
+        localization_key = "sp_hks_ceasefire_QUOTE"
+    }
+    text = {
+        trigger = { has_global_flag = hks_united_front }
+        localization_key = "sp_hks_united_front_QUOTE"
+    }
+    text = {
+        trigger = { has_global_flag = hks_final_hour }
+        localization_key = "sp_hks_final_hour_QUOTE"
+    }
+    text = {
+        trigger = { has_global_flag = hks_hkslandia_defeated }
+        localization_key = "sp_hks_hkslandia_defeated_QUOTE"
+    }
+}

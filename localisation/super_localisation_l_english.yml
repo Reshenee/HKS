@@ -1,0 +1,32 @@
+﻿l_english:
+ sp_hks_shipment:0 "Shipment of uranium stranded in Spain"  
+ sp_hks_shipment_QUOTE:0 "A mysterious shipwreck has been found off the coast of Spanish West Africa. The cargo was abandoned by its crew, with undetonated explosives scattered among the wreckage. No documents or markings hint at its origin, but a sizeable deposit of uranium was discovered in the hold."  
+ sp_hks_shipment_REMARK:0 "Nothing ever happens."  
+
+ sp_hks_hkslandia:0 "Formation of the United States of Hkslandia"  
+ sp_hks_hkslandia_QUOTE:0 "Neutral nations unite under Hkslandia, a rigid totalitarian state promising order. From Stockholm to Santiago, whispers of 'JP' echo through every decree."  
+ sp_hks_hkslandia_REMARK:0 "This can't be good."  
+
+ sp_hks_border_war:0 "Hkslandia Expands Through Conflict"  
+ sp_hks_border_war_QUOTE:0 "Hkslandia seizes Allied land in South America and invades Iraq and Iran, claiming their territories as vital to its new order."  
+ sp_hks_border_war_REMARK:0 "Something happened!"  
+
+ sp_hks_ww3:0 "Hkslandia Declares War on the World"  
+ sp_hks_ww3_QUOTE:0 "Sirens wail across the globe as panic spreads like wildfire. Shadows of bombers loom overhead, and the world holds its breath, awaiting the unimaginable."  
+ sp_hks_ww3_REMARK:0 "The world trembles."  
+
+ sp_hks_ceasefire:0 "Peace Talks Begin"
+ sp_hks_ceasefire_QUOTE:0 "As Hkslandia's threat looms, peace talks commence. Full peace remains unlikely, but halting the fighting on the Eastern Front and in Asia is essential for a united effort."
+ sp_hks_ceasefire_REMARK:0 "Peace is fragile."  
+
+ sp_hks_united_front:0 "A United Front Emerges"  
+ sp_hks_united_front_QUOTE:0 "Allies and Comintern unite, as do the Axis and East Asia Sphere. And both factions have agreed on a one year truce, to defeat Hkslandia, its puppet states must fall, sparking a new global conflict. Even though the fighting continues, some allied companies have been allowed to export certain resources to Italy and Japan."  
+ sp_hks_united_front_REMARK:0 "The world fights back."  
+
+ sp_hks_final_hour:0 "The Final Hour"  
+ sp_hks_final_hour_QUOTE:0 "Hkslandia's forces are crumbling, but their desperation makes them more dangerous. Victory is within reach, yet the cost grows heavier by the hour."  
+ sp_hks_final_hour_REMARK:0 "Almost there."  
+ 
+sp_hks_hkslandia_defeated:0 "Hkslandia Defeated"  
+ sp_hks_hkslandia_defeated_QUOTE:0 "Hkslandia has fallen. The world breathes a sigh of relief, but scars remain as a reminder of the horrors endured."  
+ sp_hks_hkslandia_defeated_REMARK:0 "We did it."

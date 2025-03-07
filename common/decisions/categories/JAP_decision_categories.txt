@@ -1,0 +1,36 @@
+JAP_intervene_in_china = {
+	allowed = {
+		original_tag = JAP
+	}
+
+	priority = 99
+}
+JAP_interservice_rivalry = {
+	allowed = {
+		original_tag = JAP
+		has_dlc = "Waking the Tiger"
+	}
+	priority = 100
+}
+
+JAP_pacific_guardian = {
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		is_puppet = no
+		has_completed_focus = JAP_pacific_guardian
+	}
+}
+
+JAP_colonial_independence = {
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		is_puppet = no
+		has_completed_focus = JAP_pacific_guardian
+	}
+}

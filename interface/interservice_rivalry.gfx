@@ -1,0 +1,10 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_bop_imperial_japanese_army"
+		texturefile = "gfx/interface/bop/bop_JAP_IJA.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_bop_imperial_japanese_navy"
+		texturefile = "gfx/interface/bop/bop_JAP_IJN.dds"
+	}
+}

@@ -1,0 +1,50 @@
+important_actions = {
+	icon = generic_crisis
+	priority = 50
+
+	allowed = {
+		always = yes
+	}
+}
+
+stability_and_war_support = {
+	icon = SOV_propaganda
+	priority = 49
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			NOT = { original_tag = SWI }
+			NOT = { has_country_flag = SWI_can_use_political_actions }
+		}
+	}
+}
+
+military_operations = {
+	icon = usa_intervention_mandate
+	priority = 48
+}
+industry_and_resources = {
+	icon = gre_paying_ifc_debt
+	priority = 47
+}
+
+foreign_actions = {
+	icon = generic_foreign_policy
+	priority = 46
+}
+
+ideology_actions = {
+	icon = power_struggle
+	priority = 45
+
+	allowed = {
+		always = yes
+	}
+}

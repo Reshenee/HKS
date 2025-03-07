@@ -1,0 +1,242 @@
+characters={
+	NEU_GENERAL1={
+		name="General Pepe"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general1.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL2={
+		name="General Sadge"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general2.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL3={
+		name="General Frodo"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general3.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL4={
+		name="General Wobble"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general4.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL5={
+		name="General Grumpy"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general5.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL6={
+		name="General Smiley"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general6.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL7={
+		name="General Snoop"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general7.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL8={
+		name="General Croak"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general8.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL9={
+		name="General Hopster"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general9.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL10={
+		name="General Ribb"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general10.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL11={
+		name="General Toadster"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general11.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL12={
+		name="General Lilypad"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general12.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL13={
+		name="General Tadpole"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general13.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL14={
+		name="General Webby"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general14.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+	NEU_GENERAL15={
+		name="General Jumpster"
+		portraits={
+			army={
+				large="gfx/leaders/NEU/characters/general15.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			
+		}
+	}
+}

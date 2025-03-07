@@ -1,0 +1,47 @@
+the_war_to_end_all_wars = {
+	priority = 100000
+	icon = GFX_decision_generic_speech
+}
+nothing_happens = {
+	priority = 100000
+	icon = GFX_decision_CHL_mapuche_liberate_charrua
+}
+CONSTRUCTIONS = {
+	priority = 1
+	icon = GFX_decision_category_SOV_merge_designers
+}
+
+ATLANTIC_WALL = {
+	priority = 0
+	icon = GFX_decision_category_ger_reichskommissariats
+}
+
+JOIN_ALLIES = {
+	priority = 97
+	icon = GFX_decision_category_generic_foreign_policy
+}
+
+AI_annex = {
+	icon = GFX_decision_category_generic_political_actions
+
+    priority = -85
+}
+
+E_Baltic = {
+	icon = GFX_decision_category_generic_foreign_policy
+	priority = 999
+	allowed = {
+		always = yes
+	}
+}
+
+WW2_COUNTDOWNS = {
+	icon = GFX_decision_category_usa_intervention_mandate
+
+    priority = 150
+}
+ATTACHE = {
+	icon = GFX_decision_category_usa_intervention_mandate
+
+    priority = 999
+}

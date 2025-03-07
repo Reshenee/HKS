@@ -1,0 +1,109 @@
+generic_nations = {
+	name = "Generic historical plan"
+	desc = ""
+
+	allowed = {
+		# OR = {
+		# 	tag = CRO
+		# 	tag = MNT
+		# 	tag = ALB
+		# 	tag = AOI
+		# 	tag = SLO 
+		# 	tag = MON 
+		# 	tag = TAN
+		# 	tag = AUS
+		# 	tag = SIA
+		# 	tag = MEN
+		# 	tag = MEN
+		# 	tag = D05
+		# 	tag = D06
+		# 	tag = DEN
+		# 	tag = NOR
+		# 	tag = BRA
+		# 	tag = FIN
+		# 	tag = INS
+		# 	tag = PHI
+		# 	tag = BEL
+		# 	tag = LUX
+		# }
+		always = yes
+	}
+
+	enable = {
+		always = yes
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort		
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		extra_tech_slot
+		construction_effort_3
+
+		production_effort
+		production_effort_2
+		production_effort_3
+
+		naval_effort
+
+		extra_tech_slot_2
+
+		political_effort
+		collectivist_ethos
+		
+		nationalism_focus
+		internationalism_focus
+		militarism
+		political_correctness
+		military_youth
+		indoctrination_focus
+		paramilitarism
+		political_commissars
+		ideological_fanaticism
+		liberty_ethos
+		neutrality_focus
+		deterrence
+		interventionism_focus
+		volunteer_corps
+		foreign_expeditions
+		why_we_fight
+		technology_sharing
+
+		army_effort
+		doctrine_effort
+		doctrine_effort_2
+		equipment_effort
+		equipment_effort_2
+		equipment_effort_3
+		motorization_effort
+		army_effort
+		
+		special_forces
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		partial_economic_mobilisation = 100
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	focus_factors = {
+		
+	}
+}
+

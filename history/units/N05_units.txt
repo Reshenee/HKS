@@ -1,0 +1,162 @@
+﻿division_template = {
+	name = "Boglandian Infantry"
+	template_counter = 101
+	override_model = dave_gfx_NEU_infantry_entity
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+        infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		rocket_artillery_brigade = { x = 4 y = 0 }
+		anti_air_brigade = { x = 4 y = 1}
+	}
+	
+	support = {
+        assault_engineer = { x = 0 y = 0 }
+        armored_car_recon = { x = 0 y = 1 }
+        helicopter_transport = { x = 0 y = 2 }
+        land_cruiser = { x = 0 y = 3 }
+        self_propelled_super_heavy_artillery = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Boglandian Mech"
+	template_counter = 121
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+        mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+        mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+        mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+
+		motorized_rocket_brigade = { x = 4 y = 0 }
+        motorized_rocket_brigade = { x = 4 y = 1 }
+        motorized_rocket_brigade = { x = 4 y = 2 }
+        mot_anti_air_brigade = { x = 4 y = 3 }
+        mot_anti_tank_brigade = { x = 4 y = 4 }
+	}
+	
+	support = {
+        armored_engineer = { x = 0 y = 0 }
+        motorized_military_police = { x = 0 y = 1 }
+        helicopter_recon = { x = 0 y = 2 }
+        land_cruiser = { x = 0 y = 3 }
+        super_heavy_artillery = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Boglandian Tank Division"
+	template_counter = 148
+	override_model = land_cruiser_entity
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+        mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+        
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }
+        medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+
+		mot_anti_air_brigade = { x = 4 y = 0 }
+	}
+	
+	support = {
+        assault_engineer = { x = 0 y = 0 }
+        motorized_military_police = { x = 0 y = 1 }
+        helicopter_transport = { x = 0 y = 2 }
+        land_cruiser = { x = 0 y = 3 }
+        armored_signal = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 4991 division_template = "Boglandian Tank Division" start_experience_factor = 1 }
+
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Infantry" start_experience_factor = 1 }
+
+
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+	division = { start_equipment_factor = 1 division_name = { is_name_ordered = yes name_order = 2 } location = 13087 division_template = "Boglandian Mech" start_experience_factor = 1 }
+}

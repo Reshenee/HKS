@@ -1,0 +1,690 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#[HKS] UK EVENTS
+			ENG = {
+				country_event = { id = britain.16 days = 20 }
+				country_event = { id = mtg_britain.1 days = 190 }
+				country_event = { id = britain.22 days = 525 }
+			}
+			#[HKS] SOVIET
+			SOV = {
+				set_occupation_law_where_available = liberate_workers_occupation
+			}
+	
+	
+			#Trade countries and their economy laws
+			TUR = { add_ideas = always_free_trade }
+			IRQ = { add_ideas = always_free_trade }
+			PER = { add_ideas = always_free_trade }
+			VEN = { add_ideas = always_free_trade }
+			SWE = { add_ideas = always_free_trade }	
+			POR = { add_ideas = always_free_trade }	
+			NEU = { add_ideas = always_free_trade } 
+
+			#China map
+			CHI = {
+				create_faction = "Chinese United Front"
+
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = hks_CHI_unified
+							option = hks_CHI_unified_NO
+						}
+					}
+					add_to_faction = SHX 
+					add_to_faction = PRC 
+					add_to_faction = XSM 
+					add_to_faction = YUN 
+					add_to_faction = GXC 
+					add_to_faction = SIK #todo 
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = hks_CHI_unified
+							option = hks_CHI_unified_YES
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = SHX
+								is_core_of = PRC
+								is_core_of = XSM
+								is_core_of = YUN
+								is_core_of = GXC
+								is_core_of = SIK
+								
+							}							
+						}
+						CHI = {
+							transfer_state = PREV
+							add_state_core = PREV							
+						}
+					}
+				}
+			}
+		
+			#[HKSMECHANIC] LET AXIS/ALLIED AI NATIONS LICENSE
+			every_country = {
+				limit={
+					axis_countries = yes
+				}
+				add_ideas = axis_ai_license
+			}
+			every_country = {
+				limit={
+					allies_countries = yes
+				}
+				add_ideas = allied_ai_license
+			}
+			# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			#[GAME RULE] SWISS IDEA
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = hks_SWI_idea
+							option = hks_SWI_idea_NO
+						}
+					}
+				}
+				NEU = {
+					country_event = { id = gerSWISS.1 days = 731 }
+				}
+			}
+			
+	
+			# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			#[GAME RULE] NEUTRAL IDEA
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = hks_NEU_idea
+							option = hks_NEU_idea_NO
+						}
+					}
+				}
+				SWE = { 
+					add_ideas = hks_neutral 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+				
+				VEN = { 
+					add_ideas = hks_neutral 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+				
+				TUR = { 
+					add_ideas = hks_neutral 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+				
+				SWI = { 
+					add_ideas = hks_neutral 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+				
+				LIT = { 
+					add_ideas = hks_neutral 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+				
+				LAT = { 
+					add_ideas = hks_neutral 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+				
+				EST = { 
+					add_ideas = hks_neutral 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+				
+				POR = { 
+					add_ideas = hks_neutral 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+				
+				NEU = { 
+					add_ideas = hks_neutral 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+				
+				NEU = { 
+					add_ideas = hks_no_units 
+					country_lock_all_division_template = yes 
+					set_rule = { 
+						can_not_declare_war = yes 
+					}
+				}
+			}
+
+
+			#[GAME RULE] COLABS
+			if = {
+				limit = {
+					NOT = {					
+						has_game_rule = {
+							rule = hks_SWI_idea
+							option = hks_SWI_idea_NO
+						}
+					}
+				}
+				NEU = {
+					country_event = { id = colab.1 days = 0 }
+				}
+			}
+
+			#[GAME RULE] China buffs + debuffs
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hks_CHI_debuffs
+						option = hks_CHI_debuffs_YES
+					}
+				}
+				CHI = { add_ideas = hks_balacing }					
+
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = hks_CHI_unified
+							option = hks_CHI_unified_NO
+						}
+					}
+					SHX = { add_ideas = hks_balacing }					
+					XSM = { add_ideas = hks_balacing }					
+					GXC = { add_ideas = hks_balacing }					
+					PRC = { add_ideas = hks_balacing }					
+					YUN = { add_ideas = hks_balacing }		
+				}
+			}
+
+			#[GAME RULE]JAPAN BUFF
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hks_JAP_buff
+						option = hks_JAP_buff_YES
+					}
+				}				
+				JAP = { add_ideas = hks_japanese_buff }
+			}
+
+			#[GAME RULE]NEU excavation events
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hks_NEU_excavation_tech
+						option = hks_NEU_excavation_tech_YES
+					}
+				}
+				NEU = {
+					country_event = { id = increase_idea.3 days = 0 }
+				}
+			}
+			
+			#[GAME RULE] SIMPLIFIED NEUTRALS		
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = HKS_SIMPLIFIED_NATIONS
+						option = HKS_SIMPLIFIED_NATIONS_YES
+					}					
+				}
+				NEU = { annex_country = { target = CUB transfer_troops = no } }
+				NEU = { annex_country = { target = BOL transfer_troops = no } }
+				NEU = { annex_country = { target = COL transfer_troops = no } }
+				NEU = { annex_country = { target = PAN transfer_troops = no } }
+				NEU = { annex_country = { target = COS transfer_troops = no } }
+				NEU = { annex_country = { target = NIC transfer_troops = no } }
+				NEU = { annex_country = { target = HON transfer_troops = no } }
+				NEU = { annex_country = { target = ELS transfer_troops = no } }
+				NEU = { annex_country = { target = GUA transfer_troops = no } }
+				NEU = { annex_country = { target = HAI transfer_troops = no } }
+				NEU = { annex_country = { target = DOM transfer_troops = no } }
+				NEU = { annex_country = { target = ECU transfer_troops = no } }
+				NEU = { annex_country = { target = PRU transfer_troops = no } }
+				NEU = { annex_country = { target = PAR transfer_troops = no } }
+				NEU = { annex_country = { target = CHL transfer_troops = no } }
+				NEU = { annex_country = { target = ARG transfer_troops = no } }
+				NEU = { annex_country = { target = URG transfer_troops = no } }
+				NEU = { annex_country = { target = TIB transfer_troops = no } }
+				NEU = { annex_country = { target = NEP transfer_troops = no } }
+				NEU = { annex_country = { target = BHU transfer_troops = no } }
+				NEU = { annex_country = { target = AFG transfer_troops = no } }
+				NEU = { annex_country = { target = SAU transfer_troops = no } }
+				NEU = { annex_country = { target = OMA transfer_troops = no } }
+				NEU = { annex_country = { target = YEM transfer_troops = no } }
+				NEU = { annex_country = { target = LIB transfer_troops = no } }
+				
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = COL
+							is_core_of = CUB
+							is_core_of = PAN
+							is_core_of = COS
+							is_core_of = NIC
+							is_core_of = HON
+							is_core_of = ELS
+							is_core_of = GUA
+							is_core_of = HAI
+							is_core_of = DOM
+							is_core_of = ECU
+							is_core_of = PRU
+							is_core_of = BOL
+							is_core_of = PAR
+							is_core_of = CHL
+							is_core_of = ARG
+							is_core_of = URG
+
+							is_core_of = LIB
+						}
+						
+						is_controlled_by = NEU
+					}
+
+					NEU = {
+						add_state_core = PREV
+					}
+					set_compliance = 100
+				}
+
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = TIB
+							is_core_of = NEP
+							is_core_of = BHU
+							is_core_of = AFG
+							
+							is_core_of = SAU
+							is_core_of = OMA
+							is_core_of = YEM
+						}
+						
+						is_controlled_by = TUR
+					}
+
+					TUR = {
+						add_state_core = PREV
+					}
+					set_compliance = 100
+				}
+			} 
+			else = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = hks_NEU_idea
+							option = hks_NEU_idea_YES
+						}
+					}
+					CHL = { add_ideas = hks_neutral }
+					COL = { add_ideas = hks_neutral }
+					ECU = { add_ideas = hks_neutral }
+					PRU = { add_ideas = hks_neutral }
+					BOL = { add_ideas = hks_neutral }
+					ARG = { add_ideas = hks_neutral }
+					PAR = { add_ideas = hks_neutral }
+					PAN = { add_ideas = hks_neutral }
+					URG = { add_ideas = hks_neutral }
+					COS = { add_ideas = hks_neutral }
+					NIC = { add_ideas = hks_neutral }
+					HON = { add_ideas = hks_neutral }
+					ELS = { add_ideas = hks_neutral }
+					GUA = { add_ideas = hks_neutral }
+					CUB = { add_ideas = hks_neutral }
+					HAI = { add_ideas = hks_neutral }
+					DOM = { add_ideas = hks_neutral }
+					NEP = { add_ideas = hks_neutral }
+					BHU = { add_ideas = hks_neutral }
+					TIB = { add_ideas = hks_neutral }
+					AFG = { add_ideas = hks_neutral }
+					LIB = { add_ideas = hks_neutral }
+				}
+				
+			}
+
+			#[GAME RULE] SIMPLIFIED BORDERS
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = HKS_SIMPLIFIED_BORDERS
+						option = HKS_SIMPLIFIED_BORDERS_YES
+					}
+				}
+				ENG = {
+					transfer_state = 544
+					transfer_state = 540
+					transfer_state = 891
+					transfer_state = 892
+					transfer_state = 896
+					transfer_state = 897
+				}
+
+				FRA = {
+					transfer_state = 296
+					transfer_state = 796
+					transfer_state = 705
+				}
+				CHI = {
+					transfer_state = 729
+				}
+				RAJ = {
+					transfer_state = 321
+				}
+				INS = {
+					transfer_state = 721
+				}
+			}
+
+			#[GAME RULE] GIVE UK OCCUPIED TERRITORIES BACK
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hks_ENG_keep_territories
+						option = hks_ENG_keep_territories_NO
+					}
+				}
+				CAN = {
+					transfer_state = 332
+					transfer_state = 331
+				}
+				MEX = {
+					transfer_state = 311
+				}
+				RAJ = {
+					transfer_state = 281
+					transfer_state = 422
+					transfer_state = 733
+				}
+			}
+
+			#[GAME RULE] ANNEXATIONS
+			#MAL
+			if = {
+				limit = {
+					MAL = {
+						is_ai = yes
+					}
+					has_game_rule = {
+						rule = hks_annex_MAL
+						option = hks_annex_MAL_YES
+					}
+				}
+				ENG = { annex_country = { target = MAL transfer_troops = no } }
+				every_state = {
+					limit = {
+						is_core_of = MAL
+						is_controlled_by = ENG
+					}
+					set_compliance = 100
+				}
+			}
+			if = {
+				limit = {
+					MAL = {
+						# is_ai = yes
+					}
+					has_game_rule = {
+						rule = hks_annex_MAL
+						option = hks_annex_MAL_NO_BUT_RESOURCE_RIGHTS
+					}
+				}
+				MAL = {
+					give_resource_rights = { receiver = ENG state = 336 }
+					give_resource_rights = { receiver = ENG state = 333 }
+				}
+			}
+			#PHI
+			if = {
+				limit = {
+					MAL = {
+						is_ai = yes
+					}
+					has_game_rule = {
+						rule = hks_annex_PHI
+						option = hks_annex_PHI_YES
+					}
+				}
+				USA = { annex_country = { target = PHI transfer_troops = no } }
+				every_state = {
+					limit = {
+						is_core_of = PHI
+						is_controlled_by = USA
+					}
+					set_compliance = 100
+				}
+			}
+			#PER
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hks_PER_event
+						option = hks_PER_event_NO
+					}
+				}
+				NEU = { annex_country = { target = PER transfer_troops = no } }
+				every_state = {
+					limit = {
+						is_core_of = PER
+						is_controlled_by = NEU
+					}
+					set_compliance = 100
+				}
+			}
+			#MON
+			if = {
+				limit = {
+					MON = {
+						is_ai = yes
+					}
+					has_game_rule = {
+						rule = hks_annex_MON
+						option = hks_annex_MON_YES
+					}
+				}
+				SOV = { annex_country = { target = MON transfer_troops = no } }
+				every_state = {
+					limit = {
+						is_core_of = MON
+						is_controlled_by = SOV
+					}
+					set_compliance = 100
+				}
+			}
+			#IRE
+			if = {
+				limit = {
+					IRE = {
+						is_ai = yes
+					}
+					has_game_rule = {
+						rule = hks_annex_IRE
+						option = hks_annex_IRE_YES
+					}
+				}
+				ENG = { annex_country = { target = IRE transfer_troops = no } }
+				every_state = {
+					limit = {
+						is_core_of = IRE
+						is_controlled_by = ENG
+					}
+					set_compliance = 100
+				}
+			}
+			#MEN
+			if = {
+				limit = {
+					MEN = {
+						is_ai = yes
+					}
+					has_game_rule = {
+						rule = hks_annex_MEN
+						option = hks_annex_MEN_YES
+					}
+				}
+				MAN = { annex_country = { target = MEN transfer_troops = yes } }
+				
+				every_state = {
+					limit = {
+						is_core_of = MEN
+						is_controlled_by = MEN
+					}
+					set_compliance = 100
+				}
+			}
+			#BRA
+			if = {
+				limit = {
+					BRA = {
+						is_ai = yes
+					}				
+					
+					MEX = {
+						is_ai = yes
+					}	
+					has_game_rule = {
+						rule = hks_annex_BRA
+						option = hks_annex_BRA_NO
+					}					
+				}
+				NEU = { annex_country = { target = BRA transfer_troops = no } }
+				NEU = { annex_country = { target = MEX transfer_troops = no } }
+				every_state = {
+					limit = {
+						is_core_of = MEX
+						is_controlled_by = NEU
+					}
+					set_compliance = 100
+				}
+			}
+			#TAN
+			if = {
+				limit = {
+					TAN = {
+						is_ai = yes
+					}				
+					
+					has_game_rule = {
+						rule = hks_annex_TAN
+						option = hks_annex_TAN_NO
+					}					
+				}
+
+				SOV = { annex_country = { target = TAN transfer_troops = no } }
+			}
+		}
+	}
+
+	on_join_faction = {
+		effect = {
+		#BRA event
+			if = {
+				limit = {
+					tag = BRA
+				}
+				news_event = { id = join_allies.2}
+			}
+		}
+	}	
+
+	on_operation_completed = {
+		effect = {
+			FROM = {
+				save_event_target_as = victim_nation
+			}
+			THIS = {
+				save_event_target_as = this_operation
+			}
+			ROOT = {
+				save_event_target_as = root_test
+			}			
+			ROOT = {
+				country_event = {
+				id = spy_reminder.1	#Operation Completed
+				days = 1
+				}
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = NOR
+					FROM = { original_tag = NOR }
+				}
+				
+				random_country = {
+					limit = {
+						original_tag = NOR 
+						has_government = democratic
+						has_civil_war = yes 
+					}
+					PREV = {
+						set_cosmetic_tag = NOR_REGULAR
+					}
+				}
+			}
+		}
+	}
+
+	on_subject_autonomy_level_change = { 
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = GER
+					}
+					ROOT = {
+						original_tag = NOR
+						has_completed_focus = NOR_a_valuable_partner_to_germany
+					}
+					not = {
+						has_global_flag = already_gotton_extra_autonomy
+					}
+				}
+				set_global_flag = already_gotton_extra_autonomy
+				ROOT = {
+					add_autonomy_ratio = {
+						value = 0.4
+					}
+				}
+			}
+		} 
+	}
+}

@@ -1,0 +1,10 @@
+﻿l_english:
+
+ spy_reminder_desc_withlabel:0 "Our spies have completed [this_operation.GetName] in [victim_nation.GetName]"
+ spy_reminder_desc_nolabel:0 "Don't forget to reassign your spies to a new operation."
+ spy_reminder_t_nolabel:0 "Operation completed"
+ spy_reminder_t_withlabel:0 "[this_operation.GetName] completed"
+ 
+ 
+ spy_reminder.1.desc:0 "Our spies have completed their task in [victim_nation.GetNameDef]. \n Don't forget to reassign your spies to a new operation."
+ spy_reminder.1.t:0 "[this_operation.GetName] completed!\n[root_test.GetName]"

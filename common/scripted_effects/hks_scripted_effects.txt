@@ -1,0 +1,1573 @@
+excavation_increase = {
+	if = {
+		limit = {
+			NEU = {
+				has_tech = excavation4
+			}
+			NOT = {
+				NEU = {
+					has_tech = excavation5
+				}
+			}
+		}
+
+		VEN = {
+			set_technology = {
+				excavation5 = 1	
+			}
+		}
+		SWE = {
+			set_technology = {
+				excavation5 = 1	
+			}
+		}
+		TUR = {
+			set_technology = {
+				excavation5 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation5 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation5 = 1	
+			}
+		}
+		NEU = {
+			set_technology = {
+				excavation5 = 1	
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NEU = {
+				has_tech = excavation3
+			}
+			NOT = {
+				NEU = {
+					has_tech = excavation4
+				}
+			}
+		}
+
+		VEN = {
+			set_technology = {
+				excavation4 = 1	
+			}
+		}
+		SWE = {
+			set_technology = {
+				excavation4 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation4 = 1	
+			}
+		}
+		TUR = {
+			set_technology = {
+				excavation4 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation4 = 1	
+			}
+		}
+		NEU = {
+			set_technology = {
+				excavation4 = 1	
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NEU = {
+				has_tech = excavation2
+			}
+			NOT = {
+				NEU = {
+					has_tech = excavation3
+				}
+			}
+		}
+
+		VEN = {
+			set_technology = {
+				excavation3 = 1	
+			}
+		}
+		SWE = {
+			set_technology = {
+				excavation3 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation3 = 1	
+			}
+		}
+		TUR = {
+			set_technology = {
+				excavation3 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation3 = 1	
+			}
+		}
+		NEU = {
+			set_technology = {
+				excavation3 = 1	
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NEU = {
+				has_tech = excavation1
+			}
+			NOT = {
+				NEU = {
+					has_tech = excavation2
+				}
+			}
+		}
+
+		VEN = {
+			set_technology = {
+				excavation2 = 1	
+			}
+		}
+		SWE = {
+			set_technology = {
+				excavation2 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation2 = 1	
+			}
+		}
+		TUR = {
+			set_technology = {
+				excavation2 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation2 = 1	
+			}
+		}
+		NEU = {
+			set_technology = {
+				excavation2 = 1	
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				NEU = {
+					has_tech = excavation1
+				}
+			}
+		}
+
+		VEN = {
+			set_technology = {
+				excavation1 = 1	
+			}
+		}
+		SWE = {
+			set_technology = {
+				excavation1 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation1 = 1	
+			}
+		}
+		TUR = {
+			set_technology = {
+				excavation1 = 1	
+			}
+		}
+		POR = {
+			set_technology = {
+				excavation1 = 1	
+			}
+		}
+		NEU = {
+			set_technology = {
+				excavation1 = 1	
+			}
+		}
+	}
+}
+
+colab_game_rule = {
+	JAP = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_JAP_free_collaboration_on_CHI
+					option = hks_JAP_collaboration_on_CHI_30
+				}
+			}
+			add_collaboration = {
+				target = CHI
+				value = 0.3
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_JAP_free_collaboration_on_CHI
+					option = hks_JAP_collaboration_on_CHI_60
+				}
+			}
+			add_collaboration = {
+				target = CHI
+				value = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_JAP_free_collaboration_on_CHI
+					option = hks_JAP_collaboration_on_CHI_100
+				}
+			}
+			add_collaboration = {
+				target = CHI
+				value = 1
+			}
+		}
+	}
+	GER = {
+		#ger on sov
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_GER_free_collaboration_on_SOV
+					option = hks_GER_free_collaboration_on_SOV_30
+				}
+			}
+			add_collaboration = {
+				target = SOV
+				value = 0.3
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_GER_free_collaboration_on_SOV
+					option = hks_GER_free_collaboration_on_SOV_60
+				}
+			}
+			add_collaboration = {
+				target = SOV
+				value = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_GER_free_collaboration_on_SOV
+					option = hks_GER_free_collaboration_on_SOV_100
+				}
+			}
+			add_collaboration = {
+				target = SOV
+				value = 1
+			}
+		}
+		#ger on pol
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_GER_free_collaboration_on_POL
+					option = hks_GER_free_collaboration_on_POL_30
+				}
+			}
+			add_collaboration = {
+				target = POL
+				value = 0.3
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_GER_free_collaboration_on_POL
+					option = hks_GER_free_collaboration_on_POL_60
+				}
+			}
+			add_collaboration = {
+				target = POL
+				value = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_GER_free_collaboration_on_POL
+					option = hks_GER_free_collaboration_on_POL_100
+				}
+			}
+			add_collaboration = {
+				target = POL
+				value = 1
+			}
+		}
+		#ger on fra
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_GER_free_collaboration_on_FRA
+					option = hks_GER_free_collaboration_on_FRA_30
+				}
+			}
+			add_collaboration = {
+				target = FRA
+				value = 0.3
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_GER_free_collaboration_on_FRA
+					option = hks_GER_free_collaboration_on_FRA_60
+				}
+			}
+			add_collaboration = {
+				target = FRA
+				value = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_GER_free_collaboration_on_FRA
+					option = hks_GER_free_collaboration_on_FRA_100
+				}
+			}
+			add_collaboration = {
+				target = FRA
+				value = 1
+			}
+		}
+	}
+	ITA = {
+		#ITA on YUG
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_ITA_free_collaboration_on_YUG
+					option = hks_ITA_free_collaboration_on_YUG_30
+				}
+			}
+			add_collaboration = {
+				target = YUG
+				value = 0.3
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_ITA_free_collaboration_on_YUG
+					option = hks_ITA_free_collaboration_on_YUG_60
+				}
+			}
+			add_collaboration = {
+				target = YUG
+				value = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_ITA_free_collaboration_on_YUG
+					option = hks_ITA_free_collaboration_on_YUG_100
+				}
+			}
+			add_collaboration = {
+				target = YUG
+				value = 1
+			}
+		}
+
+		#ITA on GRE
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_ITA_free_collaboration_on_GRE
+					option = hks_ITA_free_collaboration_on_GRE_30
+				}
+			}
+			add_collaboration = {
+				target = GRE
+				value = 0.3
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_ITA_free_collaboration_on_GRE
+					option = hks_ITA_free_collaboration_on_GRE_60
+				}
+			}
+			add_collaboration = {
+				target = GRE
+				value = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_ITA_free_collaboration_on_GRE
+					option = hks_ITA_free_collaboration_on_GRE_100
+				}
+			}
+			add_collaboration = {
+				target = GRE
+				value = 1
+			}
+		}
+	}
+}
+
+axis_capitulation_peace_deal = {
+	#Comintern
+	if = {
+		limit = {
+			has_global_flag = SOV_capitulated
+		}
+
+		ENG = {
+
+			annex_country = { target = HUN transfer_troops = no } 
+			annex_country = { target = ROM transfer_troops = no } 
+			annex_country = { target = BUL transfer_troops = no } 
+
+			release = ROM
+			release = HUN
+			release = BUL
+			release = LIT
+			release = LAT
+			release = EST
+			release = MON
+			release = SOV
+
+			add_to_faction = CZE
+			add_to_faction = ROM
+			add_to_faction = BUL
+			add_to_faction = YUG
+			add_to_faction = SOV
+			add_to_faction = HUN
+			add_to_faction = ALB
+		}
+
+		LIT = {
+			transfer_state = 784
+			transfer_state = 188
+		}
+		SOV = {
+			set_cosmetic_tag = russian_empire
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 50
+				fascism = 5
+				neutrality = 5
+				communism = 40
+			}
+
+			transfer_state = 213
+			transfer_state = 722
+			transfer_state = 146
+			transfer_state = 216
+			transfer_state = 215
+
+			every_state = {
+				limit = {
+					is_owned_by = ENG
+					is_core_of = SOV
+				}
+				SOV = {
+					transfer_state = PREV
+				}
+			}
+		}
+		WGR = {
+			add_state_core = 60
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 64
+			add_state_core = 65
+
+			transfer_state = 60
+			transfer_state = 61
+			transfer_state = 62
+			transfer_state = 64
+			transfer_state = 65
+		}
+		HUN = {
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 80
+				fascism = 0
+				neutrality = 10
+				communism = 10
+			}
+
+			transfer_state = 43
+			transfer_state = 154
+			transfer_state = 155
+		}
+		ROM = {
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 80
+				fascism = 0
+				neutrality = 10
+				communism = 10
+			}
+
+			transfer_state = 81
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 46
+			transfer_state = 76
+			transfer_state = 79
+		}
+		BUL = {
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 80
+				fascism = 0
+				neutrality = 10
+				communism = 10
+			}
+
+			transfer_state = 48
+			transfer_state = 212
+			transfer_state = 801
+			transfer_state = 211
+			transfer_state = 77
+		}
+		CZE = {
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 80
+				fascism = 0
+				neutrality = 10
+				communism = 10
+			}
+
+			transfer_state = 664
+			transfer_state = 71
+			transfer_state = 70
+			transfer_state = 75
+			transfer_state = 69
+			transfer_state = 9
+			transfer_state = 74
+			transfer_state = 73
+		}
+		POL = {
+			set_politics = {
+				ruling_party = communism
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 15
+				fascism = 0
+				neutrality = 5
+				communism = 80
+			}
+
+			transfer_state = 88
+			transfer_state = 762
+			transfer_state = 90
+			transfer_state = 10
+			transfer_state = 92
+			transfer_state = 97
+			transfer_state = 98
+			transfer_state = 87
+			transfer_state = 86
+			transfer_state = 807
+			transfer_state = 85
+			transfer_state = 72
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 68
+			transfer_state = 63
+			transfer_state = 5
+			transfer_state = 89
+			transfer_state = 91
+			transfer_state = 93
+			transfer_state = 94
+			transfer_state = 95
+			transfer_state = 96
+			transfer_state = 763
+		}
+		ALB = {
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 80
+				fascism = 0
+				neutrality = 10
+				communism = 10
+			}
+
+			transfer_state = 805
+			transfer_state = 934
+			transfer_state = 44
+		}
+		YUG = {
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 50
+				fascism = 0
+				neutrality = 10
+				communism = 40
+			}
+
+			transfer_state = 102
+			transfer_state = 109
+			transfer_state = 853
+			transfer_state = 103
+			transfer_state = 104
+			transfer_state = 163
+			transfer_state = 105
+			transfer_state = 804
+			transfer_state = 802
+			transfer_state = 106
+			transfer_state = 803
+			transfer_state = 108
+			transfer_state = 107
+			transfer_state = 764
+			transfer_state = 45
+		}
+		MON = {
+			set_cosmetic_tag = NEUTRAL
+			
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 50
+				fascism = 0
+				neutrality = 10
+				communism = 40
+			}
+		}
+
+		NEU = {
+			add_to_faction = LIT
+			add_to_faction = LAT
+			add_to_faction = EST
+			add_to_faction = MON
+		}
+	} 
+	else = {
+		if = {
+			limit = {
+				POL = {
+					has_war_with = JAP
+				}
+			}
+			POL = {
+				white_peace = JAP
+				if = {
+					limit = {
+						is_in_faction_with = ENG
+					}
+					leave_faction = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				YUG = {
+					has_war_with = JAP
+				}
+			}
+			YUG = {
+				white_peace = JAP
+				if = {
+					limit = {
+						is_in_faction_with = ENG
+					}
+					leave_faction = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				FIN = {
+					OR = {
+						has_war_with = ENG
+						has_war_with = SOV
+					}
+				}
+			}
+			FIN = {
+				white_peace = ENG
+				white_peace = SOV
+				leave_faction = yes
+				set_cosmetic_tag = NEUTRAL
+				add_ideas = hks_neutral
+			}
+
+			NEU = {
+				add_to_faction = FIN
+			}
+		}
+		else_if = {
+			limit = {
+				SPR = {
+					OR = {
+						has_war_with = ENG
+						has_war_with = SOV
+					}
+				}
+			}
+			SPR = {
+				white_peace = ENG
+				white_peace = SOV
+				leave_faction = yes
+				set_cosmetic_tag = NEUTRAL
+				add_ideas = hks_neutral
+			}
+
+			NEU = {
+				add_to_faction = SPR
+			}
+		}
+
+
+		SOV = {
+			if = {
+				limit = {
+					SOV = {
+						is_puppet = yes
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SOV
+					}
+					SOV = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			puppet = DDR
+			puppet = HUN
+			puppet = ROM
+			puppet = BUL
+			puppet = CZE
+			puppet = POL
+			puppet = ALB
+			puppet = YUG
+
+			transfer_state = 4
+			transfer_state = 975
+			transfer_state = 976
+			transfer_state = 766
+			transfer_state = 78
+			transfer_state = 89
+			transfer_state = 80
+			transfer_state = 73
+			transfer_state = 91
+			transfer_state = 93					
+			transfer_state = 94
+			transfer_state = 95
+			transfer_state = 96
+			transfer_state = 784
+			transfer_state = 784
+			transfer_state = 763
+		
+			DDR = {
+				set_cosmetic_tag = SOV_PUPPET
+
+				add_state_core = 60
+				add_state_core = 61
+				add_state_core = 62
+				add_state_core = 64
+				add_state_core = 65
+
+				transfer_state = 60
+				transfer_state = 61
+				transfer_state = 62
+				transfer_state = 64
+				transfer_state = 65
+				transfer_state = 978
+			}
+			HUN = {
+				set_cosmetic_tag = SOV_PUPPET
+
+				transfer_state = 43
+				transfer_state = 154
+				transfer_state = 155
+			}
+			ROM = {
+				set_cosmetic_tag = SOV_PUPPET
+
+				transfer_state = 81
+				transfer_state = 82
+				transfer_state = 83
+				transfer_state = 84
+				transfer_state = 46
+				transfer_state = 76
+				transfer_state = 79
+			}
+			BUL = {
+				set_cosmetic_tag = SOV_PUPPET
+
+				transfer_state = 48
+				transfer_state = 212
+				transfer_state = 801
+				transfer_state = 211
+				transfer_state = 77
+			}
+			CZE = {
+				set_cosmetic_tag = SOV_PUPPET
+				transfer_state = 664
+				transfer_state = 71
+				transfer_state = 70
+				transfer_state = 75
+				transfer_state = 69
+				transfer_state = 9
+				transfer_state = 74
+			}
+			POL = {
+				set_cosmetic_tag = SOV_PUPPET
+				transfer_state = 88
+				transfer_state = 762
+				transfer_state = 90
+				transfer_state = 10
+				transfer_state = 92
+				transfer_state = 97
+				transfer_state = 98
+				transfer_state = 87
+				transfer_state = 86
+				transfer_state = 807
+				transfer_state = 85
+				transfer_state = 72
+				transfer_state = 66
+				transfer_state = 67
+				transfer_state = 68
+				transfer_state = 63
+				transfer_state = 5
+			}
+			ALB = {
+				set_cosmetic_tag = SOV_PUPPET
+				transfer_state = 805
+				transfer_state = 934
+				transfer_state = 44
+			}
+			YUG = {
+				set_cosmetic_tag = SOV_PUPPET
+
+				transfer_state = 102
+				transfer_state = 109
+				transfer_state = 853
+				transfer_state = 103
+				transfer_state = 104
+				transfer_state = 163
+				transfer_state = 105
+				transfer_state = 804
+				transfer_state = 802
+				transfer_state = 106
+				transfer_state = 803
+				transfer_state = 108
+				transfer_state = 107
+				transfer_state = 764
+				transfer_state = 45
+			}
+			BUL = {
+				set_cosmetic_tag = SOV_PUPPET
+			}
+		}								
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = LIT
+					is_core_of = LAT
+					is_core_of = EST
+				}
+			}
+			SOV = {
+				transfer_state = PREV
+			}
+		}
+	}
+
+	#Allies
+	WGR = {
+		add_state_core = 42
+		add_state_core = 50
+		add_state_core = 51
+		add_state_core = 52
+		add_state_core = 53
+		add_state_core = 54
+		add_state_core = 55
+		add_state_core = 56
+		add_state_core = 57
+		add_state_core = 58
+		add_state_core = 59
+
+		transfer_state = 42
+		transfer_state = 50
+		transfer_state = 51
+		transfer_state = 52
+		transfer_state = 53
+		transfer_state = 54
+		transfer_state = 55
+		transfer_state = 56
+		transfer_state = 57
+		transfer_state = 58
+		transfer_state = 59
+	}
+	ETH = {
+		transfer_state = 835
+		transfer_state = 836
+		transfer_state = 837
+		transfer_state = 838
+		transfer_state = 271
+		transfer_state = 843
+		transfer_state = 841
+		transfer_state = 840
+		transfer_state = 839
+		transfer_state = 842
+		transfer_state = 908
+		transfer_state = 559
+		transfer_state = 844
+		transfer_state = 550
+	}
+	ITA = {
+		set_cosmetic_tag = ENG_puppet_ITA
+	}
+	USA = {
+		puppet = WGR
+		transfer_state = 152
+	}			
+	FRA = {
+		annex_country = { target = D04 transfer_troops = no } 
+		transfer_state = 1
+		transfer_state = 28
+		transfer_state = 153
+		transfer_state = 448
+		transfer_state = 661
+		transfer_state = 449
+		transfer_state = 662
+		transfer_state = 273	
+		
+		transfer_state = 735	
+		transfer_state = 31
+		transfer_state = 32	
+		transfer_state = 25	
+		transfer_state = 26	
+		transfer_state = 22	
+		transfer_state = 20
+		transfer_state = 33
+		transfer_state = 21	
+		transfer_state = 851
+		transfer_state = 671
+		transfer_state = 670
+		transfer_state = 641
+		transfer_state = 286
+
+		if = {
+			limit = {
+				SPR = {
+					exists = yes
+					OR = {
+						has_war_with = FRA
+						has_war_with = SOV
+					}
+				}
+			}
+			FRA = {
+				transfer_state = 290
+				transfer_state = 699
+				transfer_state = 783
+				transfer_state = 178
+			}
+		}
+	}
+	GRE = {
+		transfer_state = 184
+		transfer_state = 731
+		transfer_state = 185
+		transfer_state = 187
+		transfer_state = 47
+		transfer_state = 186
+		transfer_state = 182
+		transfer_state = 164
+	}
+	HOL = {
+		transfer_state = 36
+		transfer_state = 7
+		transfer_state = 35
+	}
+	BEL = {
+		transfer_state = 34
+		transfer_state = 6
+	}
+	LUX = {
+		transfer_state = 8
+	}
+	DEN = {
+		transfer_state = 99
+		transfer_state = 37
+		transfer_state = 337		
+	}
+	NOR = {
+		transfer_state = 110
+		transfer_state = 142
+		transfer_state = 143
+		transfer_state = 144
+	}
+	ENG = {
+		#Get remaining territories
+		annex_country = { target = GER transfer_troops = no } 
+		annex_country = { target = ITA transfer_troops = no } 
+		annex_country = { target = AOI transfer_troops = no } 
+
+		if = {
+			limit = {
+				ICE = {
+					has_war_with = ENG
+				}	
+			}
+			annex_country = { target = ICE transfer_troops = no } 
+			release = ICE
+			puppet = ICE
+		}
+
+		release = SPR
+		release = ITA
+		release = FRA
+		puppet = ITA
+
+		add_to_faction = WGR
+		add_to_faction = ETH
+		add_to_faction = ITA
+		add_to_faction = HOL
+		add_to_faction = BEL
+		add_to_faction = LUX
+		add_to_faction = GRE
+		add_to_faction = DEN
+		add_to_faction = NOR
+		add_to_faction = FRA
+		add_to_faction = USA
+		add_to_faction = MEX
+		
+		transfer_state = 848
+		transfer_state = 663
+		transfer_state = 451
+		transfer_state = 450
+		
+
+
+	}
+	FIN = {
+		transfer_state = 111
+		transfer_state = 149
+		transfer_state = 150
+		transfer_state = 148
+		transfer_state = 147
+	}
+}
+
+comintern_capitulation_peace_deal = {
+	set_global_flag = SOV_capitulated
+
+	GER = {
+		annex_country = { target = SOV transfer_troops = no } 
+		annex_country = { target = MON transfer_troops = no } 
+		annex_country = { target = TAN transfer_troops = no } 
+
+		if = {
+			limit = {
+				SIK = {
+					has_war_with = GER
+				}
+			}
+			annex_country = { target = SIK transfer_troops = no } 
+		}
+	}
+
+	JAP = {
+		transfer_state = 655
+	}
+
+	FIN = {
+
+		transfer_state = 147
+		transfer_state = 213
+		transfer_state = 722
+		transfer_state = 146
+		transfer_state = 216
+		transfer_state = 215
+	}
+
+	ROM = {
+		transfer_state = 766
+		transfer_state = 78
+		transfer_state = 80
+	}
+}
+
+jap_capitulation_peace_deal = {
+	set_global_flag = JAP_capitulated
+	
+	#transfer navy first
+	JAP = {
+		set_cosmetic_tag = USA_puppet
+
+		transfer_navy = {
+			target = USA
+		}
+	}
+
+	#stop the war
+	NEU = {
+		annex_country = { target = JAP transfer_troops = no } 
+		annex_country = { target = CHI transfer_troops = no } 
+		annex_country = { target = SIA transfer_troops = no } 
+		annex_country = { target = MEN transfer_troops = no } 
+		annex_country = { target = MAN transfer_troops = no } 
+		
+		release = SIA
+		release = CHI
+		release = JAP
+
+		NEU = {
+			country_event = { id = fix.5 hours = 0 }				
+		}
+	}
+
+	USA = {
+		puppet = JAP
+		transfer_state = 646
+		transfer_state = 633
+		transfer_state = 684
+		transfer_state = 647
+		transfer_state = 646
+		transfer_state = 648
+	}
+
+ 	FRA = {
+		puppet = SIA
+
+		transfer_state = 648
+		transfer_state = 671
+		transfer_state = 670
+		transfer_state = 286
+		transfer_state = 741
+	}
+	CHI = {
+		set_cosmetic_tag = CHI
+
+		transfer_state = 524
+		transfer_state = 615
+		transfer_state = 621
+		transfer_state = 616
+		transfer_state = 604
+		transfer_state = 754
+		transfer_state = 755
+		transfer_state = 756
+		transfer_state = 283
+		transfer_state = 746
+		transfer_state = 753
+		transfer_state = 325
+		transfer_state = 609
+		transfer_state = 745
+		
+		#man
+		transfer_state = 328
+		transfer_state = 610
+		transfer_state = 714
+		transfer_state = 715
+		transfer_state = 716
+		transfer_state = 717
+		transfer_state = 761
+
+		#men
+		transfer_state = 611
+		transfer_state = 612
+	}
+	KOR = {		
+		527 = {
+			add_core_of = KOR
+			remove_core_of = JAP
+		}
+		525 = {
+			add_core_of = KOR
+			remove_core_of = JAP
+		}
+		transfer_state = 527
+		transfer_state = 525
+	}
+	RAJ = {
+		if = {
+			limit = {
+				exists = yes
+			}
+			transfer_state = 747
+		}
+	}
+	NZL = {
+		if = {
+			limit = {
+				exists = yes
+			}
+			transfer_state = 646
+			transfer_state = 684
+			transfer_state = 641	
+		}
+	}
+	SOV = {
+		if = {
+			limit = {
+				exists = yes
+			}
+			transfer_state = 537	
+		}
+	}
+
+
+
+	ENG = {
+		add_to_faction = JAP
+		add_to_faction = CHI
+		add_to_faction = KOR
+		add_to_faction = SIA
+	}
+}
+
+fix_jap = {
+	JAP = {
+		transfer_state = 526
+		transfer_state = 529
+		transfer_state = 530
+		transfer_state = 531
+		transfer_state = 532
+		transfer_state = 535
+		transfer_state = 534
+		transfer_state = 533
+		transfer_state = 536
+		transfer_state = 528
+		transfer_state = 555	
+		transfer_state = 282
+	}
+}
+
+chi_capitulation_peace_deal = {
+	set_global_flag = CHI_capitulated
+	CHI = {
+		transfer_navy = {
+			target = JAP
+		}
+	}
+	JAP = {
+		annex_country = { target = CHI transfer_troops = no }
+
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = hks_CHI_unified
+					option = hks_CHI_unified_NO
+				}
+			}
+			annex_country = { target = SHX transfer_troops = no }
+			annex_country = { target = PRC transfer_troops = no }
+			annex_country = { target = XSM transfer_troops = no }
+			annex_country = { target = YUN transfer_troops = no }
+			annex_country = { target = GXC transfer_troops = no }
+
+			if = {
+				limit = {
+					SIK = {
+						is_in_faction_with = CHI
+					}
+				}
+				annex_country = { target = SIK transfer_troops = no }
+			}
+			else = {
+				JAP = {
+					diplomatic_relation = { 
+						country = SIK 
+						relation = non_aggression_pact 
+						active = yes
+					}
+				}
+			}		
+		}
+
+		country_event = { id = hksChina.1 days = 0}
+	}
+}
+
+eth_capitulation_peace_deal = {
+	set_global_flag = ETH_capitulated
+
+	ITA = {
+		transfer_state = 835
+		transfer_state = 836
+		transfer_state = 837
+		transfer_state = 838
+		transfer_state = 839
+		transfer_state = 840
+		transfer_state = 841
+		transfer_state = 842
+		transfer_state = 843
+		transfer_state = 271
+		transfer_state = 908
+	}			
+}
+
+#yug_capitulation_peace_deal = {
+#	set_global_flag = YUG_capitulated
+
+#	YUG = {
+#		news_event = { id = country_capitulated.0 days = 0 }
+#		transfer_navy = {
+#			target = ITA
+#		}
+#	}	
+
+#	ITA = {
+#		transfer_state = 853
+#		transfer_state = 102
+#		transfer_state = 104
+#		transfer_state = 802
+#		transfer_state = 804
+#		transfer_state = 107
+#		transfer_state = 108
+
+#		transfer_state = 45
+#		transfer_state = 764
+		
+#		transfer_state = 970
+#		transfer_state = 106
+#		transfer_state = 803
+#	}
+
+#	if = {
+#		limit = {
+#			has_game_rule = {
+#				rule = hks_ITA_puppets
+#				option = hks_ITA_puppets_OFF
+#			}
+#		}
+#		ITA = {
+#			transfer_state = 103
+#			transfer_state = 109
+#			transfer_state = 105
+#		}
+#	}
+
+#	if = {
+#		limit = {
+#			has_game_rule = {
+#				rule = hks_ITA_puppets
+#				option = hks_ITA_puppets_ON
+#			}
+#		}
+#		CRO = {
+#			transfer_state = 103
+#			transfer_state = 109
+#			transfer_state = 852
+#			103 = { add_core_of = CRO }
+#			109 = { add_core_of = CRO }
+#			852 = { add_core_of = CRO }
+#		}
+#		MNT = {
+#			transfer_state = 105
+#			105 = { add_core_of = MNT }
+
+#			set_country_flag = ITA_established_montenegro
+#			give_resource_rights = { receiver = ITA state = 105 }
+#			division_template = {
+#				name = "Montenegrin Chetniks"
+#				is_locked = yes
+#				division_names_group = ITA_INF_01
+#				regiments = {
+#					mountaineers = { x = 0 y = 0 }
+#					mountaineers = { x = 0 y = 1 }
+#					mountaineers = { x = 0 y = 2 }
+#					mountaineers = { x = 1 y = 0 }
+#					mountaineers = { x = 1 y = 1 }
+#					mountaineers = { x = 1 y = 2 }
+#				}
+#			}
+
+#			country_event = {
+#				id = BBA_italy_interaction_events.7
+#				days = 0
+#			}
+			
+#			105 = {
+#				create_unit = {
+#					division = "name = \"First Montenegrin Chetnik Brigade\" division_template = \"Montenegrin Chetniks\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+#					owner = MNT
+#				}
+
+#				create_unit = {
+#					division = "name = \"Second Montenegrin Chetnik Brigade\" division_template = \"Montenegrin Chetniks\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+#					owner = MNT
+#				}
+
+#				create_unit = {
+#					division = "name = \"Third Montenegrin Chetnik Brigade\" division_template = \"Montenegrin Chetniks\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+#					owner = MNT
+#				}
+#			}
+#		}	
+#		ITA = {
+#			set_autonomy = {
+#				target = MNT
+#				autonomy_state = autonomy_reichsprotectorate	
+#				end_wars = no
+#				end_civil_wars = no	
+#			}
+#			set_autonomy = {
+#				target = CRO
+#				autonomy_state = autonomy_reichsprotectorate
+#				end_wars = no
+#				end_civil_wars = no
+#			}
+#		}
+#	}	
+#}
+
+#gre_capitulation_peace_deal = {
+#	set_global_flag = GRE_capitulated
+
+#	GRE = {
+#		news_event = { id = country_capitulated.0 days = 0 }
+#		transfer_navy = {
+#			target = ITA
+#		}
+#	}
+
+#	ITA = {
+#		transfer_state = 185
+#		transfer_state = 186
+#		transfer_state = 182
+#		transfer_state = 47
+#		transfer_state = 187
+
+#		transfer_state = 184
+#		transfer_state = 731
+#	}
+#}
+
+SPR_revival = {
+	set_global_flag = SPR_capitulated
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = hks_SPCW_revival
+				option = hks_SPCW_revival_YES_buffs
+			}
+		}
+
+		# if soviet volunteer:
+		if = {
+			limit = {
+				SPD = {
+					has_volunteers_amount_from = {
+						tag = SOV
+						count > 0
+					}
+				}
+			}
+			SOV = {
+				add_ideas = hks_SPR_reparations
+			}
+		}
+
+		if = {
+			limit = {
+				SPD = {
+					has_volunteers_amount_from = {
+						tag = FRA
+						count > 0
+					}
+				}
+			}
+			FRA = {
+				add_ideas = hks_SPR_reparations
+			}
+		}
+	}	
+	
+	set_global_flag = nationalist_victory
+	set_global_flag = SPR_franco_won
+	set_global_flag = scw_over
+
+	hidden_effect = {
+		country_event = { id = lar_news.1 hours = 0 }
+
+		every_state = {
+			limit = {
+				or = {
+					is_owned_by = SPD
+					is_owned_by = SPC
+					is_owned_by = SPA
+					is_owned_by = SPB
+				}
+			}
+			SPR = {
+				transfer_state = PREV
+			}
+		}
+	}
+}

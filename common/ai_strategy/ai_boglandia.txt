@@ -1,0 +1,340 @@
+defend_home = {
+    allowed = {
+		tag = NEU
+	}
+    enable = {
+		has_global_flag = hkslanda
+	}
+	abort = {
+		has_global_flag = rip_hkslandia
+	}
+	
+    
+	ai_strategy = {
+		type = garrison
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 2000
+	}
+}
+
+N01 = {
+	allowed = {
+		tag = N01
+	}
+    enable = {
+		has_global_flag = hkslanda
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = { type = dont_defend_ally_borders id = N02 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N03 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N04 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N05 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N06 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N07 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = NEU value = -500 }
+	
+	ai_strategy = {
+		type = front_control
+		area = mainland_europe
+		priority = -500
+		ordertype = front
+	}
+	ai_strategy = {
+		type = front_control
+		area = middle_east
+		priority = -500
+		ordertype = front
+	}
+
+		
+	ai_strategy = { type = antagonize id = D04 value = 59 }
+	ai_strategy = { type = prepare_for_war id = D04 value = 59 }
+	ai_strategy = { type = consider_weak id = D04 value = 59 }
+	
+	ai_strategy = { type = antagonize id = ENG value = 59 }
+	ai_strategy = { type = prepare_for_war id = ENG value = 59 }
+	ai_strategy = { type = consider_weak id = ENG value = 59 }
+
+	ai_strategy = { type = antagonize id = FRA value = 59 }
+	ai_strategy = { type = prepare_for_war id = FRA value = 59 }
+	ai_strategy = { type = consider_weak id = FRA value = 59 }
+
+	ai_strategy = { type = antagonize id = COG value = 59 }
+	ai_strategy = { type = prepare_for_war id = COG value = 59 }
+	ai_strategy = { type = consider_weak id = COG value = 59 }
+	
+	ai_strategy = { type = antagonize id = SPR value = 59 }
+	ai_strategy = { type = prepare_for_war id = SPR value = 59 }
+	ai_strategy = { type = consider_weak id = SPR value = 59 }
+
+	
+	ai_strategy = {
+		type = front_control
+		tag = SPR
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = COG
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = D04
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = ENG
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = FRA
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+N02 = {
+	allowed = {
+		tag = N02
+	}
+    enable = {
+		has_global_flag = hkslanda
+	}
+	abort = {
+		always = no
+	}
+
+		
+	ai_strategy = { type = antagonize id = FIN value = 59 }
+	ai_strategy = { type = prepare_for_war id = FIN value = 59 }
+	ai_strategy = { type = consider_weak id = FIN value = 59 }
+	
+	ai_strategy = { type = antagonize id = GER value = 59 }
+	ai_strategy = { type = prepare_for_war id = GER value = 59 }
+	ai_strategy = { type = consider_weak id = GER value = 59 }
+
+	
+	ai_strategy = {
+		type = front_control
+		tag = FIN
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = GER
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+N03 = {
+	allowed = {
+		tag = N03
+	}
+    enable = {
+		has_global_flag = hkslanda
+	}
+	abort = {
+		always = no
+	}
+
+		
+	ai_strategy = { type = antagonize id = SPR value = 59 }
+	ai_strategy = { type = prepare_for_war id = SPR value = 59 }
+	ai_strategy = { type = consider_weak id = SPR value = 59 }
+	
+	ai_strategy = { type = antagonize id = GER value = 59 }
+	ai_strategy = { type = prepare_for_war id = GER value = 59 }
+	ai_strategy = { type = consider_weak id = GER value = 59 }
+
+	
+	ai_strategy = {
+		type = front_control
+		tag = SPR
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = GER
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+N04 = {
+	allowed = {
+		tag = N04
+	}
+    enable = {
+		has_global_flag = hkslanda
+	}
+	abort = {
+		always = no
+	}
+
+		
+	ai_strategy = { type = antagonize id = PER value = 59 }
+	ai_strategy = { type = prepare_for_war id = PER value = 59 }
+	ai_strategy = { type = consider_weak id = PER value = 59 }
+	
+	ai_strategy = { type = antagonize id = ENG value = 59 }
+	ai_strategy = { type = prepare_for_war id = ENG value = 59 }
+	ai_strategy = { type = consider_weak id = ENG value = 59 }
+
+	ai_strategy = { type = antagonize id = SOV value = 59 }
+	ai_strategy = { type = prepare_for_war id = SOV value = 59 }
+	ai_strategy = { type = consider_weak id = SOV value = 59 }
+
+	ai_strategy = { type = antagonize id = BUL value = 59 }
+	ai_strategy = { type = prepare_for_war id = BUL value = 59 }
+	ai_strategy = { type = consider_weak id = BUL value = 59 }
+
+	ai_strategy = { type = antagonize id = RAJ value = 59 }
+	ai_strategy = { type = prepare_for_war id = RAJ value = 59 }
+	ai_strategy = { type = consider_weak id = RAJ value = 59 }
+	
+	ai_strategy = {
+		type = front_control
+		tag = RAJ
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = PER
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = BUL
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SOV
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			is_core_of = EGY
+		}
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+N05 = {
+	allowed = {
+		tag = N05
+	}
+    enable = {
+		has_global_flag = hkslanda
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = { type = dont_defend_ally_borders id = N02 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N03 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N04 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N01 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N06 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = N07 value = -500 }
+	ai_strategy = { type = dont_defend_ally_borders id = NEU value = -500 }
+	
+	ai_strategy = {
+		type = front_control
+		area = mainland_europe
+		priority = -500
+		ordertype = front
+	}
+	ai_strategy = {
+		type = front_control
+		area = middle_east
+		priority = -500
+		ordertype = front
+	}
+		
+	ai_strategy = {
+		type = front_control
+		area = north_africa
+		priority = -500
+		ordertype = front
+	}
+	ai_strategy = {
+		type = front_control
+		area = africa
+		priority = -500
+		ordertype = front
+	}
+		
+	ai_strategy = { type = antagonize id = MEX value = 59 }
+	ai_strategy = { type = prepare_for_war id = MEX value = 59 }
+	ai_strategy = { type = consider_weak id = MEX value = 59 }
+	
+	ai_strategy = { type = antagonize id = USA value = 59 }
+	ai_strategy = { type = prepare_for_war id = USA value = 59 }
+	ai_strategy = { type = consider_weak id = USA value = 59 }
+	
+	ai_strategy = {
+		type = front_control
+		tag = USA
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = MEX
+		ordertype = front		
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+	
+}

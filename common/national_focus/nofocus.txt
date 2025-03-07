@@ -1,0 +1,47 @@
+focus_tree = {
+	id = nofocus
+
+	country = {
+		factor = 0
+        # modifier = {
+		# 	add = 100
+		# 	tag = VEN
+        # }
+		# modifier = {
+		# 	add = 100
+		# 	tag = NEU
+        # }
+	}
+ 
+	default = no
+
+	continuous_focus_position = { x = 10000 y = 10000 }
+
+    	initial_show_position = {
+    		x = 20
+    		y = 0
+    	}
+
+    	focus = {
+    		id = "no focus for u"
+    		icon = GFX_focus_TUR_the_montreux_convention
+    		available = {
+    		    always = no
+    		}
+
+			allow_branch = {
+				always = no
+			}
+	
+    		x = 5
+    		y = 0
+    		cost = 10
+    		ai_will_do = {
+    			base = 10
+    		}
+
+    		completion_reward = {
+    			
+    		}
+    	}
+}

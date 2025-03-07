@@ -1,0 +1,1148 @@
+ignore_neutral = {
+    allowed = {}
+    enable = {
+		always = yes
+	}
+	abort = {
+		NEU = {
+			has_global_flag = hkslanda
+		}
+	}
+	
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = NEU
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = NEU
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = NEU
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = NEU
+        value = -1000
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = POR
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = POR
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = POR
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = POR
+        value = -1000
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = SWI
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = SWI
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = SWI
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SWI
+        value = -1000
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = VEN
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = VEN
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = VEN
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = VEN
+        value = -1000
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = TUR
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = TUR
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = TUR
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = TUR
+        value = -1000
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = SWE
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = SWE
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = SWE
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SWE
+        value = -1000
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = LIT
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = LIT
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = LIT
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = LIT
+        value = -1000
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = EST
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = EST
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = EST
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = EST
+        value = -1000
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = LAT
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = LAT
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = LAT
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = LAT
+        value = -1000
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = AUS
+        value = 1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        tag = AUS
+        value = -1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = AUS
+        value = 1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = AUS
+        value = -1000
+    }
+}
+
+ignore_comintern = {
+	allowed = {
+		OR = {
+			tag = CHI
+			tag = SHX
+			tag = PRC
+			tag = XSM
+			tag = YUN
+			tag = GXC
+			tag = POL
+			tag = USA
+			tag = ENG
+			tag = FRA
+			tag = CAN
+			tag = RAJ
+			tag = BRA
+			tag = HOL
+			tag = BEL
+			tag = POL
+			tag = LUX
+			tag = AST
+			tag = NZL
+			tag = INS
+			tag = DEN
+			tag = NOR
+			tag = CZE
+			tag = MEX
+			tag = IRE
+			tag = PER
+			tag = GRE
+			tag = YUG
+			tag = JAP
+			tag = MAN
+			tag = MEN
+			tag = SIA
+		}
+		# OR = {
+		# 	extended_allied_countries = yes
+		# 	japan_countries = yes
+		# 	china_countries = yes
+		# }
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SOV
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = SOV
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SOV
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = SOV
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = TAN
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = TAN
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TAN
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = TAN
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = MON
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = MON
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MON
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = MON
+		value = -1000
+	}
+}
+
+ignore_axis = {
+	allowed = {
+		OR = {
+			tag = ITA
+			tag = GER
+			tag = SLO
+			tag = HUN
+			tag = FIN
+			tag = ROM
+			tag = BUL
+			tag = JAP
+			tag = MAN
+			tag = MEN
+			tag = SIA
+		}
+		# axis_countries = yes
+	} 
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = HUN
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = HUN
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = HUN
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = FIN
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = FIN
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = FIN
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = ROM
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = ROM
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ROM
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = BUL
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = BUL
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = BUL
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GER
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = GER
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER  
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = ITA
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = ITA
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ITA  
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = D04
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = D04
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = D04  
+		value = -1000
+	}
+}
+
+ignore_allies = {
+	allowed = {
+		OR = {
+			tag = USA
+			tag = ENG
+			tag = FRA
+			tag = CAN
+			tag = RAJ
+			tag = BRA
+			tag = HOL
+			tag = BEL
+			tag = POL
+			tag = LUX
+			tag = AST
+			tag = NZL
+			tag = INS
+			tag = DEN
+			tag = NOR
+			tag = CZE
+			tag = IRQ
+			tag = MEX
+			tag = IRE
+			tag = PER
+			tag = GRE
+			tag = YUG
+			tag = SOV
+			tag = MON
+			tag = TAN
+			tag = CHI
+			tag = SHX
+			tag = PRC
+			tag = XSM
+			tag = YUN
+			tag = GXC
+		}
+		# OR = {
+		# 	extended_allied_countries = yes
+		# 	comintern_countries = yes
+		# 	china_countries = yes
+		# }
+	} 
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = USA
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = USA
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = USA
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = ENG
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = ENG
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ENG
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = FRA
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = FRA
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = FRA
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CAN
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = CAN
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = CAN
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = RAJ
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = RAJ
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = RAJ
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = BRA
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = BRA
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = BRA
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = HOL
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = HOL
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = HOL
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = BEL
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = BEL
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = BEL
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = POL
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = POL
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = POL
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = LUX
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = LUX
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = LUX
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = AST
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = AST
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = AST
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = NZL
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = NZL
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = NZL
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = INS
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = INS
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = INS
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = DEN
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = DEN
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = DEN
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = NOR
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = NOR
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = NOR
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CZE
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = CZE
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = CZE
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SPR
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = SPR
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = SPR
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = IRE
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = IRE
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = IRE
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = IRQ
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = IRQ
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = IRQ
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = PER
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = PER
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = PER
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GRE
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = GRE
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = GRE
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = YUG
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = YUG
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = YUG
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = MEX
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = MEX
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = MEX
+		value = -1000
+	}
+}
+
+ignore_japan = {
+	allowed = {
+		OR = {
+			tag = SOV
+			tag = TAN
+			tag = MON
+			tag = GER
+			tag = ITA
+			tag = ROM
+			tag = HUN
+			tag = BUL
+			tag = SPR
+			tag = SLO
+			tag = FIN
+		}
+		# OR = {
+		# 	comintern_countries = yes
+		# 	axis_countries = yes
+		# }
+		# NOT = {
+		# 	china_countries = yes
+		# }
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SIA
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = SIA
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = SIA
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SIA
+		value = 1000
+	} 
+	ai_strategy = { 
+		type = front_unit_request
+		tag = MAN
+		value = -1000
+	} 
+	ai_strategy = { 
+		type = ignore
+		id = MAN
+		value = 1000
+	} 
+	ai_strategy = { 
+		type = dont_defend_ally_borders
+		id = MAN
+		value = 1000
+	} 
+	ai_strategy = { 
+		type = prepare_for_war
+		id = MAN		
+		value = -1000
+	} 
+	ai_strategy = { 
+		type = front_unit_request
+		tag = MEN
+		value = -1000
+	} 
+	ai_strategy = { 
+		type = ignore
+		id = MEN
+		value = 1000
+	} 
+	ai_strategy = { 
+		type = dont_defend_ally_borders
+		id = MEN
+		value = 1000
+	} 
+	ai_strategy = { 
+		type = prepare_for_war
+		id = MEN		
+		value = -1000
+	} 
+	ai_strategy = { 
+		type = front_unit_request
+		tag = JAP
+		value = -1000
+	} 
+	ai_strategy = { 
+		type = ignore
+		id = JAP
+		value = 1000
+	} 
+	ai_strategy = { 
+		type = dont_defend_ally_borders
+		id = JAP
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = JAP
+		value = -1000
+	}
+}
+
+ignore_china = {
+    allowed = { 
+		OR = {
+			tag = USA
+			tag = ENG
+			tag = FRA
+			tag = CAN
+			tag = RAJ
+			tag = BRA
+			tag = HOL
+			tag = BEL
+			tag = POL
+			tag = LUX
+			tag = AST
+			tag = NZL
+			tag = INS
+			tag = DEN
+			tag = NOR
+			tag = CZE
+			tag = MEX
+			tag = IRE
+			tag = PER
+			tag = GRE
+			tag = YUG
+			tag = SOV
+			tag = MON
+			tag = TAN
+		}
+	}
+    enable = { 
+		always = yes 
+	}
+    abort = { 
+		has_global_flag = CHI_capitulated 
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = CHI
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = CHI
+		value = 1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SIK
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = SIK
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SIK
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = SHX
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = SHX
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SHX
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XSM
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = XSM
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = XSM
+		value = 1000
+	}
+}
+
+ignore_NOR_and_FIN = {
+    allowed = {
+        OR = {
+            tag = NOR
+            tag = FIN
+        }
+    }
+    enable = { 
+		always = yes 
+	}
+
+    abort = {
+		FIN = {
+			has_government = fascism 
+			is_in_faction_with = GER 
+		}
+    }
+
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = FIN
+        value = 1000
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = NOR
+        value = 1000
+    }
+    
+    ai_strategy = {
+        type = front_unit_request
+        id = FIN
+        value = -1000
+    }
+    ai_strategy = {
+        type = front_unit_request
+        id = NOR
+        value = -1000
+    }
+    
+    ai_strategy = {
+        type = ignore
+        id = FIN
+        value = 1000
+    }
+    ai_strategy = {
+        type = ignore
+        id = NOR
+        value = 1000
+    }
+    
+    ai_strategy = {
+        type = prepare_for_war
+        id = FIN
+        value = -1000
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = NOR
+        value = -1000
+    }
+}

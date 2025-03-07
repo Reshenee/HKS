@@ -1,0 +1,393 @@
+scripted_gui = {
+	st_country_powers = {
+		context_type = selected_state_context
+		window_name = "horsttool_container"
+		visible = {
+			ROOT = {
+				has_country_flag = host
+				has_country_flag = transfer_enabled
+			}
+		}
+		effects = {
+			observer_click = {
+				owner = {
+					set_temp_variable = {
+						ROOT.marks = this
+					}
+					SOL = {
+						change_tag_from = var:marks
+					}
+				}
+			}
+			whitepeace_click = {
+				owner = {
+					set_temp_variable = {
+						ROOT.marks = this
+					}
+					var:marks = {
+						declare_war_on = {
+							target = VEN
+							type = annex_everything
+						}
+						every_enemy_country = {
+							white_peace = PREV
+						}
+					}
+				}
+			}
+			clear_all_markings_click = {
+				ROOT = {
+					for_each_scope_loop = {
+						array = marked_states
+						clear_variable = mark_status
+					}
+					clear_array = marked_states
+				}
+			}
+			award_states_click = {
+				owner = {
+					for_each_loop = {
+						array = ROOT.marked_states
+						value = state
+						transfer_state = state
+					}
+					GER = {
+						news_event = {
+							id = horsttool.5
+						}
+					}
+					ROOT = {
+						for_each_scope_loop = {
+							array = marked_states
+							clear_variable = mark_status
+						}
+						clear_array = marked_states
+					}
+				}
+			}
+			add_cheat_click = {
+				set_variable = {
+					ROOT.taker = this
+				}
+				var:taker = {
+					owner = {
+						set_variable = {
+							Root.target_country = this
+						}
+						if = {
+							limit = {
+								check_variable = {
+									Root.selected_cheat = 1
+								}
+							}
+							add_offsite_building = {
+								type = arms_factory
+								level = 1
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {
+									Root.selected_cheat = 2
+								}
+							}
+							add_offsite_building = {
+								type = arms_factory
+								level = -1
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {
+									Root.selected_cheat = 3
+								}
+							}
+							add_offsite_building = {
+								type = industrial_complex
+								level = 1
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {
+									Root.selected_cheat = 4
+								}
+							}
+							add_offsite_building = {
+								type = industrial_complex
+								level = -1
+							}
+						}
+					}
+				}
+				GER = {
+					news_event = {
+						id = horsttool.1
+					}
+					set_variable = {
+						this.target_country = Root.target_country
+					}
+					set_variable = {
+						this.selected_cheat = Root.selected_cheat
+					}
+				}
+				clear_variable = ROOT.taker
+			}
+			add_cores_click = {
+				owner = {
+					set_temp_variable = {
+						ROOT.taker = this
+					}
+					for_each_loop = {
+						array = ROOT.marked_states
+						value = state
+						var:state = {
+							add_core_of = var:taker
+						}
+					}
+					GER = {
+						news_event = {
+							id = horsttool.4
+						}
+					}
+					ROOT = {
+						for_each_scope_loop = {
+							array = marked_states
+							clear_variable = mark_status
+						}
+						clear_array = marked_states
+						clear_variable = first_marked_state
+					}
+				}
+			}
+			annex_country_click = {
+				owner = {
+					set_variable = {
+						ROOT.taker = this
+					}
+				}
+				var:ROOT.marked_states^0 = {
+					owner = {
+						set_variable = {
+							ROOT.target = this
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							ROOT.target = ROOT.taker
+						}
+					}
+				}
+				else = {
+					var:ROOT.target = {
+						var:ROOT.taker = {
+							GER = {
+								news_event = {
+									id = horsttool.3
+								}
+							}
+							annex_country = {
+								target = PREV
+								transfer_troops = yes
+							}
+						}
+					}
+				}
+				ROOT = {
+					for_each_scope_loop = {
+						array = marked_states
+						clear_variable = mark_status
+					}
+					clear_array = marked_states
+					clear_variable = target
+					clear_variable = taker
+					clear_variable = first_marked_state
+				}
+			}
+			puppet_country_click = {
+				owner = {
+					set_variable = {
+						ROOT.taker = this
+					}
+				}
+				var:ROOT.marked_states^0 = {
+					owner = {
+						set_variable = {
+							ROOT.target = this
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							ROOT.target = ROOT.taker
+						}
+					}
+				}
+				else = {
+					var:ROOT.target = {
+						var:ROOT.taker = {
+							puppet = PREV
+						}
+					}
+				}
+				ROOT = {
+					for_each_scope_loop = {
+						array = marked_states
+						clear_variable = mark_status
+					}
+					clear_array = marked_states
+					clear_variable = target
+					clear_variable = taker
+					clear_variable = first_marked_state
+				}
+			}
+			toogle_mark_click = {
+				if = {
+					limit = {
+						check_variable = {
+							mark_status = 0
+						}
+					}
+					set_variable = {
+						mark_status = 2
+					}
+					add_to_array = {
+						ROOT.marked_states = THIS
+					}
+				}
+				else = {
+					clear_variable = mark_status
+					remove_from_array = {
+						ROOT.marked_states = THIS
+					}
+				}
+				set_variable = {
+					ROOT.first_marked_state = ROOT.marked_states^0
+				}
+			}
+			cheat1_click = {
+				if = {
+					limit = {
+						Root = {
+							has_country_flag = cheating
+						}
+					}
+					set_variable = {
+						Root.selected_cheat = 1
+					}
+					ROOT = {
+						clr_country_flag = cheating
+					}
+				}
+				else = {
+					ROOT = {
+						set_country_flag = cheating
+					}
+				}
+			}
+			cheat2_click = {
+				set_variable = {
+					Root.selected_cheat = 2
+				}
+				ROOT = {
+					clr_country_flag = cheating
+				}
+			}
+			cheat3_click = {
+				set_variable = {
+					Root.selected_cheat = 3
+				}
+				ROOT = {
+					clr_country_flag = cheating
+				}
+			}
+			cheat4_click = {
+				set_variable = {
+					Root.selected_cheat = 4
+				}
+				ROOT = {
+					clr_country_flag = cheating
+				}
+			}
+		}
+		properties = {
+			toogle_mark = {
+				frame = mark_status
+			}
+		}
+		triggers = {
+			observer_click_enabled = {
+				owner = {
+					is_ai = no
+				}
+			}
+			add_cheat_click_enabled = {
+				check_variable = {
+					Root.selected_cheat>0
+				}
+			}
+			cheat1_visible = {
+			}
+			cheat1_text_visible = {
+			}
+			cheat2_visible = {
+				ROOT = {
+					has_country_flag = cheating
+				}
+			}
+			cheat3_visible = {
+				ROOT = {
+					has_country_flag = cheating
+				}
+			}
+			cheat4_visible = {
+				ROOT = {
+					has_country_flag = cheating
+				}
+			}
+			cheat2_text_visible = {
+				ROOT = {
+					has_country_flag = cheating
+				}
+			}
+			cheat3_text_visible = {
+				ROOT = {
+					has_country_flag = cheating
+				}
+			}
+			cheat4_text_visible = {
+				ROOT = {
+					has_country_flag = cheating
+				}
+			}
+			clear_all_markings_click_enabled = {
+				check_variable = {
+					ROOT.marked_states^num > 0
+				}
+			}
+			award_states_click_enabled = {
+				check_variable = {
+					ROOT.marked_states^num > 0
+				}
+			}
+			annex_country_click_enabled = {
+				check_variable = {
+					ROOT.marked_states^num > 0
+				}
+			}
+			puppet_country_click_enabled = {
+				check_variable = {
+					ROOT.marked_states^num > 0
+				}
+			}
+			add_cores_click_enabled = {
+				check_variable = {
+					ROOT.marked_states^num > 0
+				}
+			}
+		}
+	}
+}

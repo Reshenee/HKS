@@ -1,0 +1,92 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+	leader_of_hkslandia = {
+		random = no
+		stability_factor = 10
+		war_support_factor = 10
+	}
+	general_of_hkslandia = {
+		random = no
+		stability_weekly_factor = 0.01
+		war_support_weekly_factor = 0.01
+		compliance_gain = 1
+		compliance_growth = 1
+	}
+	top_organizer = {
+		random = no
+		army_morale_factor = 0.1
+		army_org_regain = 0.1
+		experience_loss_factor = -0.1
+	}
+	content_creator = {
+		random = no
+		weekly_manpower = 100
+		political_power_gain = 0.05
+	}
+	lazy_modder = {
+		random = no
+		dig_in_speed_factor = 0.05
+	}
+	destined_to_die = {
+		random = no
+		autonomy_gain_global_factor = 0.05
+		army_morale_factor = -0.05
+	}
+
+	prisoner_kuzya = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_kuzya
+	}
+	prisoner_hks = {
+		random = no
+		sprite = 13
+		custom_modifier_tooltip = SOV_prisoner_hks
+	}
+	prisoner_brexit = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_brexit
+	}
+	prisoner_diktrix = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_diktrix
+	}
+	prisoner_dora = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_dora
+	}
+	prisoner_gunter = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_gunter
+	}
+	prisoner_logie = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_logie
+	}
+	prisoner_namuu = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_namuu
+	}
+	prisoner_dogy = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_dogy
+	}
+	prisoner_quill = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_quill
+	}
+	prisoner_sbc = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_sbc
+	}
+	prisoner_toaster = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_toaster
+	}
+	prisoner_chaos = {
+		random = no
+		custom_modifier_tooltip = SOV_prisoner_chaos
+	}
+}

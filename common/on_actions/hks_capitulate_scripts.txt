@@ -1,0 +1,283 @@
+on_actions = {
+	#hkslandia puppet cap:
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					tag = NEU
+				}
+				NEU = {
+					country_event = { id = super.8 days = 0 }
+				}
+			}
+			if = {
+				limit = {
+					tag = N01
+				}
+				N01 = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				play_song = "logie"
+			}
+			
+			if = {
+				limit = {
+					original_tag = N02
+				}
+				N02 = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				play_song = "alimox"
+			}
+			
+			if = {
+				limit = {
+					original_tag = N03
+				}
+				N03 = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				play_song = "dora"
+			}
+			
+			if = {
+				limit = {
+					original_tag = N04
+				}
+				N04 = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				play_song = "dogy"
+			}
+			
+			if = {
+				limit = {
+					original_tag = N05
+				}
+				N05 = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				play_song = "brexit"
+			}
+			
+			if = {
+				limit = {
+					original_tag = N06
+				}
+				N06 = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				play_song = "gunter"
+			}
+			
+			if = {
+				limit = {
+					original_tag = N07
+				}
+				N07 = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
+				play_song = "ashley"
+			}
+			
+	
+		
+		}
+	}
+
+
+	#AI Cap
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hks_limit_AI_units
+						option = hks_limit_AI_units_YES
+					}
+					is_ai = yes
+				}
+				ROOT = {
+					add_ideas = AI_sacked_army
+					country_lock_all_division_template = yes 
+					delete_unit = {}
+				}
+			}
+		}
+	}
+
+	#ETH capitulate event
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					TAG = ETH
+					NOT = {
+						has_global_flag = ETH_capitulated
+					}
+					NOT = {
+						has_game_rule = {
+							rule = HKS_PEACE_SCRIPTS
+							option = HKS_PEACE_SCRIPTS_OFF
+						}
+					}
+				}
+				eth_capitulation_peace_deal = yes
+			}
+		}
+	}
+
+	#YUG capitulate event
+	#on_capitulation_immediate = {
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				TAG = YUG
+	#				YUG = {
+	#					has_war_with = ITA
+	#				}
+	#				NOT = {
+	#					has_global_flag = YUG_capitulated
+	#				}
+	#				NOT = {
+	#					has_game_rule = {
+	#						rule = HKS_PEACE_SCRIPTS
+	#						option = HKS_PEACE_SCRIPTS_OFF
+	#					}
+	#				}
+	#				NOT = {
+	#					YUG = {
+	#						is_in_faction_with = ENG
+	#					}
+	#				}
+	#			}
+	#			yug_capitulation_peace_deal = yes			
+	#		}
+	#	}
+	#}
+
+	#GRE capitulate event
+	#on_capitulation_immediate = {
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				TAG = GRE
+	#				NOT = {
+	#					has_global_flag = GRE_capitulated
+	#				}
+	#				NOT = {
+	#					has_game_rule = {
+	#						rule = HKS_PEACE_SCRIPTS
+	#						option = HKS_PEACE_SCRIPTS_OFF
+	#					}
+	#				}
+	#			}
+	#			gre_capitulation_peace_deal = yes
+	#		}
+	#	}
+	#}
+
+	#CHI capitulation event
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					TAG = CHI
+						
+					NOT = {
+						has_global_flag = CHI_capitulated
+					}
+					NOT = {
+						has_game_rule = {
+							rule = HKS_PEACE_SCRIPTS
+							option = HKS_PEACE_SCRIPTS_OFF
+						}
+					}
+				}
+				JAP = { add_threat = 20 }
+				chi_capitulation_peace_deal = yes				
+			}
+		}
+	}
+	
+	#SPR capitulation event
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					TAG = SPR
+						
+					NOT = {
+						has_global_flag = SPR_capitulated
+						has_global_flag = hkslanda
+					}
+					NOT = {
+						has_game_rule = {
+							rule = hks_SPCW_revival
+							option = hks_SPCW_revival_NO
+						}
+					}
+				}
+
+				SPR_revival = yes				
+			}
+		}
+	}
+
+	#JAP capitulation event
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = HKS_PEACE_SCRIPTS
+							option = HKS_PEACE_SCRIPTS_OFF
+						}
+					}
+				}
+				if = {
+					limit = { tag = JAP }
+					set_global_flag = JAP_capitulated				
+					jap_capitulation_peace_deal = yes
+				}
+			}
+		}
+	}
+
+	#Axis Capitulation event
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					tag = GER
+				}
+				set_global_flag = GER_capitulated                
+				
+				axis_capitulation_peace_deal = yes				
+			}
+		}
+	}
+
+	#Comintern capitulate event
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					tag = SOV
+
+					NOT = {
+						has_global_flag = SOV_capitulated
+					}
+					NOT = {
+						has_game_rule = {
+							rule = HKS_PEACE_SCRIPTS
+							option = HKS_PEACE_SCRIPTS_OFF
+						}
+					}
+				}
+				comintern_capitulation_peace_deal = yes
+			}
+		}
+	}
+}

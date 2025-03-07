@@ -1,0 +1,5 @@
+﻿l_english: 
+ MAIN_NAME:0 "Regular Mode"
+ MAIN_DESC:0 "Gamemode with the full map but all the non participants have been removed.\n\n - Rebalacing features have been added. \n - All non historical focus tree paths have been removed. \n - Scripted events and peace deals have been added to make games progress more smoothly (turn off in game rules). \n - Multiple events and decisions have been added to improve your expierience."
+ SMALL_NAME:0 "Small Mode"
+ SMALL_DESC:0 "Gamemode with only Europe/Africa/Russia. \n\n - Same Features as Regular Mode. \n - Resources have roughly been compensated.\n - UK has the same amount of civs.\n - Africa/France/UK will recieve buffs (check mod page for specifics).\n - Germany/Soviets/Italy recieve xp compensation"

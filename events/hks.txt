@@ -1,0 +1,926 @@
+add_namespace = iran_front
+add_namespace = siam
+add_namespace = join_allies
+add_namespace = hksChina
+add_namespace = increase_idea
+add_namespace = fix
+add_namespace = colab
+add_namespace = gerSWISS
+add_namespace = hkslandia
+
+# after border war
+country_event = {
+	id = hkslandia.1
+	title = hkslandia.1.t
+	desc = hkslandia.1.desc
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hkslandia.1.a
+	}
+}
+
+#after special border war
+country_event = {
+	id = hkslandia.2
+	title = hkslandia.1.t
+	desc = hkslandia.1.desc
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = {
+		name = hkslandia.1.a
+
+		NEU = {
+			transfer_state = 687
+			transfer_state = 309
+			transfer_state = 310
+		}
+	}
+}
+country_event = {
+	id = hkslandia.3
+	title = hkslandia.1.t
+	desc = hkslandia.1.desc
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = {
+		name = hkslandia.1.a
+
+		N04 = {
+			transfer_state = 291
+			transfer_state = 675
+			transfer_state = 676
+			transfer_state = 680
+			transfer_state = 418
+			transfer_state = 419
+			transfer_state = 420
+			transfer_state = 266
+			transfer_state = 416
+		}
+	}
+}
+country_event = {
+	id = hkslandia.4
+	title = hkslandia.1.t
+	desc = hkslandia.1.desc
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = {
+		name = hkslandia.1.a
+
+		NEU = {
+			transfer_state = 695
+			transfer_state = 685
+			transfer_state = 691
+		}
+	}
+}
+country_event = {
+	id = hkslandia.5
+	title = hkslandia.1.t
+	desc = hkslandia.1.desc
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = {
+		name = hkslandia.1.a
+
+		N01 = {
+			transfer_state = 778
+			transfer_state = 556
+			transfer_state = 779
+			transfer_state = 780
+			transfer_state = 899
+			transfer_state = 898
+		}
+	}
+}
+country_event = {
+	id = hkslandia.6
+	title = hkslandia.1.t
+	desc = hkslandia.1.desc
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = {
+		name = hkslandia.1.a
+
+		N01 = {
+			transfer_state = 700
+		}
+	}
+}
+country_event = {
+	id = hkslandia.7
+	title = hkslandia.1.t
+	desc = hkslandia.1.desc
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = {
+		name = hkslandia.1.a
+
+		N01 = {
+			transfer_state = 274
+		}
+	}
+}
+#nuke event
+country_event = {
+    id = hkslandia.20
+    title = hkslandia.20.a
+    desc = hkslandia.20.b
+    picture = GFX_report_event_japan_army_mountainside
+
+    is_triggered_only = yes
+	fire_only_once = yes
+
+
+
+    option = {
+        name = hkslandia.20.c
+		add_threat = 100
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = nuke1
+				}
+			}
+			nuke_usa = yes
+		}
+		
+    }
+}
+country_event = {
+    id = hkslandia.21
+    title = hkslandia.20.a
+    desc = hkslandia.20.b
+    picture = GFX_report_event_japan_army_mountainside
+
+    is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = hkslandia.20.c
+
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = nuke2
+				}
+			}
+			nuke_eng = yes
+		}
+		
+    }
+}
+country_event = {
+    id = hkslandia.22
+    title = hkslandia.20.a
+    desc = hkslandia.20.b
+    picture = GFX_report_event_japan_army_mountainside
+
+    is_triggered_only = yes
+	fire_only_once = yes
+
+
+
+    option = {
+        name = hkslandia.20.c
+
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = nuke3
+				}
+			}
+			nuke_ger = yes
+		}
+		
+    }
+}
+country_event = {
+    id = hkslandia.23
+    title = hkslandia.20.a
+    desc = hkslandia.20.b
+    picture = GFX_report_event_japan_army_mountainside
+
+    is_triggered_only = yes
+	fire_only_once = yes
+
+
+
+    option = {
+        name = hkslandia.20.c
+
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = nuke4
+				}
+			}
+			nuke_ita = yes
+		}
+		
+    }
+}
+country_event = {
+    id = hkslandia.24
+    title = hkslandia.20.a
+    desc = hkslandia.20.b
+    picture = GFX_report_event_japan_army_mountainside
+
+    is_triggered_only = yes
+	fire_only_once = yes
+
+
+
+    option = {
+        name = hkslandia.20.c
+
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = nuke5
+				}
+			}
+			nuke_sov = yes
+		}
+		
+    }
+}
+country_event = {
+    id = hkslandia.25
+    title = hkslandia.20.a
+    desc = hkslandia.20.b
+    picture = GFX_report_event_japan_army_mountainside
+
+    is_triggered_only = yes
+	fire_only_once = yes
+
+
+
+    option = {
+        name = hkslandia.20.c
+
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = nuke6
+				}
+			}
+			nuke_jap = yes
+		}
+		
+    }
+}
+
+#Iran Front
+news_event = {
+	id = iran_front.0
+	picture = GFX_news_event_004
+	title = iran_front.0.a
+	major = yes
+	is_triggered_only = yes
+
+	#Descriptions
+		#Allies Description
+		desc = {
+			#Iran joined through the Allies
+			text = iran_front.1.a
+			trigger = {
+				allies_countries = yes
+				has_global_flag = allies_iran
+			}
+		}
+		desc = {
+			#Iran because attacked
+			text = iran_front.1.b
+			trigger = {
+				allies_countries = yes
+				has_global_flag = axis_iran
+			}
+		}
+
+		#Axis Description
+		desc = {
+			#Iran joined through the Allies
+			text = iran_front.2.a
+			trigger = {
+				axis_countries = yes
+				has_global_flag = allies_iran
+			}
+		}
+		desc = {
+			#Iran because attacked
+			text = iran_front.2.b
+			trigger = {
+				axis_countries = yes
+				has_global_flag = axis_iran
+			}
+		}
+		desc = {
+			#Iran because attacked 2
+			text = iran_front.2.c
+			trigger = {
+				axis_countries = yes
+				has_global_flag = axis_iran
+				CHI = {
+					OR = {
+						exists = no
+						is_puppet_of = JAP
+					}
+				}
+			}
+		}
+
+	#Options
+		#Allies Options
+		option = {
+			#Iran joined through the Allies
+			trigger = {
+				allies_countries = yes
+				has_global_flag = allies_iran
+			}
+
+			name = iran_front.1.c
+		}
+		option = {
+			#Iran because attacked
+			trigger = {
+				allies_countries = yes
+				has_global_flag = axis_iran
+			}
+
+			name = iran_front.1.d
+		}
+
+		#Axis options
+		option = {
+			#Iran joined through the Allies
+			trigger = {
+				axis_countries = yes
+				has_global_flag = allies_iran
+			}
+
+			name = iran_front.2.d
+		}
+		option = {
+			#Iran because attacked
+			trigger = {
+				axis_countries = yes
+				has_global_flag = axis_iran
+			}
+
+			name = iran_front.2.e
+		}
+}
+
+#Brazil joins the allies
+news_event = {
+	id = join_allies.2
+	picture = GFX_news_event_mex_civil_war
+	title = join_allies.2.a
+	desc = join_allies.2.b	
+
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			allies_countries = yes
+		}
+
+		name = join_allies.2.c
+	}
+	
+	option = {
+		trigger = {
+			axis_countries = yes
+		}
+
+		name = join_allies.2.d
+	}
+}
+
+#Ireland joins the allies
+news_event = {
+	id = join_allies.3
+	picture = GFX_news_event_018
+	title = join_allies.3.a
+	desc = join_allies.3.b	
+
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			allies_countries = yes
+		}
+
+		name = join_allies.2.c
+	}
+	
+	option = {
+		trigger = {
+			axis_countries = yes
+		}
+
+		name = join_allies.2.d
+	}
+}
+
+#siam events
+country_event = {
+	id = siam.0 
+	title = siam.0.a
+	desc = siam.0.b
+	picture = GFX_report_event_japanese_siam_politicians
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+	
+	immediate = {
+		hidden_effect = {
+			JAP = {
+				add_to_faction = SIA
+			}
+			USA = {
+				diplomatic_relation = {
+					country = SIA
+					relation = guarantee
+					active = no
+				}
+			}
+		}
+		
+	}
+	option = { 
+		name = siam.0.e
+
+		JAP = { add_to_faction = SIA }
+		SIA = {
+			country_event = { id = siam.3 hours = 0} 
+			transfer_state = 741
+			transfer_state = 670
+			transfer_state = 286
+			transfer_state = 671
+		}
+	}
+	option = { 
+		name = siam.0.d
+
+		JAP = { add_to_faction = SIA }
+		SIA = {
+			country_event = { id = siam.1 hours = 0} 
+			transfer_state = 741
+			transfer_state = 670
+		}
+	}
+	option = { 
+		name = siam.0.c
+
+		SIA = {
+			country_event = { id = siam.2 hours = 0} 
+		}
+
+		trigger = {
+			is_ai = no
+		}
+	}
+
+
+}
+country_event = {
+	id = siam.1 
+	title = siam.1.a
+	desc = siam.1.b
+	picture = GFX_report_event_japanese_siam_politicians
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = {
+		name = siam.1.c
+		add_opinion_modifier = { target = JAP modifier = medium_increase }
+	}
+}
+country_event = {
+	id = siam.2 
+	title = siam.2.a
+	desc = siam.2.b
+	picture = GFX_report_event_japanese_siam_politicians
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = {
+		name = siam.2.c
+		add_opinion_modifier = { target = JAP modifier = medium_decrease }
+	}
+}
+country_event = {
+	id = siam.3 
+	title = siam.3.a
+	desc = siam.3.b
+	picture = GFX_report_event_japanese_siam_politicians
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = {
+		name = siam.3.c
+		add_opinion_modifier = { target = JAP modifier = huge_increase }
+	}
+}
+
+#Fall of China
+country_event = {
+	id = hksChina.1
+	title = hksChina.1.a
+	desc = hksChina.1.b
+
+	picture = GFX_report_event_japanese_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+	
+			set_global_flag = CHI_capitulated
+			
+			JAP = {
+				annex_country = { target = PRC transfer_troops = no }	
+				annex_country = { target = SHX transfer_troops = no }
+				annex_country = { target = XSM transfer_troops = no }		
+				annex_country = { target = YUN transfer_troops = no }		
+				annex_country = { target = GXC transfer_troops = no }		
+				annex_country = { target = SIK transfer_troops = no }					
+				annex_country = { target = CHI transfer_troops = no }	
+
+				release = PRC
+				release = SHX
+				release = XSM
+				release = YUN
+				release = GXC
+				release = SIK
+				release = CHI
+			}
+
+			every_country = {
+				limit = {
+					OR = {
+						tag = PRC
+						tag = SHX
+						tag = XSM
+						tag = YUN
+						tag = GXC
+						tag = SIK
+						tag = CHI
+					}
+				}
+				set_cosmetic_tag = JAP_puppet
+			}
+		}
+	}
+	
+	# Japan will control
+	option = {
+		name = hksChina.1.c
+
+		ai_chance = {
+			factor = 1
+		}
+
+		JAP = {
+			annex_country = { target = CHI transfer_troops = no }	
+			annex_country = { target = PRC transfer_troops = no }	
+			annex_country = { target = SHX transfer_troops = no }
+			annex_country = { target = XSM transfer_troops = no }		
+			annex_country = { target = YUN transfer_troops = no }		
+			annex_country = { target = GXC transfer_troops = no }		
+			annex_country = { target = SIK transfer_troops = no }		
+		}
+	}
+	
+	# Manchu will control (except coast)
+	option = {
+		name = hksChina.1.d
+
+		ai_chance = {
+			factor = 5
+		}
+		trigger = {
+			MAN = {
+				exists = yes
+			}
+		}
+
+		MAN = {
+			annex_country = { target = CHI transfer_troops = no }	
+			annex_country = { target = PRC transfer_troops = no }	
+			annex_country = { target = SHX transfer_troops = no }
+			annex_country = { target = XSM transfer_troops = no }		
+			annex_country = { target = YUN transfer_troops = no }		
+			annex_country = { target = GXC transfer_troops = no }		
+			annex_country = { target = SIK transfer_troops = no }
+		}
+		
+		JAP = {
+			transfer_state = 608
+			transfer_state = 614
+			transfer_state = 597
+			transfer_state = 743
+			transfer_state = 598
+			transfer_state = 613
+			transfer_state = 596 
+			transfer_state = 595
+			transfer_state = 593
+			transfer_state = 592
+			transfer_state = 729
+			transfer_state = 594
+			transfer_state = 609
+			transfer_state = 745
+			transfer_state = 591
+			country_event = { id = hksChina.2 hours = 0}
+		}
+	}
+
+	# Split China
+	option = {
+		name = hksChina.1.f
+
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			MAN = {
+				exists = yes
+			}
+		}
+
+		MAN = {
+			annex_country = { target = SHX transfer_troops = no }
+			annex_country = { target = XSM transfer_troops = no }		
+			annex_country = { target = SIK transfer_troops = no }					
+			annex_country = { target = PRC transfer_troops = no }	
+
+			transfer_state = 601				
+			transfer_state = 752	
+		}			
+		
+		JAP = {
+			annex_country = { target = YUN transfer_troops = no }	
+			annex_country = { target = CHI transfer_troops = no }	
+			annex_country = { target = GXC transfer_troops = no }	
+
+			country_event = { id = hksChina.2 hours = 0}
+		}
+	}
+}
+
+country_event = {
+	id = hksChina.2
+	title = hksChina.2.a
+	desc = hksChina.2.b
+
+	picture = GFX_report_event_japan_army_mountainside
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	# No increased taxes
+	option = {
+		name = hksChina.2.c
+
+		ai_chance = {
+			factor = 1
+		}
+		
+	}
+	# Implement taxes
+	option = {
+		name = hksChina.2.d
+
+		ai_chance = {
+			factor = 5
+		}
+		
+		MAN = {
+			add_ideas = MAN_tax_idea
+		}
+	}
+
+	# Implement taxes but remove after a year
+	option = {
+		name = hksChina.2.e
+
+		ai_chance = {
+			factor = 1
+		}
+		
+		MAN = {
+			add_ideas = MAN_tax_idea
+			country_event = { id = hksChina.3 days = 365 }
+		}
+	}
+}
+country_event = {
+	id = hksChina.3
+	title = hksChina.3.a
+	desc = hksChina.3.b
+
+	picture = GFX_report_event_japan_europe_pact
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	# Remove taxes
+	option = {
+		name = hksChina.3.c
+
+		ai_chance = {
+			factor = 1
+		}
+		
+		MAN = {
+			remove_ideas = MAN_tax_idea
+		}
+	}
+}
+
+#excavation idea swap
+country_event = {
+	id = increase_idea.3
+	title = increase_idea.3.a
+	desc = increase_idea.3.b
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = { 
+		name = increase_idea.3.c
+
+		NEU = {
+			country_event = { id = increase_idea.3 days = 730 }
+		}
+
+		excavation_increase = yes
+	}
+}
+
+#axis - cap
+country_event = {
+	id = fix.0
+	title = fix.0.a
+	desc = fix.0.b
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = { 
+		name = fix.0.c
+
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = hkslanda
+				}
+			}
+			axis_capitulation_peace_deal = yes
+		}
+	}
+}
+
+#comintern - cap
+country_event = {
+	id = fix.1
+	title = fix.1.a
+	desc = fix.1.b
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = { 
+		name = fix.1.c
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = hkslanda
+				}
+			}
+			comintern_capitulation_peace_deal = yes
+		}
+	}
+}
+
+#jap - cap
+country_event = {
+	id = fix.2
+	title = fix.2.a
+	desc = fix.2.b
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = { 
+		name = fix.2.c
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = hkslanda
+				}
+			}
+			jap_capitulation_peace_deal = yes
+		}
+	}
+}
+
+#SPCW - cap
+country_event = {
+	id = fix.4
+	title = fix.4.a
+	desc = fix.4.b
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = { 
+		name = fix.4.c
+
+		SPR_revival = yes
+	}
+}
+#give japanese land back
+country_event = {
+	id = fix.5
+	title = fix.4.a
+	desc = fix.4.b
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = { 
+		name = fix.4.c
+
+		fix_jap = yes
+	}
+}
+#NEU - DO COLABS 
+country_event = {
+	id = colab.1
+	title = colab.1.a
+	desc = colab.1.b
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = { 
+		name = colab.1.c
+
+		colab_game_rule = yes
+	}
+}
+
+#NEU - give ger funny
+country_event = {
+	id = gerSWISS.1
+	title = gerSWISS.1.a
+	desc = gerSWISS.1.b
+	picture = GFX_report_event_hungary_refused
+
+	is_triggered_only = yes
+
+	option = { 
+		name = gerSWISS.1.c
+
+		GER = {
+			country_event = {
+				id = BBA_switzerland_trade.1
+				hours = 0
+			}
+		}
+
+		SWI = {
+			unlock_decision_tooltip = {
+				decision = SWI_offer_fascist_to_trade_gold
+				show_effect_tooltip  = yes
+			}	
+		}
+	}
+}

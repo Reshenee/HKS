@@ -1,0 +1,627 @@
+ideas = {
+	country = {
+		#other
+		AI_sacked_army = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				is_ai = no
+			}
+			removal_cost = -1
+			picture = SWE_neither_death_nor_dishonor	
+
+			modifier = {
+				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
+	
+			}
+		}
+		hks_peace_for_now_sov = {
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			picture = ARG_establish_the_free_association	
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -1
+				defense_bonus_against = 10
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = -1
+				defense_bonus_against = 10
+			}
+		}
+		hks_peace_for_now_jap = {
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			picture = ARG_establish_the_free_association	
+
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = -1
+				defense_bonus_against = 10
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = -1
+				defense_bonus_against = 10
+			}
+			targeted_modifier = {
+				tag = MEN
+				attack_bonus_against = -1
+				defense_bonus_against = 10
+			}
+			targeted_modifier = {
+				tag = SIA
+				attack_bonus_against = -1
+				defense_bonus_against = 10
+			}
+		}
+		hks_hkslandian_strength = {
+			allowed = {
+				always = yes
+			}
+			cancel = {
+				
+			}
+			removal_cost = -1
+			picture = BRA_us_of_south_america	
+
+			modifier = {
+				army_core_attack_factor = 10
+				army_core_defence_factor = 10
+				supply_consumption_factor = -1
+			}
+		}
+		hks_hkslandian_state = {
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			picture = chi_war_of_resistance3	
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				supply_consumption_factor = -1
+				industrial_factory_donations = 100
+				military_factory_donations = 50
+			}
+		}
+		hks_hkslandian_water_into_fuel = {
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			picture = generic_fuel_reserves	
+
+			modifier = {
+				base_fuel_gain = 10000
+				
+			}
+		}
+		hks_kill_yourself_1 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+		
+		hks_kill_yourself_2 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+		
+		hks_kill_yourself_3 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+		
+		hks_kill_yourself_4 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+		
+		hks_kill_yourself_5 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+		
+		hks_kill_yourself_6 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+		
+		hks_kill_yourself_7 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+
+		hks_allied_imports = {
+			allowed = {
+				always = yes
+			}
+			cancel = {
+				NOT = {
+					has_global_flag = hkslanda
+				}
+			}
+			removal_cost = -1
+			picture = ARG_resource_extration_focus
+			modifier = {
+				country_resource_oil = 50
+				country_resource_steel = 200
+				country_resource_tungsten = 200
+				country_resource_chromium = 200
+			}
+		}
+
+		hks_neutral = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = air_support_focus	
+
+			modifier = {
+				justify_war_goal_time = 100
+				enemy_justify_war_goal_time = 100
+				enemy_operative_capture_chance_factor = 100
+				ai_get_ally_desire_factor  = -1000
+				ai_join_ally_desire_factor = -1000
+				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
+	
+			}
+		}
+		hks_nobody_likes_invading_norway = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = SWE_save_norway	
+
+			modifier = {
+				surrender_limit = -0.2
+			}
+		}
+		hks_democracy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus	
+
+			modifier = {
+				democratic_drift = 100
+			}
+		}
+		hks_ai_restrictions = { 
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = air_support_focus	
+
+			modifier = {
+
+				political_power_gain = -100
+				justify_war_goal_time = 100
+				enemy_justify_war_goal_time = 100
+				conscription = -10
+				enemy_operative_capture_chance_factor = 1
+				join_faction_tension = 10
+				industrial_capacity_factory = -10
+				industrial_capacity_dockyard = -10
+				consumer_goods_factor = 100
+				ai_get_ally_desire_factor  = -1000
+				ai_join_ally_desire_factor = -1000
+			}
+		}
+		MAN_tax_idea = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				is_subject = no
+			}
+			removal_cost = -1
+
+			picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility
+			
+			modifier = {
+				cic_to_overlord_factor = 0.30
+				mic_to_overlord_factor = 0.60
+			}
+		}
+		hks_SPR_reparations = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				ROOT = {
+					has_war_with = GER
+				}
+			}
+			removal_cost = -1
+			picture = SPR_relocate_the_gold_reserves	
+			cancel = {
+				if = {
+					limit = {
+						tag = FRA
+					}
+					has_capitulated = yes
+				}
+				if = {
+					limit = {
+						tag = SOV
+					}
+					has_war_with = GER
+				}
+
+
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#hks (china)
+		hks_balacing = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		
+			picture = buff
+			modifier = {
+				army_org_factor = -0.10
+				army_org_regain = -0.10
+				army_morale_factor = -0.10
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+				experience_loss_factor = 0.15
+			}
+
+			cancel = {
+				is_subject_of = JAP
+			}
+		}
+
+		hks_fra_volunteers = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			cancel = {
+				has_global_flag = scw_over
+			}
+			
+			rule = {
+				can_send_volunteers = yes 
+			}
+
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				send_volunteers_tension = -1
+				stability_factor = -0.1
+			}
+		}
+		hks_soviet_volunteers = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			cancel = {
+				has_volunteers_amount_from = {
+					tag = SOV
+					count = 0
+				}			
+			}
+		
+			picture = buff
+			modifier = {
+				command_power_gain = -0.05
+				industrial_capacity_factory = -0.1
+				army_attack_factor  = -0.05
+				army_defence_factor  = -0.15
+				planning_speed = -0.1
+			}
+		}
+		hks_japanese_buff = {
+			allowed = {
+				TAG = JAP
+			}
+			removal_cost = -1
+
+			picture = buff
+			modifier = {
+				supply_consumption_factor = -0.1
+				production_speed_buildings_factor = 0.15
+				air_fuel_consumption_factor = -0.20
+				navy_fuel_consumption_factor = -0.20
+				naval_doctrine_cost_factor = -0.20
+				air_doctrine_cost_factor = -0.20
+				industry_repair_factor = 0.20
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+		}
+		hks_women_in_the_workforce = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			cancel = {
+				OR = {
+					has_war = no
+					not = {
+						OR = {
+							has_idea = tot_economic_mobilisation
+							has_idea = totaler_krieg_economy
+						}
+					}
+				}			
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+            conscription = 0.03
+            stability_factor = -0.05
+			}
+		}
+	}
+
+	#ai license acceptance
+	hidden_ideas = {
+		axis_ai_license = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+
+			targeted_modifier = {
+				tag = GER
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = ITA
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = HUN
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = ROM
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = BUL
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = SPR
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = FIN
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = JAP
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = MAN
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = SIA
+				ai_license_acceptance = 1000
+			}
+		}
+		allied_ai_license = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+
+			targeted_modifier = {
+				tag = ENG
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = CAN
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = USA
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = MEX
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = BRA
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = SAF
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = FRA
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = IRE
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = RAJ
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = AST
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = NZL
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = SOV
+				ai_license_acceptance = 1000
+			}
+			targeted_modifier = {
+				tag = MON
+				ai_license_acceptance = 1000
+			}
+		}
+		hks_no_units = { 
+			allowed = {
+				tag = NEU
+			}
+			removal_cost = -1
+			picture = air_support_focus	
+			modifier = {
+				conscription = -100
+				industrial_capacity_factory = -100
+			}
+	    }
+	}
+
+	#trade laws
+	trade_laws = {
+		law = yes
+		use_list_view = yes	
+	
+		always_closed_economy = {
+			
+			allowed = {
+				always = no
+			}
+							
+			cost = 6969
+			removal_cost = -1
+			picture = closed_economy
+			
+			allowed_to_remove = {
+				always = no
+			}	
+			
+			modifier = {
+				min_export = 0
+			}			
+			cancel_if_invalid = no
+		}
+	}
+	trade_laws = {
+		law = yes
+		use_list_view = yes	
+	
+		always_free_trade = {
+			
+			allowed = {
+				always = no
+			}
+							
+			cost = 6969
+			removal_cost = -1
+			picture = free_trade
+			
+			allowed_to_remove = {
+				always = no
+			}	
+			
+			modifier = {
+				min_export = 0.8
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
+			}			
+			cancel_if_invalid = no
+		}
+	}
+}

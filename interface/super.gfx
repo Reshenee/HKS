@@ -1,0 +1,50 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sp_event_window"
+		textureFile = "/gfx/Super_Event_Window.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_close_button"
+		textureFile = "/gfx/Super_Event_Close_Button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_underlay"
+		textureFile = "/gfx/Super_Event_Underlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_shipment"
+		textureFile = "/gfx/sp_events/shipment.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_hkslandia"
+		textureFile = "/gfx/sp_events/hkslandia.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_border_war"
+		textureFile = "/gfx/sp_events/border_war.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ww3"
+		textureFile = "/gfx/sp_events/ww3.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ceasefire"
+		textureFile = "/gfx/sp_events/ceasefire.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_united_front"
+		textureFile = "/gfx/sp_events/united_front.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_hks_final_hour"
+		textureFile = "/gfx/sp_events/final_hour.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_hks_hkslandia_defeated"
+		textureFile = "/gfx/sp_events/hkslandia_defeated.dds"
+	}
+
+}

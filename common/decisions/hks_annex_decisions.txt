@@ -1,0 +1,805 @@
+AI_annex = {
+    ITA_annex_BUL = {
+        icon = GFX_decision_eng_trade_unions_support
+        fire_only_once = yes
+
+        available = {
+            original_tag = GER
+            BUL = { is_ai = yes }
+            BUL = { has_capitulated = no }
+            date > 1939.01.01
+        }
+
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            country_exists = BUL
+            original_tag = GER
+            BUL = { is_ai = yes }
+            is_ai = no
+        }
+        complete_effect = {
+            add_state_core = 48
+            annex_country = { target = BUL transfer_troops = yes } 
+            every_state = {
+                limit = {
+                    is_core_of = BUL
+                    is_controlled_by = GER
+                }
+                set_compliance = 100
+            }
+        }
+    }
+   # ITA_annex_CRO = {
+   #     icon = GFX_decision_eng_trade_unions_support
+   #     fire_only_once = yes
+
+   #     available = {
+   #         original_tag = ITA
+    #        CRO = { is_ai = yes }
+    #        CRO = { has_capitulated = no }
+    #        date > 1939.01.01
+    #    }
+
+    #    visible = {
+    #        has_game_rule = {
+	#			rule = hks_annex_decisions
+	#			option = hks_annex_decisions_ON
+	#		}
+    #        country_exists = CRO
+    #        original_tag = ITA
+     #       CRO = { is_ai = yes }
+    #        is_ai = no
+    #    }
+    #    complete_effect = {
+    #        annex_country = { target = CRO transfer_troops = yes }
+     #       every_state = {
+     #           limit = {
+    #                is_core_of = CRO
+    #                is_controlled_by = ITA
+     #           }
+      #          set_compliance = 100
+      #      }
+     #   }
+   # }
+   #ENG annex Free France
+    ITA_annex_MNT = {
+        icon = GFX_decision_eng_trade_unions_support
+        fire_only_once = yes
+
+        available = {
+           original_tag = ENG
+            FRA = { is_ai = yes }
+            FRA = { has_capitulated = yes }
+
+            
+        }
+
+       visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            country_exists = FRA
+            original_tag = ENG
+            FRA = { is_ai = yes }
+            is_ai = no
+        }
+        complete_effect = {
+            hidden_effect = {
+                  635 = { set_compliance = 100 }
+                
+            }
+            annex_country = { target = FRA transfer_troops = yes }
+           
+        }
+    }
+    ITA_annex_ALB = {
+        icon = GFX_decision_eng_trade_unions_support
+        fire_only_once = yes
+
+        available = {
+            original_tag = ITA
+            ITA = {
+                has_completed_focus = ITA_albanian_occupation
+            }
+            ALB = { is_ai = yes }
+            ALB = { is_subject_of = ITA }
+            ALB = { has_capitulated = no }
+
+            date > 1939.01.01
+        }
+
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            country_exists = ALB
+            original_tag = ITA
+            ALB = { is_ai = yes }
+            is_ai = no
+        }
+        complete_effect = {
+            annex_country = { target = ALB transfer_troops = yes }
+            every_state = {
+                limit = {
+                    is_core_of = ALB
+                    is_controlled_by = ITA
+                }
+                set_compliance = 100
+            }
+        }
+    }
+  #  ITA_annex_AOI = {
+  #      icon = GFX_decision_eng_trade_unions_support
+  #      fire_only_once = yes
+
+   #     available = {
+   #         original_tag = ITA
+    #        AOI = { is_ai = yes }
+    #        AOI = { has_capitulated = no }
+
+    #        date > 1939.01.01
+    #    }
+
+    #    visible = {
+    #        has_game_rule = {
+	#			rule = hks_annex_decisions
+	#			option = hks_annex_decisions_ON
+	#		}
+     #       country_exists = AOI
+     #       original_tag = ITA
+    #        AOI = { is_ai = yes }
+    #        is_ai = no
+     #   }
+     #   complete_effect = {
+     #       annex_country = { target = AOI transfer_troops = yes }
+     #       every_state = {
+     #           limit = {
+     #               is_core_of = AOI
+     #               is_controlled_by = ITA
+     #           }
+     #           set_compliance = 100
+     #       }
+     #   }
+    #}
+    GER_annex_HUN = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+            country_exists = HUN
+            original_tag = GER
+            HUN = { is_ai = yes }
+            HUN = { has_capitulated = no }
+
+            date > 1939.01.01
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = GER
+            HUN = { is_ai = yes }
+            is_ai = no
+            country_exists = HUN
+        }
+        complete_effect = {
+            add_state_core = 155
+            add_state_core = 43
+            annex_country = { target = HUN transfer_troops = yes }
+            every_state = {
+                limit = {
+                    is_core_of = HUN
+                    is_controlled_by = GER
+                    }
+                set_compliance = 100
+            }
+        }
+    }
+    GER_annex_SLO = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+            date > 1939.01.01
+            country_exists = SLO
+            original_tag = GER
+
+            AND = {
+                country_exists = SLO
+                SLO = { is_ai = yes }
+                SLO = { has_capitulated = no }
+
+                SLO = { is_puppet_of = GER}
+            }           	
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = GER		
+        }
+        complete_effect = {
+            hidden_effect = {
+                  75 = { set_compliance = 100 }
+                  9 = { set_compliance = 100 }
+            }
+            if = {
+                limit = { 
+                    country_exists = SLO
+                }
+                annex_country = { target = SLO transfer_troops = yes }
+                every_state = {
+                    limit = {
+                        is_core_of = SLO
+                        is_controlled_by = GER
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }	
+    GER_annex_ROM = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+            country_exists = ROM
+            original_tag = GER
+            ROM = { is_ai = yes }
+            date > 1939.01.01
+            ROM = { has_capitulated = no }
+
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = GER
+            ROM = { is_ai = yes }
+            is_ai = no
+            country_exists = ROM
+        }
+        complete_effect = {
+            add_state_core = 46
+            annex_country = { target = ROM transfer_troops = yes }
+            
+            every_state = {
+                limit = {
+                    is_core_of = ROM
+                    is_controlled_by = GER
+                }
+                set_compliance = 100
+            }
+        }
+    }
+    ENG_annex_IRE = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+            country_exists = IRE
+            original_tag = ENG
+            IRE = { is_ai = yes }
+            IRE = { has_capitulated = no }
+
+            date > 1939.01.01
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = ENG
+            IRE = { is_ai = yes }
+            is_ai = no
+            country_exists = IRE
+        }
+        complete_effect = {
+            annex_country = {
+                target = IRE transfer_troops = yes
+            }
+            every_state = {
+                limit = {
+                    is_core_of = IRE
+                    is_controlled_by = ENG
+                }
+                set_compliance = 100
+            }
+        }
+    }
+    ENG_annex_SAF = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+            country_exists = SAF
+            original_tag = ENG
+            SAF = { has_capitulated = no }
+
+            SAF = { is_ai = yes }
+            date > 1939.01.01
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = ENG
+            SAF = { is_ai = yes }
+            is_ai = no
+            country_exists = SAF
+        }
+        complete_effect = {
+            annex_country = { target = SAF transfer_troops = yes }
+            every_state = {
+                limit = {
+                    is_core_of = SAF
+                    is_controlled_by = ENG
+                    }
+                set_compliance = 100
+            }
+        }
+    }
+    ENG_annex_AST = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+                country_exists = AST
+                original_tag = ENG
+                AST = { is_ai = yes }
+                date > 1939.01.01
+            }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = ENG
+            AST = { is_ai = yes }
+            is_ai = no
+            AST = { has_capitulated = no }
+
+            country_exists = AST
+            NOT = {
+                AND = {
+                    517 = {
+                        is_owned_by = ENG
+                    }
+                    711 = {
+                        is_owned_by = AST
+                    }
+                }
+            }   
+        }
+        complete_effect = {
+            annex_country = { target = AST transfer_troops = yes }
+            
+            every_state = {
+                limit = {
+                    OR = {
+                        is_core_of = AST
+                        is_core_of = NZL
+                    }
+                    is_controlled_by = ENG
+                    }
+                set_compliance = 100
+            }
+        }
+    }
+    ENG_annex_CAN = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+                country_exists = CAN
+                original_tag = ENG
+                CAN = { is_ai = yes }
+                CAN = { has_capitulated = no }
+
+                date > 1939.01.01
+            }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = ENG
+            CAN = { is_ai = yes }
+            is_ai = no
+            country_exists = CAN
+        }
+        complete_effect = {
+            annex_country = { target = CAN transfer_troops = yes }
+            every_state = {
+                limit = {
+                    OR = {
+                        is_core_of = CAN
+                        is_core_of = NZL
+                    }
+                    is_controlled_by = ENG
+                    }
+                set_compliance = 100
+            }
+            IF = {
+                limit = {
+                    has_country_flag = CAN_mech
+                }
+                IRE = {
+                    set_technology = {
+                        mechanised_infantry = 1
+                    }
+                }
+                IRE = {
+                    create_equipment_variant = {
+                        name = "UPGRADE"
+                        type = mechanized_equipment_1
+                        upgrades = {
+                            tank_reliability_upgrade = 5
+                            tank_engine_upgrade = 0
+                            tank_armor_upgrade = 0
+                            mech_cost_upgrade = 5
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ENG_annex_NZL = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+                country_exists = NZL
+                original_tag = ENG
+                NZL = { is_ai = yes }
+                AST = { is_ai = yes}
+                NZL = { has_capitulated = no }
+
+                date > 1939.01.01
+            }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = ENG
+            NZL = { is_ai = yes }
+            AST = { is_ai = yes }
+            is_ai = no
+            country_exists = NZL
+        }
+        complete_effect = {
+            annex_country = { target = NZL transfer_troops = yes }
+            every_state = {
+                limit = {
+                    is_core_of = NZL
+                    is_controlled_by = ENG
+                    }
+                set_compliance = 100
+            }
+        }
+    }
+    ENG_annex_RAJ = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+                country_exists = RAJ
+                original_tag = ENG
+                RAJ = { is_ai = yes }
+                RAJ = { has_capitulated = no }
+
+                date > 1939.01.01
+            }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = ENG
+            RAJ = { is_ai = yes }
+            is_ai = no
+            country_exists = RAJ
+        }
+        complete_effect = {
+            annex_country = { target = RAJ transfer_troops = yes }
+            every_state = {
+                limit = {
+                    is_core_of = RAJ
+                    is_controlled_by = ENG
+                    }
+                set_compliance = 100
+            }
+        }
+    }
+    AST_annex_NZL = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = yes
+
+        available = {
+            original_tag = AST
+            NZL = { is_ai = yes }
+            NZL = { has_capitulated = no }
+
+            date > 1939.01.01
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = AST
+            NZL = { is_ai = yes }
+            is_ai = no
+            country_exists = NZL
+        }
+        complete_effect = {
+            annex_country = { target = NZL transfer_troops = yes }
+            every_state = {
+                limit = {
+                    is_core_of = NZL
+                    is_controlled_by = AST
+                    }
+                set_compliance = 100
+            }
+        }
+    }
+    #JAP_annex_SIA = {
+     #   icon = GFX_decision_eng_trade_unions_support
+
+     #   fire_only_once = yes
+
+     #   available = {
+     #       date > 1940.01.01
+     #       original_tag = JAP
+     #       SIA = { is_ai = yes }
+     #       SIA = { has_capitulated = no }
+
+     #   }
+     #   visible = {
+     #       has_game_rule = {
+	#			rule = hks_annex_decisions
+	#			option = hks_annex_decisions_ON
+	#		}
+     #       original_tag = JAP
+     #       SIA = { is_ai = yes }
+     #       is_ai = no
+    #        country_exists = SIA
+     #   }
+    #    complete_effect = {
+   #         annex_country = { target = SIA transfer_troops = yes }
+    #        every_state = {
+     #           limit = {
+     #                   is_core_of = SIA
+     #                   is_controlled_by = JAP
+      #              }
+      #          set_compliance = 100
+      #      }
+     #   }
+    #}
+    JAP_annex_MAN = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+            country_exists = MAN
+            original_tag = JAP
+            MAN = { is_ai = yes }
+            MAN = { has_capitulated = no }
+
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = JAP
+            country_exists = MAN
+        }
+        complete_effect = {
+            annex_country = { target = MAN transfer_troops = yes }
+
+            hidden_effect = {
+                761 = { set_compliance = 100 }
+                714 = { set_compliance = 100 }
+                715 = { set_compliance = 100 }
+                610 = { set_compliance = 100 }
+                716 = { set_compliance = 100 }
+                328 = { set_compliance = 100 }
+                717 = { set_compliance = 100 }
+                611 = { set_compliance = 100 }
+                612 = { set_compliance = 100 }
+            }
+        }
+    } 
+    JAP_annex_MEN = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+            country_exists = MEN
+            original_tag = JAP
+            MEN = { is_ai = yes }
+            MEN = { has_capitulated = no }
+
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = JAP
+            country_exists = MEN
+            MAN = { is_ai = yes }
+
+        }
+        complete_effect = {
+            JAP = {
+                annex_country = { target = MEN transfer_troops = yes }
+            }
+
+            hidden_effect = {
+                611 = { set_compliance = 100 }
+                612 = { set_compliance = 100 }
+            }
+        }
+    }
+    JAP_annex_MEN_into_man = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = no
+
+        available = {
+            country_exists = MEN
+            country_exists = MAN
+            original_tag = JAP
+            MEN = { is_ai = yes }
+            MEN = { has_capitulated = no }
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = JAP
+            country_exists = MEN
+            country_exists = MAN
+            MAN = { is_ai = yes }
+
+        }
+        complete_effect = {
+            MAN = {
+                annex_country = { target = MEN transfer_troops = yes }
+            }
+
+            hidden_effect = {
+                611 = { set_compliance = 100 }
+                612 = { set_compliance = 100 }
+            }
+        }
+    }
+
+    SOV_annex_MON = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = yes
+
+        available = {
+            original_tag = SOV
+            MON = { is_ai = yes }
+            MON = { has_capitulated = no }
+
+            date > 1940.01.01
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = SOV
+            MON = { is_ai = yes }
+            is_ai = no
+            country_exists = MON
+        }
+        complete_effect = {
+            annex_country = { target = MON transfer_troops = no }
+            every_state = {
+                limit = {
+                        is_core_of = MON
+                        is_controlled_by = SOV
+                    }
+                set_compliance = 100
+                }
+            }
+    }
+    SOV_annex_TAN = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = yes
+
+        available = {
+            original_tag = SOV
+            TAN = { is_ai = yes }
+            TAN = { has_capitulated = no }
+
+            date > 1940.01.01
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = SOV
+            TAN = { is_ai = yes }
+            is_ai = no
+            country_exists = TAN
+        }
+        complete_effect = {
+            annex_country = { target = TAN transfer_troops = no }
+            every_state = {
+                limit = {
+                        is_core_of = TAN
+                        is_controlled_by = SOV
+                    }
+                set_compliance = 100
+                }
+            }
+    }
+    SOV_annex_SIK = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        fire_only_once = yes
+
+        available = {
+            original_tag = SOV
+            SIK = { is_ai = yes }
+            SIK = { has_capitulated = no }
+
+            date > 1940.01.01
+        }
+        visible = {
+            has_game_rule = {
+				rule = hks_annex_decisions
+				option = hks_annex_decisions_ON
+			}
+            original_tag = SOV
+            SIK = {
+                is_in_faction_with = SOV
+            }
+            SIK = { is_ai = yes }
+            is_ai = no
+            country_exists = SIK
+        }
+        complete_effect = {
+            annex_country = { target = SIK transfer_troops = no }
+            every_state = {
+                limit = {
+                        is_core_of = SIK
+                        is_controlled_by = SOV
+                    }
+                set_compliance = 100
+                }
+            }
+    }
+}

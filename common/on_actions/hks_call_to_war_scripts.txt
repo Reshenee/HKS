@@ -1,0 +1,333 @@
+on_actions = {
+	#GER calls axis against SOV
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					GER = {
+						has_war_with = SOV
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_to_war = {
+						targeted_alliance = GER
+						enemy = SOV
+					}
+				}
+
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+					}
+					add_to_war = {
+						targeted_alliance = SOV
+						enemy = GER
+					}
+				}
+			}			
+		}
+	}
+	#GER calls axis against YUG
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					GER = {
+						has_war_with = YUG
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_to_war = {
+						targeted_alliance = GER
+						enemy = YUG
+					}
+				}
+			}
+		}
+	}
+	#ITA calls axis against YUG
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					ITA = {
+						has_war_with = YUG
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_subject_of = ITA
+					}
+					add_to_war = {
+						targeted_alliance = ITA
+						enemy = YUG
+					}
+				}
+			}
+		}
+	}
+	#GER calls axis against GRE
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					GER = {						
+						has_war_with = GRE
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_to_war = {
+						targeted_alliance = GER
+						enemy = GRE
+					}
+				}
+			}
+		}
+	}
+	#ITA calls axis against GRE
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					ITA = {
+						has_war_with = GRE
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_subject_of = ITA
+					}
+					add_to_war = {
+						targeted_alliance = ITA
+						enemy = GRE
+					}
+				}
+			}
+		}
+	}
+	#GER calls axis against IRQ
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					GER = {
+						has_war_with = IRQ
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_to_war = {
+						targeted_alliance = GER
+						enemy = IRQ
+					}
+				}
+			}
+		}
+	}
+	#CHI AND JAP calls faction against EACH OTHER
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					CHI = {
+						has_war_with = JAP
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = CHI
+					}
+					add_to_war = {
+						targeted_alliance = CHI
+						enemy = JAP
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = JAP
+					}
+					add_to_war = {
+						targeted_alliance = JAP
+						enemy = CHI
+					}
+				}
+			}
+		}
+	}
+	#ITA calls axis against IRQ
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					ITA = {
+						has_war_with = IRQ
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = ITA
+					}
+					add_to_war = {
+						targeted_alliance = ITA
+						enemy = IRQ
+					}
+				}
+			}
+		}
+	}
+	#GER calls axis against PER
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					GER = {
+						has_war_with = PER
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					add_to_war = {
+						targeted_alliance = GER
+						enemy = PER
+					}
+				}
+			}
+		}
+	}
+	#ITA calls axis against PER
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					ITA = {
+						has_war_with = PER
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = ITA
+					}
+					add_to_war = {
+						targeted_alliance = ITA
+						enemy = PER
+					}
+				}
+			}
+		}
+	}
+	#ITA calls subjects into war
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					ITA = {
+						has_war_with = ENG
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				every_country = {
+					limit = {
+						is_puppet_of = ITA
+					}
+					add_to_war = {
+						targeted_alliance = ITA
+						enemy = ENG
+					}
+				}
+			}
+		}
+	}
+	#ENG calls allies against GER
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					GER = {
+						has_war_with = POL
+					}
+					has_game_rule = {
+						rule = HKS_WAR_SCRIPTS
+						option = HKS_WAR_SCRIPTS_ON
+					}
+				}
+				ENG = {
+					add_to_war = {
+						targeted_alliance = POL
+						enemy = GER
+					}
+
+					add_to_faction = POL
+					add_to_faction = FRA
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = ENG
+						NOT = {
+							tag = USA
+						}
+					}
+					add_to_war = {
+						targeted_alliance = ENG
+						enemy = GER
+					}
+				}
+			}			
+		}
+	}
+}

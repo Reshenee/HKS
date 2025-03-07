@@ -1,0 +1,106 @@
+scripted_gui = {
+	sp_event_window = {
+		window_name = "sp_event_window"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = Super_Event_Visible
+		}
+		
+		triggers = {
+			sp_shipment_visible = {
+				has_global_flag = hks_shipment
+			}
+		}
+		triggers = {
+			sp_hkslandia_visible = {
+				has_global_flag = hks_hkslandia
+			}
+		}
+		triggers = {
+			sp_border_war_visible = {
+				has_global_flag = hks_border_war
+			}
+		}
+		triggers = {
+			sp_ww3_visible = {
+				has_global_flag = hks_ww3
+			}
+		}
+		triggers = {
+			sp_ceasefire_visible = {
+				has_global_flag = hks_ceasefire
+			}
+		}
+		triggers = {
+			sp_united_front_visible = {
+				has_global_flag = hks_united_front
+			}
+		}
+		triggers = {
+			sp_hks_final_hour_visible = {
+				has_global_flag = hks_final_hour
+			}
+		}
+		triggers = {
+			sp_hks_hkslandia_defeated_visible = {
+				has_global_flag = hks_hkslandia_defeated
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+				if = {
+					limit = {
+						has_global_flag = hks_shipment
+					}
+					clr_global_flag = hks_shipment
+				}
+				if = {
+					limit = {
+						has_global_flag = hks_hkslandia
+					}
+					clr_global_flag = hks_hkslandia
+				}
+				if = {
+					limit = {
+						has_global_flag = hks_border_war
+					}
+					clr_global_flag = hks_border_war
+				}
+				if = {
+					limit = {
+						has_global_flag = hks_ww3
+					}
+					clr_global_flag = hks_ww3
+				}
+				if = {
+					limit = {
+						has_global_flag = hks_ceasefire
+					}
+					clr_global_flag = hks_ceasefire
+				}
+				if = {
+					limit = {
+						has_global_flag = hks_united_front
+					}
+					clr_global_flag = hks_united_front
+				}
+				if = {
+					limit = {
+						has_global_flag = hks_final_hour
+					}
+					clr_global_flag = hks_final_hour
+				}
+				if = {
+					limit = {
+						has_global_flag = hks_hkslandia_defeated
+					}
+					clr_global_flag = hks_hkslandia_defeated
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,618 @@
+hkslandia_set_up_general = {
+	# [Refactor cosmetic/states]
+	if = {
+		limit = {
+			NOT = {
+				has_global_flag = setup_completed
+			}
+		}
+		set_global_flag = setup_completed
+
+		NEU = {
+			set_global_flag = hkslanda
+			remove_ideas = hks_neutral
+			remove_ideas = hks_no_units
+			remove_ideas = always_free_trade
+			add_ideas = limited_exports
+			remove_ideas = hks_ai_restrictions
+			add_ideas = hks_hkslandian_strength
+			country_lock_all_division_template = no #hks undo
+			set_cosmetic_tag = HKS_cos
+			add_stability = 100
+			add_war_support = 100
+			create_faction = "the United States of Hkslandia"
+			set_country_flag = NEU_fascism
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			set_popularities = {
+				fascism = 100
+			}
+			create_country_leader = {
+				name = "Big Brother JP"
+				picture = "gfx/leaders/NEU/GFX_Portrait_Hks.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					leader_of_hkslandia
+				}
+			}
+			
+			495 = {
+				add_resource = {
+					type = chromium
+					amount = 1000
+				}
+				add_resource = {
+					type = steel
+					amount = 1000
+				}
+				add_resource = {
+					type = rubber
+					amount = 1000
+				}
+				add_resource = {
+					type = aluminium
+					amount = 1000
+				}
+				add_resource = {
+					type = chromium
+					amount = 1000
+				}
+				add_resource = {
+					type = oil
+					amount = 1000
+				}
+				add_resource = {
+					type = tungsten
+					amount = 1000
+				}
+				set_state_category = rural
+	
+				# set_state_category = large_city
+				add_victory_points = {
+					province = 13334
+					value = 100
+				}
+			}
+			
+			set_capital = {
+				state = 495
+			}
+	
+			set_country_leader_name = {
+				name = "Big Brother JP"
+			} 
+	
+			annex_country = { target = SWE }
+			annex_country = { target = VEN }
+			annex_country = { target = TUR }
+			annex_country = { target = SWI }
+			annex_country = { target = POR }
+			
+			build_states = yes
+		}	
+	
+		# [Spawn Subjects]
+		NEU = {
+			# Africa, N01
+			N01 = {
+				transfer_state = 298
+				set_cosmetic_tag = HKS_cos
+			
+				add_ideas = limited_exports
+				add_ideas = extensive_conscription
+				add_ideas = war_economy
+				build_states = yes
+				
+				create_country_leader = {
+					name = "General Logie"
+					picture = "gfx/leaders/NEU/logie.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						general_of_hkslandia top_organizer
+					}
+				}
+			}
+			# To-do: Sweden, N02
+			N02 = {
+				transfer_state = 138
+				transfer_state = 139
+				transfer_state = 140
+				transfer_state = 915
+				transfer_state = 919
+				transfer_state = 141
+				transfer_state = 913
+				transfer_state = 38
+				transfer_state = 916
+				transfer_state = 917
+				transfer_state = 666
+				transfer_state = 918
+				transfer_state = 124
+				set_cosmetic_tag = HKS_cos
+				add_ideas = limited_exports
+				add_ideas = extensive_conscription
+				add_ideas = war_economy
+				build_states = yes
+				create_country_leader = {
+					name = "General Alimox"
+					picture = "gfx/leaders/NEU/alimox.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						general_of_hkslandia
+					}
+				}
+			}
+			# To-do: Switzerland, N03
+			N03 = {
+				transfer_state = 180
+				transfer_state = 181
+				transfer_state = 112
+				transfer_state = 795
+				transfer_state = 179
+				set_cosmetic_tag = HKS_cos
+			
+				add_ideas = limited_exports
+				add_ideas = extensive_conscription
+				add_ideas = war_economy
+				build_states = yes
+				create_country_leader = {
+					name = "General Dora"
+					picture = "gfx/leaders/NEU/dora.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						general_of_hkslandia top_organizer
+					}
+				}
+			}
+			# To-do: Turkey, N04
+			N04 = {
+				transfer_state = 49
+				transfer_state = 339 
+				transfer_state = 340
+				transfer_state = 341
+				transfer_state = 342
+				transfer_state = 343
+				transfer_state = 344
+				transfer_state = 345
+				transfer_state = 346
+				transfer_state = 347
+				transfer_state = 348
+				transfer_state = 349
+				transfer_state = 350
+				transfer_state = 352
+				transfer_state = 353
+				transfer_state = 354
+				transfer_state = 355
+				transfer_state = 356
+				transfer_state = 797
+				transfer_state = 798
+				transfer_state = 799
+				transfer_state = 800
+				
+				transfer_state = 292
+				transfer_state = 678
+				transfer_state = 679
+				transfer_state = 854
+				transfer_state = 855
+				transfer_state = 856
+				transfer_state = 857
+				transfer_state = 858
+				transfer_state = 859
+	
+				transfer_state = 294
+				transfer_state = 293
+				
+				
+				transfer_state = 415
+				transfer_state = 267
+	
+				set_cosmetic_tag = HKS_cos
+			
+				add_ideas = limited_exports
+				add_ideas = extensive_conscription
+				add_ideas = war_economy
+				build_states = yes
+	
+				create_country_leader = {
+					name = "General Dogy"
+					picture = "gfx/leaders/NEU/dogy.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						general_of_hkslandia top_organizer
+					}
+				}
+			}
+			N05 = {
+				transfer_state = 316
+				transfer_state = 317 
+				transfer_state = 312
+				transfer_state = 314
+				transfer_state = 313
+		
+				set_cosmetic_tag = HKS_cos
+			
+				add_ideas = limited_exports
+				add_ideas = extensive_conscription
+				add_ideas = war_economy
+				build_states = yes
+				create_country_leader = {
+					name = "General Brexit"
+					picture = "gfx/leaders/NEU/brexit.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						general_of_hkslandia lazy_modder
+					}
+				}
+			}
+			N06 = {
+				transfer_state = 323
+				transfer_state = 324 
+				transfer_state = 322
+				transfer_state = 757
+				transfer_state = 758
+	
+				set_cosmetic_tag = HKS_cos
+		
+				add_ideas = limited_exports
+				add_ideas = extensive_conscription
+				add_ideas = war_economy
+				build_states = yes
+				create_country_leader = {
+					name = "General Gunter"
+					picture = "gfx/leaders/NEU/gunter.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						general_of_hkslandia destined_to_die
+					}
+				}
+			}
+			N07 = {
+				transfer_state = 3
+				transfer_state = 151 
+				transfer_state = 847
+				transfer_state = 845
+				
+				if = {
+					limit = {
+						NOT = {
+							ITA = {
+								owns_state = 846
+							}
+						}
+					}
+					transfer_state = 846
+				}
+				set_cosmetic_tag = HKS_cos
+		
+				add_ideas = limited_exports
+				add_ideas = extensive_conscription
+				add_ideas = war_economy
+				build_states = yes
+				create_country_leader = {
+					name = "General Ashley"
+					picture = "gfx/leaders/NEU/ashley.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						general_of_hkslandia content_creator
+					}
+				}
+			}
+	
+			puppet = N01
+			puppet = N02
+			puppet = N03
+			puppet = N04
+			puppet = N05
+			puppet = N06
+			puppet = N07
+		}
+	
+		hkslandia_set_up_combat = yes
+	}
+}
+
+hkslandia_set_up_combat = {
+	NEU = { set_research_slots = 10 for_every_country = yes load_oob = NEU_units add_manpower = 10000000 country_lock_all_division_template = yes set_rule = { can_send_volunteers = yes } }
+	N01 = { set_research_slots = 10 for_every_country = yes load_oob = N01_units add_manpower = 10000000 country_lock_all_division_template = yes set_rule = { can_send_volunteers = yes } add_ideas = { hks_hkslandian_state hks_hkslandian_water_into_fuel } }
+	N02 = { set_research_slots = 10 for_every_country = yes load_oob = N02_units add_manpower = 10000000 country_lock_all_division_template = yes set_rule = { can_send_volunteers = yes } add_ideas = { hks_hkslandian_state hks_hkslandian_water_into_fuel } }
+	N03 = { set_research_slots = 10 for_every_country = yes load_oob = N03_units add_manpower = 10000000 country_lock_all_division_template = yes set_rule = { can_send_volunteers = yes } add_ideas = { hks_hkslandian_state hks_hkslandian_water_into_fuel } }
+	N04 = { set_research_slots = 10 for_every_country = yes load_oob = N04_units add_manpower = 10000000 country_lock_all_division_template = yes set_rule = { can_send_volunteers = yes } add_ideas = { hks_hkslandian_state hks_hkslandian_water_into_fuel } }
+	N05 = { set_research_slots = 10 for_every_country = yes load_oob = N05_units add_manpower = 10000000 country_lock_all_division_template = yes set_rule = { can_send_volunteers = yes } add_ideas = { hks_hkslandian_state hks_hkslandian_water_into_fuel } }
+	N06 = { set_research_slots = 10 for_every_country = yes load_oob = N06_units add_manpower = 10000000 country_lock_all_division_template = yes set_rule = { can_send_volunteers = yes } add_ideas = { hks_hkslandian_state hks_hkslandian_water_into_fuel } }
+	N07 = { set_research_slots = 10 for_every_country = yes load_oob = N07_units add_manpower = 10000000 country_lock_all_division_template = yes set_rule = { can_send_volunteers = yes } add_ideas = { hks_hkslandian_state hks_hkslandian_water_into_fuel } }
+}
+
+hkslandia_war = {
+	every_country = {
+		limit = {
+			NOT = {
+				AND = {
+					has_war_with = NEU
+					is_subject_of = NEU
+					tag = NEU
+				}
+			}
+		}
+		NEU = {
+			declare_war_on = {	
+				target = PREV
+				type = annex_everything
+			}
+		}
+	}
+}
+
+for_every_country = {
+	# [Technology]
+	set_technology = {
+		gwtank_chassis = 1
+		basic_medium_tank_chassis = 1
+		improved_medium_tank_chassis = 1
+		advanced_medium_tank_chassis = 1
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		advanced_infantry_weapons = 1
+		advanced_infantry_weapons2 = 1
+		tech_support = 1
+		tech_engineers = 1
+		tech_engineers2 = 1
+		tech_engineers3 = 1
+		tech_engineers4 = 1
+		sp_armored_engineer_tech = 1
+		tech_logistics_company = 1
+		tech_logistics_company2 = 1
+		tech_logistics_company3 = 1
+		tech_logistics_company4 = 1
+		sp_helicopter_transport_pods_tech = 1
+		tech_military_police = 1
+		sp_armored_motorized_military_police_tech = 1
+		armored_train = 1
+		basic_train = 1
+		tech_trucks = 1
+		motorized_rocket_unit = 1
+		motorised_infantry = 1
+		mechanised_infantry = 1
+		mechanised_infantry2 = 1
+		mechanised_infantry3 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antiair3 = 1
+		antiair4 = 1
+		antiair5 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+		antitank4 = 1
+		antitank5 = 1
+		tech_signal_company = 1
+		sp_armored_signal_tech = 1
+		fuel_refining = 1
+		fuel_refining2 = 1
+		fuel_refining3 = 1
+		fuel_refining4 = 1
+		fuel_refining5 = 1
+		tech_signal_company2 = 1
+		tech_signal_company3 = 1
+		tech_signal_company4 = 1
+		rocket_artillery = 1
+		rocket_artillery2 = 1
+		rocket_artillery3 = 1
+		rocket_artillery4 = 1
+		superior_firepower = 1
+		sup_delay = 1
+		mobile_defence = 1
+		intergrated_support = 1
+		regimental_combat_teams = 1
+		sup_mechanized_offensive = 1
+		centralized_fire_control = 1
+		forward_observers = 1
+		advanced_firebases = 1
+		shock_and_awe = 1
+		marines = 1
+		marines2 = 1
+		marines3 = 1
+		paratroopers = 1
+		paratroopers2 = 1
+		paratroopers3 = 1
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1
+		tech_mountaineers3 = 1
+		armored_car1 = 1
+		armored_car2 = 1
+		armored_car3 = 1
+	}
+
+	# [Special Projects]
+	complete_special_project = { project = sp:sp_air_radar }
+	complete_special_project = { project = sp:sp_land_land_cruiser }
+	complete_special_project = { project = sp:sp_land_military_engineering_vehicles }
+	complete_special_project = { project = sp:sp_air_helicopter }
+	complete_special_project = { project = sp:sp_land_self_propelled_super_heavy_howitzer }
+	complete_special_project = { project = sp:sp_land_super_heavy_howitzer }
+
+
+	# [Equipment varients]
+	create_equipment_variant = {
+		name = "Hkscruiser"
+		type = land_cruiser_chassis_1
+		parent_version = 0
+		modules = {
+			lc_main_armament_slot = lc_heavy_naval_guns
+			lc_secondary_armament_slot = lc_super_heavy_howitzer
+			lc_special_features_slot_1 = lc_radio_3
+			lc_special_features_slot_2 = lc_helipad
+			lc_special_features_slot_3 = lc_internal_fuel_tanks
+			lc_additional_armament_slot_1 = lc_rocket_launcher
+			lc_additional_armament_slot_2 = lc_light_anti_air_battery
+			lc_additional_armament_slot_3 = lc_medium_cannon_turret
+			lc_additional_armament_slot_4 = lc_medium_cannon_turret
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 20
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Hkszer V"
+		type = medium_tank_chassis_3
+		design_team = mio:generic_tank_organization
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon_2
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = auto_loader
+			special_type_slot_4 = tank_radio_3
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 17
+			tank_nsb_armor_upgrade = 1
+		}
+	}
+
+	# [Equipment Stickpile]
+	add_equipment_to_stockpile = { type = convoy amount = 5000 }
+	add_equipment_to_stockpile = { type = helicopter_equipment amount = 5000 }
+	add_equipment_to_stockpile = { type = armored_car_equipment_2 amount = 5000 }
+	add_equipment_to_stockpile = { type = mechanized_equipment_3 amount = 15000 }
+	add_equipment_to_stockpile = { type = self_propelled_super_heavy_artillery_equipment amount = 5000 }
+	add_equipment_to_stockpile = { type = armored_support_vehicle_1 amount = 50000 }
+	add_equipment_to_stockpile = { type = super_heavy_artillery_equipment_1 amount = 25000 }
+	add_equipment_to_stockpile = { type = land_cruiser_chassis_1 variant_name = "Hkscruiser" amount = 500 }
+	add_equipment_to_stockpile = { type = medium_tank_chassis_3 variant_name = "Hkszer V" amount = 25000 }
+
+	add_equipment_to_stockpile = { type = support_equipment amount = 20000 }
+	add_equipment_to_stockpile = { type = motorbike_equipment_1 amount = 5000 }
+	add_equipment_to_stockpile = { type = anti_air_equipment_3 amount = 10000 }
+	add_equipment_to_stockpile = { type = anti_tank_equipment_3 amount = 10000 }
+	add_equipment_to_stockpile = { type = motorized_rocket_equipment amount = 10000 }
+	add_equipment_to_stockpile = { type = rocket_artillery_equipment_2 amount = 10000 }
+	add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 75000 }
+	add_equipment_to_stockpile = { type = motorized_equipment amount = 20000 }
+	add_equipment_to_stockpile = { type = train_equipment_2 amount = 500 }
+
+	
+	# [Templates]
+	delete_unit_template_and_units = { division_template = "Brigada de Infanteria" }
+	delete_unit_template_and_units = { division_template = "Motorized-Division" }
+	delete_unit_template_and_units = { division_template = "Paratroopers" }
+	delete_unit_template_and_units = { division_template = "Mountaineer-Division" }
+	delete_unit_template_and_units = { division_template = "Marines" }
+	delete_unit_template_and_units = { division_template = "Armored-Division" }
+}
+
+build_states = {
+	add_state_cores = yes 
+
+	every_owned_state = {
+		limit = {
+			is_coastal = yes
+		}
+		add_building_construction = {
+			type = coastal_bunker
+			level = 10
+			instant_build = yes
+			province = {
+				all_provinces = yes
+			}
+		}
+	}
+	every_owned_state = {
+		add_building_construction = {
+			type = infrastructure
+			level = 5
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = anti_air_building
+			level = 5
+			instant_build = yes
+		}
+	}
+}
+
+add_state_cores = {
+	310 = { add_core_of = NEU }  
+	309 = { add_core_of = NEU }  
+	687 = { add_core_of = NEU }  
+	691 = { add_core_of = NEU }  
+	695 = { add_core_of = NEU }  
+	685 = { add_core_of = NEU }
+
+
+	every_owned_state = { add_core_of = ROOT }  
+}
+
+nuke_usa = {
+	launch_nuke = { province = 3957 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 3878 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 9814 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 1866 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 9671 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 10337 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 1965 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 3778 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 1827 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 10717 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	set_global_flag = nuke1
+}
+
+nuke_eng = {
+	launch_nuke = { province = 6103 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 6384 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 11293 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	set_global_flag = nuke2
+}
+
+nuke_ger = {
+	launch_nuke = { province = 6521 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 391 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 11506 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 6488 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 3544 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	set_global_flag = nuke3
+}
+
+nuke_ita = {
+	launch_nuke = { province = 9904 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 10074 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	set_global_flag = nuke4
+}
+
+nuke_sov = {
+	launch_nuke = { province = 6380 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 11370 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 525 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 3686 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 3151 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 6338 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 11474 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 7274 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 957 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	set_global_flag = nuke5
+}
+
+nuke_jap = {
+	launch_nuke = { province = 1182 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 11960 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 12068 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 11913 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	launch_nuke = { province = 7101 controller = NEU use_nuke = yes nuke_type = thermonuclear_bomb }
+	set_global_flag = nuke6
+}

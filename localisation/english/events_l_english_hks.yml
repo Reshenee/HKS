@@ -1,0 +1,65 @@
+﻿ l_english:
+ #Iran Allies
+ iran_front.0.a:0 "Iran's entry into the Allies"
+ iran_front.1.a:0 "Iran joins Allies against Axis aggression. Troops and aircraft deployed with India's permission. Allies unite to reclaim Egypt and Iraq. Momentous campaign underway to restore stability."
+ iran_front.1.b:0 "Iran aligns with Allies against Axis aggression. United front formed to repel common threat. Allies and Iran stand determined to confront and defend against Axis forces."
+ iran_front.1.c:0 "We shall defeat them!"
+ iran_front.1.d:0 "Another escalation"
+ #Iran Axis
+ iran_front.2.a:0 ""
+ iran_front.2.b:0 "Axis powers resent Iran's neutrality and its vital oil fields. They seek to crush Iran for dominance, disregarding consequences and aiming to overcome India and other obstacles in their path to victory."
+ iran_front.2.c:0 "Frustrated by Iran's prolonged neutrality, the Axis powers see their oil fields as essential in the war against the Allies. With a determination to establish a land border with their Japanese allies, the Axis resolves to destroy India, regardless of the cost involved. Their unwavering commitment drives them to take drastic measures to achieve their objectives, sparing no expense or effort in their pursuit of victory."
+ iran_front.2.d:0 "The will regret this."
+ iran_front.2.e:0 "We will crush them."
+
+ hkslandia.1.t:0 "We have been attacked!"
+ hkslandia.1.desc:0 "Hkslandia has taken our colonial holdings!"
+ hkslandia.1.a:0 "They will pay for this"
+
+ #China capitulation event
+ hksChina.1.a:0 "Victory in China!"
+ hksChina.1.b:0 "Our forces have emerged victorious against China! With the dust settling, pivotal decisions now await us as we deliberate on the forthcoming steps."
+ hksChina.1.c:0 "We shall assume control of China."
+ hksChina.1.d:0 "Puyi may control the inland, but we must retain the coastline."
+ hksChina.1.f:0 "Puyi can have dominion over the northern warlords."
+
+ hksChina.2.a:0 "Tax Policy on Manchukuo"
+ hksChina.2.b:0 "Now that we have redrawn the borders, what should our tax policy be on the Chinese states?"
+ hksChina.2.c:0 "No additional taxes needed."
+ hksChina.2.d:0 "We will tax Puyi as is our right."
+ hksChina.2.e:0 "We will tax Puyi as war reparations, but remove them after a year."
+
+ hksChina.3.a:0 "War Reparations Finished"
+ hksChina.3.b:0 "It has been a year since the fall of China, and as per our agreement, the war reparations will be removed."
+ hksChina.3.c:0 "Finally."
+
+ #Brazil joining the Allies
+ join_allies.2.a:0 "Brazil's Entry into the Allies!"
+ join_allies.2.b:0 "The United Kingdom has officially announced Brazil's entry into the Allies, marking a significant development in the global conflict. Brazil, driven by the relentless acts of aggression committed by the Axis nations, has chosen to align itself with the Allies. With a resolute spirit, the Brazilians have pledged to contribute their efforts to the cause, vowing to liberate Europe from the clutches of the Evil Axis. This new alliance adds strength and determination to the Allied forces, reshaping the dynamics of the war and setting the stage for a renewed and united front against the Axis powers."
+ join_allies.3.a:0 "Ireland's Entry into the Allies!"
+ join_allies.3.b:0 "The United Kingdom has officially announced Ireland's unexpected entry into the Allies, signifying a remarkable shift in the global conflict. Driven by mounting concerns over the Axis powers' destabilizing ambitions and the fall of neighboring nations, Ireland has chosen to align itself with the Allies. Determined to protect its sovereignty and defend against potential threats, the Irish government now stands alongside like-minded nations in the fight against tyranny and oppression. With Ireland's strategic location, industrial capacity, and skilled workforce, the new alliance adds vital strength to the Allied forces, reshaping the dynamics of the war and forging a renewed and united front against the Axis powers."
+ join_allies.2.c:0 "Interesting"
+ join_allies.2.d:0 "They will regret that"
+
+ #Siam
+ siam.0.a:0 "Inviting Siam to the faction"
+ siam.0.b:0 "Siam, displaying a strong willingness to join our faction, becomes an alluring prospect due to their sympathetic stance towards our cause and strategically advantageous location. Additionally, given their expressed enthusiasm, we could contemplate granting Siam a portion of the recently acquired Vichy territories in Indochina, reinforcing their commitment to our cause within the Greater East Asia Co-Prosperity Sphere."
+ siam.0.c:0 "We will keep our lands to ourselves."
+ siam.0.d:0 "We shall give them Laos and Cambodia, welcome to the faction!"
+ siam.0.e:0 "We want our new allies to be strong, give them everything."
+
+ siam.1.a:0 "Joining the Greater East Asia Co-Prosperity Sphere"
+ siam.1.b:0 "With Japan granting us control over Laos and Cambodia, their gesture has cemented our loyalty. By joining their faction, the Greater East Asia Co-Prosperity Sphere, we unequivocally demonstrate our unwavering commitment to their cause. Our strategic location and shared sympathies make us a valuable asset within their alliance."
+ siam.1.c:0 "Wonderful!"
+
+ siam.2.a:0 "Joining the Greater East Asia Co-Prosperity Sphere"
+ siam.2.b:0 "We see this invitation to join the Greater East Asia Co-Prosperity Sphere as a promising avenue for potential territorial gains. Aligning ourselves with Japan and their faction holds the prospect of expanding our influence and securing strategic advantages."
+ siam.2.c:0 "With the help of Japan we will be able to expand."
+
+ siam.3.a:0 "Joining the Greater East Asia Co-Prosperity Sphere"
+ siam.3.b:0 "With Japan granting us control over Indochina, their gesture has secured our loyalty. In joining their faction, the Greater East Asia Co-Prosperity Sphere, we affirm our unwavering commitment to their cause. Our strategic location and shared sympathies make us a valuable addition to their alliance."
+ siam.3.c:0 "We shall prove to be good allies."
+ 
+#Other
+ hksgeneric.14.a:0 "§RWARNING, WILL RECALL THE ATTACHE!§"
+ hksgeneric.14.b:0 "Keep Attache!"

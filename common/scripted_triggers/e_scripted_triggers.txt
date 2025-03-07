@@ -1,0 +1,139 @@
+neutral_countries = {
+	NOT = {
+		OR = {
+			generic_minors = yes
+			allies_countries = yes
+			comintern_countries = yes
+			axis_countries = yes
+			japan_countries = yes
+			china_countries = yes
+		}
+	}
+}
+
+generic_minors = {
+	OR = {
+		tag = ALB
+		tag = AOI
+		tag = MNT
+		tag = CRO
+		tag = MON
+		tag = MEN
+		tag = TAN
+		tag = SLO
+		tag = MAL
+		tag = PHI
+		tag = INS
+		tag = SIA
+		tag = BRA
+	}
+}
+
+allies_countries = {
+	OR = {
+		tag = USA
+		tag = ENG
+		tag = FRA
+		tag = RAJ
+		tag = CAN
+		tag = NZL
+		tag = SAF
+		tag = AST
+		tag = BRA
+		tag = MEX
+	}
+}
+
+other_countries = {
+	OR = {
+		tag = HOL
+		tag = BEL
+		tag = DEN
+		tag = NOR
+		tag = LUX
+		tag = YUG
+		tag = GRE
+		tag = IRQ
+		tag = PER
+	}
+}
+
+comintern_countries = {
+	OR = {
+		tag = SOV
+		tag = MON
+		tag = TAN
+
+		if = {
+			limit = {
+				SIK = {
+					is_in_faction_with = SOV
+				}
+			}
+			tag = SIK
+		}
+	}
+}
+
+axis_countries = {
+	OR = {
+		tag = GER
+		tag = ITA
+		tag = ROM
+		tag = HUN
+		tag = BUL
+		tag = SPR
+		tag = SLO
+		tag = FIN
+		tag = ALB
+		tag = AOI
+	}
+}
+
+japan_countries = {
+	OR = {
+		tag = JAP
+		tag = MAN
+		tag = MEN
+		tag = SIA
+	}
+}
+
+china_countries = {
+	OR = {
+		tag = CHI
+		tag = SHX
+		tag = PRC
+		tag = XSM
+		tag = YUN
+		tag = GXC
+	}
+}
+
+sub_tech = {
+	has_game_rule = {
+		rule = HKS_SUBMARINES
+		option = HKS_SUBMARINES_YES
+	}
+}
+
+mass_mob = {
+	has_game_rule = {
+		rule = HKS_MM
+		option = HKS_MM_YES
+	}
+}
+
+force_attack = {
+	has_game_rule = {
+		rule = HKS_FORCE_ATTACK
+		option = HKS_FORCE_ATTACK_YES
+	}
+}
+
+last_stand = {
+	has_game_rule = {
+		rule = HKS_LAST_STAND
+		option = HKS_LAST_STAND_YES
+	}
+}

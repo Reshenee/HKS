@@ -1,0 +1,79 @@
+﻿capital = 493
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_research_slots = 0
+
+set_popularities = {
+	neutrality = 100
+}
+
+set_convoys = 3000
+
+create_country_leader = {
+	name = "Neutral Chad"
+	picture = "gfx/leaders/NEU/GFX_Portrait_Gigachad.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+set_occupation_law = martial_law_occupation
+
+division_template = {
+	name = "Military Police"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+		cavalry = { x = 3 y = 4 }
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+		cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+		cavalry = { x = 4 y = 4 }
+	}
+	
+	support = 	{
+
+	}	
+}
+
+recruit_character = NEU_GENERAL1
+recruit_character = NEU_GENERAL2
+recruit_character = NEU_GENERAL3
+recruit_character = NEU_GENERAL4
+recruit_character = NEU_GENERAL5
+recruit_character = NEU_GENERAL6
+recruit_character = NEU_GENERAL7
+recruit_character = NEU_GENERAL8
+recruit_character = NEU_GENERAL9
+recruit_character = NEU_GENERAL10
+recruit_character = NEU_GENERAL11
+recruit_character = NEU_GENERAL12
+recruit_character = NEU_GENERAL13
+recruit_character = NEU_GENERAL14
+recruit_character = NEU_GENERAL15

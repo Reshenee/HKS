@@ -1,0 +1,135 @@
+spriteTypes = {
+   #prisoners
+   spriteType = {
+		name = "GFX_prisoner_default"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_generic_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_Kuzya_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_jp_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_hks_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_diktrix_imprisoned.dds"
+	}   
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_dora_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_gunter_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_logie_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_namuu_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_nik_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_Quill_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_sbc_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_Toaster_imprisoned.dds"
+	}
+   spriteType = {
+		name = "GFX_prisoner_jp"
+		texturefile = "gfx/leaders/Prisoners/idea_SOV_Chaos_imprisoned.dds"
+	}
+   
+   #DECISIONS
+   spriteType = {
+		name = "GFX_game_rule_999"
+		texturefile = "gfx/interface/decisions/decision_stability_icon.dds"
+	}
+
+   #IDEAS
+   spriteType = {
+      name = "GFX_idea_buff"
+      texturefile = "gfx/interface/ideas/idea_generic_flexible_foreign_policy.dds"
+   }
+   spriteType = {
+      name = "GFX_idea_SPR"
+      texturefile = "gfx/interface/ideas/idea_spr.dds"
+   }
+   spriteType = {
+      name = "GFX_idea_SPA"
+      texturefile = "gfx/interface/ideas/idea_spa.dds"
+   }
+   spriteType = {
+      name = "GFX_idea_hks_soviets"
+      texturefile = "gfx/interface/ideas/spr_subvert_soviet_control.dds"
+   }
+   spriteType = {
+		name = "GFX_air_gamerules"
+		texturefile = "gfx/interface/ideas/idea_generic_air_payment.dds"
+	}
+
+   # TRAITS
+   spriteType = {
+      name = "GFX_trait_adaptable_half"
+      texturefile = "gfx/interface/traits/trait_adaptable.dds"
+   }
+   spriteType = {
+      name = "GFX_trait_expert_improviser_passive"
+      texturefile = "gfx/interface/traits/trait_improvisation_expert.dds"
+   }
+
+   # GAME RULES
+   spriteType = {
+      name = "GFX_game_rule_1"
+      texturefile = "gfx/interface/game_rules/1.png"
+   }
+   spriteType = {
+      name = "GFX_game_rule_2"
+      texturefile = "gfx/interface/game_rules/2.png"
+   }
+   spriteType = {
+      name = "GFX_game_rule_3"
+      texturefile = "gfx/interface/game_rules/3.png"
+   }
+   spriteType = {
+      name = "GFX_game_rule_4"
+      texturefile = "gfx/interface/game_rules/4.png"
+   }
+   spriteType = {
+      name = "GFX_game_rule_5"
+      texturefile = "gfx/interface/game_rules/5.png"
+   }
+   spriteType = {
+      name = "GFX_game_rule_6"
+      texturefile = "gfx/interface/game_rules/6.png"
+   }
+   spriteType = {
+      name = "GFX_game_rule_7"
+      texturefile = "gfx/interface/game_rules/7.png"
+   }
+   spriteType = {
+      name = "GFX_game_rule_8"
+      texturefile = "gfx/interface/game_rules/8.png"
+   }
+   spriteType = {
+      name = "GFX_game_rule_9"
+      texturefile = "gfx/interface/game_rules/9.png"
+   }
+}

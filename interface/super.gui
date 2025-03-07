@@ -1,0 +1,102 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "sp_event_window"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_sp_event_window"
+		}
+
+		iconType = {
+			name = "sp_shipment"
+			spriteType = "GFX_sp_shipment"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "sp_hkslandia"
+			spriteType = "GFX_sp_hkslandia"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "sp_border_war"
+			spriteType = "GFX_sp_border_war"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "sp_ww3"
+			spriteType = "GFX_sp_ww3"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "sp_ceasefire"
+			spriteType = "GFX_sp_ceasefire"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "sp_united_front"
+			spriteType = "GFX_sp_united_front"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "sp_hks_final_hour"
+			spriteType = "GFX_sp_hks_final_hour"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "sp_hks_hkslandia_defeated"
+			spriteType = "GFX_sp_hks_hkslandia_defeated"
+			position = {x = 0 y = 0}
+		}
+
+		###############
+		###INTERFACE###
+		###############
+		
+		iconType = {
+			name = "sp_event_text_underlay"
+			spriteType = "GFX_sp_event_underlay"
+			position = { x = 195 y = 332 }
+		}
+		
+		instantTextBoxType = {
+			name = "super_quote"
+			position = { x = 225 y = 336 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_quote]"
+			maxWidth = 348
+			maxHeight = 110
+			fixedsize = yes	
+			format = right
+		}
+		
+		instantTextboxType = {
+			name = "super_title"
+			position = { x = -52 y = 40 }
+			font = "hoi_24header"
+			format = center
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 700
+			maxHeight = 50
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "sp_event_close_button"
+			spriteType = "GFX_sp_event_close_button"
+			position = { x = 187 y = 475 }
+			clicksound = click_close
+			buttonText = "[get_super_event_remark]"
+			buttonFont = "hoi_20b"
+		}
+	}
+}

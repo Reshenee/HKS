@@ -1,0 +1,5 @@
+﻿l_russian:
+ RECALL_VOLUNTEERS_TITLE:0 "Отозвать добровольцев"
+ RECALL_VOLUNTEERS_ACTION_DESC:0 "Мы можем решить отозвать добровольцев, которых отправили в другие страны."
+ RECALL_VOLUNTEERS_TOOLTIP:0 "§Y[This.GetNameWithFlag]§! §Rдолжна иметь добровольцев от нас, которых мы можем отозвать.§!"
+ RECALL_VOLUNTEERS_TOOLTIP_G:0 "§Y[This.GetNameWithFlag]§! должна иметь добровольцев от нас, которых мы можем отозвать."

@@ -1,0 +1,16 @@
+
+
+add_namespace = spy_reminder
+
+country_event = {
+	id = spy_reminder.1
+	title = "Operation completed!"
+	desc = "Our spies have completed their task in [victim_nation.GetName]. Don't forget to reassign your spies to a new operation."
+	is_triggered_only = yes
+	fire_only_once = no
+	picture = GFX_report_event_finnish_letter
+
+	option = {
+		name = "Very well."
+	}
+}

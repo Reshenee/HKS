@@ -1,0 +1,22 @@
+on_actions = {
+	on_operation_completed = {
+		effect = {
+
+			FROM = {
+				save_event_target_as = victim_nation
+			}
+			THIS = {
+				save_event_target_as = this_operation
+			}
+			ROOT = {
+				save_event_target_as = root_test
+			}			
+			ROOT = {
+				country_event = {
+				id = spy_reminder.1	#Operation Completed
+				days = 1
+				}
+			}
+		}
+	}
+}

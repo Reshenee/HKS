@@ -1,0 +1,306 @@
+QuickTemplates = {
+	HIDE = {
+		icon = decision_generic_decision
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = Clear_Template_Decision
+		}
+	}
+
+	SHOW = {
+		icon = decision_generic_decision
+		visible = {
+			is_ai = no
+			has_country_flag = Clear_Template_Decision
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			clr_country_flag = Clear_Template_Decision
+		}
+	}
+
+	INFANTRY_2W = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			division_template = {
+				name = "2w Infantry"
+				template_counter = 7
+
+				regiments = {
+					infantry = { x = 0 y = 0 }			
+				}
+			}
+		}
+	}
+	INFANTRY_10W = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			division_template = {
+				name = "10w Infantry"
+				template_counter = 12
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+				}
+			}
+		}
+	}
+	INFANTRY_20W = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			division_template = {
+				name = "20w Infantry"
+				template_counter = 3
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+				}
+			}
+		}
+	}
+	INFANTRY_30W = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			division_template = {
+				name = "30w Infantry"
+				template_counter = 238
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					infantry = { x = 2 y = 4 }
+				}
+			}
+		}
+	}
+	MOTORIZED_40W = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			division_template = {
+				name = "Motorized Division"
+
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 0 y = 3 }
+					motorized = { x = 0 y = 4 }
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					motorized = { x = 1 y = 3 }
+					motorized = { x = 1 y = 4 }
+					motorized = { x = 2 y = 0 }
+					motorized = { x = 2 y = 1 }
+					motorized = { x = 2 y = 2 }
+					motorized = { x = 2 y = 3 }
+					motorized = { x = 2 y = 4 }
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					motorized = { x = 3 y = 4 }
+				}
+			}
+		}
+	}
+	INFANTRY_40W = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			division_template = {
+				name = "40w Infantry"
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					infantry = { x = 2 y = 4 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+					infantry = { x = 3 y = 3 }
+					infantry = { x = 3 y = 4 }
+				}
+			}
+		}
+	}
+	INFANTRY_50W = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			division_template = {
+				name = "50w Infantry"
+				template_counter = 18
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					infantry = { x = 2 y = 4 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+					infantry = { x = 3 y = 3 }
+					infantry = { x = 3 y = 4 }
+					infantry = { x = 4 y = 0 }
+					infantry = { x = 4 y = 1 }
+					infantry = { x = 4 y = 2 }
+					infantry = { x = 4 y = 3 }
+					infantry = { x = 4 y = 4 }
+				}
+			}
+		}
+	}
+	MP_INFANTRY = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		available = {
+
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			division_template = {
+				name = "Military Police"
+
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
+					cavalry = { x = 0 y = 4 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
+					cavalry = { x = 1 y = 4 }
+					cavalry = { x = 2 y = 0 }
+					cavalry = { x = 2 y = 1 }
+					cavalry = { x = 2 y = 2 }
+					cavalry = { x = 2 y = 3 }
+					cavalry = { x = 2 y = 4 }
+					cavalry = { x = 3 y = 0 }
+					cavalry = { x = 3 y = 1 }
+					cavalry = { x = 3 y = 2 }
+					cavalry = { x = 3 y = 3 }
+					cavalry = { x = 3 y = 4 }
+					cavalry = { x = 4 y = 0 }
+					cavalry = { x = 4 y = 1 }
+					cavalry = { x = 4 y = 2 }
+					cavalry = { x = 4 y = 3 }
+					cavalry = { x = 4 y = 4 }
+				}
+				
+				support = 	{
+
+				}	
+			}
+		}
+	}
+}

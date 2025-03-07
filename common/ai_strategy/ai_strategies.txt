@@ -1,0 +1,411 @@
+#pre ww2 conflicts
+SPCW_SPD_foreign = {
+	allowed = {
+		OR = {
+			tag = USA
+			tag = ENG
+			tag = FRA
+			tag = RAJ
+			tag = CAN
+			tag = NZL
+			tag = SAF
+			tag = AST
+			tag = BRA
+			tag = MEX
+			tag = SOV
+			tag = MON
+			tag = TAN
+	
+			if = {
+				limit = {
+					SIK = {
+						is_in_faction_with = SOV
+					}
+				}
+				tag = SIK
+			}
+		}
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+
+	ai_strategy = { type = send_volunteers_desire id = SPD value = 1000 }
+	ai_strategy = { type = send_volunteers_desire id = SPR value = -1000 }
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SPD
+		value = 1000
+		target = send_attache
+	}
+}
+SPCW_SPD_accept = {
+	allowed = {
+		tag = SPD
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+	
+	#accept attaches
+	ai_strategy = { type = diplo_action_acceptance id = SOV value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MON value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = TAN value = 1000 target = send_attache }
+	
+	ai_strategy = { type = diplo_action_acceptance id = USA value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ENG value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = FRA value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = RAJ value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = CAN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = NZL value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SAF value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = AST value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = BRA value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MEX value = 1000 target = send_attache }
+	
+	#military access to fix supply bug for SOV and FRA
+	ai_strategy = { type = diplo_action_acceptance id = SOV value = 1000 target = military_access }
+	ai_strategy = { type = diplo_action_acceptance id = FRA value = 1000 target = military_access }
+}
+SPCW_SPD_deny = {
+	allowed = {
+		tag = SPD
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+	
+	#deny attaches
+	ai_strategy = { type = diplo_action_acceptance id = GER value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ITA value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ROM value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = HUN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = BUL value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SPR value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SLO value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = FIN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = JAP value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MAN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MEN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SIA value = -1000 target = send_attache }
+}
+
+SPCW_SPR_foreign = {
+	allowed = {
+		OR = {
+			tag = GER
+			tag = ITA
+			tag = ROM
+			tag = HUN
+			tag = BUL
+			tag = SPR
+			tag = SLO
+			tag = FIN
+			tag = ALB
+			tag = AOI
+			tag = JAP
+			tag = MAN
+			tag = MEN
+			tag = SIA
+		}
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+
+	#send volunteers
+	ai_strategy = { type = send_volunteers_desire id = SPR value = 1000 }
+	ai_strategy = { type = send_volunteers_desire id = SPD value = -1000 }
+	
+	#send attaches
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SPR
+		value = 1000
+		target = send_attache
+	}
+}
+SPCW_SPR_accept = {
+	allowed = {
+		tag = SPR
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+	
+	#accept attaches
+	ai_strategy = { type = diplo_action_acceptance id = GER value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ITA value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ROM value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = HUN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = BUL value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SPR value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SLO value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = FIN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = JAP value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MAN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MEN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SIA value = 1000 target = send_attache }
+		
+	#military access to fix supply bug for GER, ITA and JAP
+	ai_strategy = { type = diplo_action_acceptance id = GER value = 1000 target = military_access }
+	ai_strategy = { type = diplo_action_acceptance id = ITA value = 1000 target = military_access }
+	ai_strategy = { type = diplo_action_acceptance id = JAP value = 1000 target = military_access }
+}
+SPCW_SPR_deny = {
+	allowed = {
+		tag = SPR
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+	
+	#deny attaches
+	ai_strategy = { type = diplo_action_acceptance id = SOV value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MON value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = TAN value = -1000 target = send_attache }
+	
+	ai_strategy = { type = diplo_action_acceptance id = USA value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ENG value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = FRA value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = RAJ value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = CAN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = NZL value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SAF value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = AST value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = BRA value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MEX value = -1000 target = send_attache }
+}
+
+CHI_foreign = {
+	allowed = {
+		OR = {
+			tag = USA
+			tag = ENG
+			tag = RAJ
+			tag = CAN
+			tag = NZL
+			tag = SAF
+			tag = AST
+			tag = BRA
+			tag = MEX
+			tag = SOV
+			tag = MON
+			tag = TAN
+	
+			if = {
+				limit = {
+					SIK = {
+						is_in_faction_with = SOV
+					}
+				}
+				tag = SIK
+			}
+		}
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+
+	ai_strategy = { type = send_volunteers_desire id = CHI value = 1000 }
+	ai_strategy = { type = send_volunteers_desire id = JAP value = -1000 }
+	ai_strategy = {
+		type = diplo_action_desire
+		id = CHI
+		value = 1000
+		target = send_attache
+	}
+}
+CHI_accept = {
+	allowed = {
+		china_countries = yes
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+	
+	#accept attaches
+	ai_strategy = { type = diplo_action_acceptance id = SOV value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MON value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = TAN value = 1000 target = send_attache }
+	
+	ai_strategy = { type = diplo_action_acceptance id = USA value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MEX value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ENG value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = FRA value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = RAJ value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = CAN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = NZL value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SAF value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = AST value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = BRA value = 1000 target = send_attache }
+}
+CHI_deny = {
+	allowed = {
+		china_countries = yes
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+	
+	#deny attaches
+	ai_strategy = { type = diplo_action_acceptance id = GER value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ITA value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ROM value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = HUN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = BUL value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SPR value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SLO value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = FIN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = JAP value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MAN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MEN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SIA value = -1000 target = send_attache }
+}
+
+CHI_fix_FRA = {
+	allowed = {
+		tag = FRA
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = CHI
+		value = 1000
+		target = send_attache
+	}
+	ai_strategy = { type = send_volunteers_desire id = CHI value = -1000 }
+}
+
+JAP_foreign = {
+	allowed = {
+		OR = {
+			tag = GER
+			tag = ITA
+			tag = ROM
+			tag = HUN
+			tag = BUL
+			tag = SPR
+			tag = SLO
+			tag = FIN
+			tag = ALB
+			tag = AOI
+		}
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+
+	ai_strategy = { type = send_volunteers_desire id = JAP value = 1000 }
+	ai_strategy = { type = send_volunteers_desire id = CHI value = -1000 }
+	ai_strategy = { type = diplo_action_desire id = JAP target = send_attache value = 1000 }
+}
+JAP_accept = {
+	allowed = {
+		japan_countries = yes
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+	
+	#accept attaches
+	ai_strategy = { type = diplo_action_acceptance id = GER value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ITA value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ROM value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = HUN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = BUL value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SPR value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SLO value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = FIN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = JAP value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MAN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MEN value = 1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SIA value = 1000 target = send_attache }
+		
+	#military access to fix supply bug for GER, ITA and JAP
+	ai_strategy = { type = diplo_action_acceptance id = GER value = 1000 target = military_access }
+	ai_strategy = { type = diplo_action_acceptance id = ITA value = 1000 target = military_access }
+	ai_strategy = { type = diplo_action_acceptance id = JAP value = 1000 target = military_access }
+}
+JAP_deny = {
+	allowed = {
+		japan_countries = yes
+	}
+	enable = { always = yes }
+	abort = {
+		always = no
+	}
+	
+	#deny attaches
+	ai_strategy = { type = diplo_action_acceptance id = SOV value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MON value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = TAN value = -1000 target = send_attache }
+	
+	ai_strategy = { type = diplo_action_acceptance id = USA value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = ENG value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = FRA value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = RAJ value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = CAN value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = NZL value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = SAF value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = AST value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = BRA value = -1000 target = send_attache }
+	ai_strategy = { type = diplo_action_acceptance id = MEX value = -1000 target = send_attache }
+}
+
+#Neutral
+do_not_leave_faction = {
+	allowed = { neutral_countries = yes } 
+	enable = { always = yes }
+	abort = {
+		NEU = {
+			has_global_flag = hkslanda
+		}
+	}
+	ai_strategy = { type = alliance id = NEU value = 1000 }
+}
+
+#Sia
+SIA_join_JAP = {
+	allowed = { tag = SIA }
+	abort = {
+		always = no
+	}
+	enable = { 
+		OR = {
+			has_global_flag = CHI_capitulated 
+			JAP = {
+				has_completed_focus = JAP_alliance_with_siam
+			}
+		}
+	}
+	ai_strategy = { type = alliance id = JAP value = 2000 }
+}
+
+ITA_DONT_JOIN_ATTACK_FRANCE_PRE_WW2 = {
+	allowed = { tag = ITA }
+	enable = { 
+		always = yes
+	}
+	abort = {
+		GER = {
+			has_war_with = ENG
+		}
+	}
+	ai_strategy = { type = conquer id = FRA value = -2000 }
+	ai_strategy = { type = ignore id = FRA value = -2000 }
+}

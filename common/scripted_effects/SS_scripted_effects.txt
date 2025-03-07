@@ -1,0 +1,363 @@
+#	Example:
+# 
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+SS_set_templates = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = SS_motorised_division
+			}
+			NOT = {
+				has_tech = mechanised_infantry
+			}
+		}
+		SS_motorised_division = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = SS_mechanised_division_early
+			}
+			has_tech = mechanised_infantry	
+		}
+		SS_mechanised_division_early = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = SS_mechanised_division_late
+			}
+			AND = {
+				has_tech = mechanised_infantry
+				has_tech = basic_medium_td
+				has_tech = basic_medium_art
+			}
+		}
+		SS_mechanised_division_late = yes
+	}
+	if = {
+		limit = {
+			AND = {
+				NOT = { has_country_flag = SS_armored_division_early }
+				NOT = {
+					OR = {
+						has_tech = basic_medium_tank
+						has_tech = improved_medium_tank
+						has_tech = advanced_medium_tank
+						has_tech = basic_medium_tank_chassis #just one needed because nsb medium tree has no bypasses
+					}
+				}
+				NOT = {
+					has_tech = mechanised_infantry
+				}
+			}
+		}
+		SS_armored_division_early = yes
+	}
+	if = {
+		limit = {
+			AND = {
+				NOT = { has_country_flag = SS_armored_division_improved }
+				OR = {
+					has_tech = basic_medium_tank
+					has_tech = improved_medium_tank
+					has_tech = advanced_medium_tank
+					has_tech = basic_medium_tank_chassis #just one needed because nsb medium tree has no bypasses
+				}
+				NOT = {
+					has_tech = mechanised_infantry
+				}
+			}
+		}
+		SS_armored_division_improved = yes
+	}
+	if = {
+		limit = {
+			AND = {
+				NOT = { has_country_flag = SS_armored_division_late }
+				OR = {
+					has_tech = basic_medium_tank
+					has_tech = improved_medium_tank
+					has_tech = advanced_medium_tank
+					has_tech = basic_medium_tank_chassis #just one needed because nsb medium tree has no bypasses
+				}
+				has_tech = mechanised_infantry
+			}
+		}
+		SS_armored_division_late = yes
+	}
+}
+
+SS_motorised_division = {
+	set_country_flag = SS_motorised_division
+	division_template = {
+		name = "SS Motorisierte Division"
+		priority = 2
+		division_names_group = GER_SS_01
+		is_locked = yes
+		regiments = {
+			motorized = { x = 0 y = 0 }
+			motorized = { x = 0 y = 1 }
+			motorized = { x = 0 y = 2 }
+
+			motorized = { x = 1 y = 0 }
+			motorized = { x = 1 y = 1 }
+			
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+			
+		}
+		support = {
+					artillery = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					anti_air = { x = 0 y = 3 }
+					military_police = { x = 0 y = 4 }
+		}
+		override_model = GER_infantry_alt_0_entity
+	}
+}
+SS_mechanised_division_early = {
+	set_country_flag = SS_mechanised_division_early
+	division_template = {
+		name = "SS Panzergrenadier Division"
+		priority = 2
+		division_names_group = GER_SS_01
+		is_locked = yes
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+			mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+			
+			mot_anti_tank_brigade = { x = 2 y = 0 }
+			mot_anti_tank_brigade = { x = 2 y = 1 }
+
+		}
+		support = {
+						artillery = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						light_tank_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+						military_police = { x = 0 y = 4 }
+		}
+		override_model = GER_infantry_alt_0_entity
+	}
+}
+
+SS_mechanised_division_late = {
+	set_country_flag = SS_mechanised_division_late
+	division_template = {
+		name = "SS Panzergrenadier Division (n.A.)"
+		priority = 2
+		division_names_group = GER_SS_01
+		is_locked = yes
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+			mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+
+			light_armor = { x = 2 y = 0 }
+			
+		}
+		support = {
+						artillery = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						light_tank_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+						military_police = { x = 0 y = 4 }
+		}
+		override_model = GER_infantry_alt_0_entity
+	}
+}
+
+SS_armored_division_early = {
+	set_country_flag = SS_armored_division_early
+	division_template = {
+		name = "SS Panzer Division"
+		priority = 2
+		division_names_group = GER_SS_01
+		is_locked = yes
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+			mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+
+			light_armor = { x = 2 y = 0 }
+		}
+		support = {
+			artillery = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			light_tank_recon = { x = 0 y = 2 }
+			anti_air = { x = 0 y = 3 }
+			military_police = { x = 0 y = 4 }
+		}
+	}
+}
+
+SS_armored_division_improved = {
+	set_country_flag = SS_armored_division_improved
+	division_template = {
+		name = "SS Panzer Division (n.A.)"
+		priority = 2
+		division_names_group = GER_SS_01
+		is_locked = yes
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+			mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+
+			light_armor = { x = 2 y = 0 }
+		}
+		support = {
+			artillery = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			light_tank_recon = { x = 0 y = 2 }
+			anti_air = { x = 0 y = 3 }
+			military_police = { x = 0 y = 4 }
+		}
+	}
+}
+SS_armored_division_late = {
+	set_country_flag = SS_armored_division_late
+	division_template = {
+		name = "SS Panzer Division (vollgep.)"
+		priority = 2
+		division_names_group = GER_SS_01
+		is_locked = yes
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+			mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+
+			light_armor = { x = 2 y = 0 }
+		}
+		support = {
+			artillery = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			light_tank_recon = { x = 0 y = 2 }
+			anti_air = { x = 0 y = 3 }
+			military_police = { x = 0 y = 4 }
+		}
+	}
+}
+SS_infantry_division = {
+	set_country_flag = SS_infantry_division
+	division_template = {
+		name = "SS Waffen-Grenadier-Division"
+		priority = 2
+		division_names_group = GER_SS_01
+		template_counter = 101
+		is_locked = yes
+		regiments = {
+			motorized = { x = 0 y = 0 }
+			motorized = { x = 0 y = 1 }
+			motorized = { x = 0 y = 2 }
+
+			motorized = { x = 1 y = 0 }
+			motorized = { x = 1 y = 1 }
+			
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+
+		}
+		support = {
+			artillery = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			mot_recon = { x = 0 y = 2 }
+			anti_air = { x = 0 y = 3 }
+			military_police = { x = 0 y = 4 }
+		}
+		override_model = GER_militia
+	}
+}
+SS_resolve_effects_wehrmacht = {
+	if = {
+		limit = {
+			AND = {
+				check_variable = { var = wehrmacht_anger value = 0 compare = greater_than_or_equals }
+				check_variable = { wehrmacht_anger < 10 }
+			}
+		}
+		random_list = {
+			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } } #generals protest
+			50 = {}
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { var = wehrmacht_anger value = 10 compare = greater_than_or_equals }
+				check_variable = { wehrmacht_anger < 20 }
+			}
+		}
+		random_list = {
+			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } } #generals protest
+			25 = { country_event = { id = ss_recruitment_event.11 days = 1 } } #general resigns in protest
+			25 = {}
+		}
+	}
+}
+
+SS_resolve_effects_ss = {
+	if = {
+		limit = {
+			AND = {
+				check_variable = { var = SS_anger value = 0 compare = greater_than_or_equals }
+				check_variable = { SS_anger < 10 }
+			}
+		}
+		random_list = {
+			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } } #Himmler protests
+			50 = {}
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { var = SS_anger value = 10 compare = greater_than_or_equals }
+				check_variable = { SS_anger < 20 }
+			}
+		}
+		random_list = {
+			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } } #Himmler protest
+			25 = { country_event = { id = ss_recruitment_event.21 days = 1 } } #secret meeting of SS officers
+			25 = {}
+		}
+	}
+	
+}
