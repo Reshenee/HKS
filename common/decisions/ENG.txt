@@ -8916,6 +8916,9 @@ important_actions = {
 		available = {
 			has_war = yes
 			has_government = democratic
+			FRA = { has_capitulated = yes }
+			HOL = { has_capitulated = yes }
+			BEL = { has_capitulated = yes }
 		}
 
 		cost = 50
@@ -8936,6 +8939,46 @@ important_actions = {
 		
 		complete_effect = {
 			transfer_state = 698
+			transfer_state = 309
+			transfer_state = 695
+			transfer_state = 310
+			transfer_state = 635
+			transfer_state = 641
+			transfer_state = 713
+			transfer_state = 706	
+			transfer_state = 543
+			transfer_state = 708
+			transfer_state = 730
+			transfer_state = 734
+			transfer_state = 320
+			transfer_state = 694
+			annex_country = { target = COG transfer_troops = yes }
+						random_other_country = {
+				limit = {
+					original_tag = JAP
+				}
+				transfer_state = 728
+				transfer_state = 729
+			}
+			random_other_country = {
+				limit = {
+					original_tag = BEL
+				}
+				add_ideas = AI_sacked_army
+			}
+						random_other_country = {
+				limit = {
+					original_tag = HOL
+				}
+				add_ideas = AI_sacked_army
+			}
+									random_other_country = {
+				limit = {
+					original_tag = FRA
+					is_ai = yes
+				}
+				add_ideas = AI_sacked_army
+			}
 		}
 	}
 
@@ -9116,6 +9159,7 @@ ENG_homeland_defense_decision_cat = {
 
 		remove_effect = {
 			add_ideas = ENG_blackouts_idea
+			add_ideas =	ITA_stockpiling_fuel
 			custom_effect_tooltip = ENG_enforce_blackouts_tt
 		}
 		
@@ -9150,13 +9194,16 @@ ENG_homeland_defense_decision_cat = {
 			has_idea = ENG_blackouts_idea
 		}
 	
-		cost = 50
+		cost = 20
 
 		days_remove = 14
 
 		remove_effect = {
 			remove_ideas = {
 				ENG_blackouts_idea
+			}	
+						remove_ideas = {
+				ITA_stockpiling_fuel
 			}	
 		}
 		
@@ -9305,10 +9352,19 @@ ENG_homeland_defense_decision_cat = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
+
+						irregular_infantry = { x = 1 y = 0 }
+						penal_battalion = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+
+						cavalry = { x = 2 y = 0 }						
 					}
 					support = {
+					artillery = { x = 0 y = 0 }
+					military_police = { x = 0 y = 1 }
+					anti_air = { x = 0 y = 2 }
+					blackshirt_assault_battalion = { x = 0 y = 3 }
+					engineer = { x = 0 y = 4 }
 					}
 				}
 			}
@@ -9433,11 +9489,11 @@ ENG_homeland_defense_decision_cat = {
 			}			
 		}
 		
-		cost = 25
+		cost = 5
 
 		fire_only_once = yes
 
-		days_remove = 7
+		days_remove = 4
 
 		ai_will_do = {
 			base = 50
@@ -9473,6 +9529,22 @@ ENG_homeland_defense_decision_cat = {
 
 			FROM = {
 				set_state_flag = ENG_raised_home_guard_here_already_flag
+				create_unit = {
+				    division = "name = \"Home Guard Defense Brigade\" division_template = \"Home Guard Defense Brigades\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
+				    owner = ROOT
+				}
+				create_unit = {
+				    division = "name = \"Home Guard Defense Brigade\" division_template = \"Home Guard Defense Brigades\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
+				    owner = ROOT
+				}
+				create_unit = {
+				    division = "name = \"Home Guard Defense Brigade\" division_template = \"Home Guard Defense Brigades\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
+				    owner = ROOT
+				}
+				create_unit = {
+				    division = "name = \"Home Guard Defense Brigade\" division_template = \"Home Guard Defense Brigades\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
+				    owner = ROOT
+				}
 				create_unit = {
 				    division = "name = \"Home Guard Defense Brigade\" division_template = \"Home Guard Defense Brigades\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
 				    owner = ROOT
@@ -9539,9 +9611,7 @@ military_operations = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
-			ICE = { exists = yes }
-			NOR = { has_capitulated = yes }
-			is_in_faction_with = NOR
+			ICE = { exists = yes is_subject = no }
 		}
 
 		cost = 50
@@ -9560,8 +9630,12 @@ military_operations = {
 		}
 		
 		complete_effect = {
-			declare_war_on = { target = ICE type = puppet_wargoal_focus }
+			annex_country = { target = ICE } 
 			add_popularity = { ideology = democratic popularity = -0.05 }
+						transfer_state = 337
+									transfer_state = 914
+												transfer_state = 101
+			
 		}
 	}
 	

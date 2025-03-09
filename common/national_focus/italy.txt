@@ -13501,15 +13501,7 @@ focus_tree = {
 		relative_position_id = ITA_all_roads_lead_to_rome
 		cost = 5
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_tech = ship_hull_super_heavy
-			}
-			else = {
-				has_tech = heavy_battleship
-			}
+			is_special_project_completed = sp:sp_naval_super_heavy_battleship
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}

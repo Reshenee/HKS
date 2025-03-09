@@ -65,37 +65,6 @@ AI_annex = {
      #   }
    # }
    #ENG annex Free France
-    ITA_annex_MNT = {
-        icon = GFX_decision_eng_trade_unions_support
-        fire_only_once = yes
-
-        available = {
-           original_tag = ENG
-            FRA = { is_ai = yes }
-            FRA = { has_capitulated = yes }
-
-            
-        }
-
-       visible = {
-            has_game_rule = {
-				rule = hks_annex_decisions
-				option = hks_annex_decisions_ON
-			}
-            country_exists = FRA
-            original_tag = ENG
-            FRA = { is_ai = yes }
-            is_ai = no
-        }
-        complete_effect = {
-            hidden_effect = {
-                  635 = { set_compliance = 100 }
-                
-            }
-            annex_country = { target = FRA transfer_troops = yes }
-           
-        }
-    }
     ITA_annex_ALB = {
         icon = GFX_decision_eng_trade_unions_support
         fire_only_once = yes
@@ -198,7 +167,7 @@ AI_annex = {
                     is_core_of = HUN
                     is_controlled_by = GER
                     }
-                set_compliance = 100
+                set_compliance = 25
             }
         }
     }
@@ -279,7 +248,7 @@ AI_annex = {
                     is_core_of = ROM
                     is_controlled_by = GER
                 }
-                set_compliance = 100
+                set_compliance = 25
             }
         }
     }
@@ -349,7 +318,7 @@ AI_annex = {
                     is_core_of = SAF
                     is_controlled_by = ENG
                     }
-                set_compliance = 100
+                set_compliance = 70
             }
         }
     }
@@ -397,7 +366,7 @@ AI_annex = {
                     }
                     is_controlled_by = ENG
                     }
-                set_compliance = 100
+                set_compliance = 70
             }
         }
     }
@@ -434,7 +403,7 @@ AI_annex = {
                     }
                     is_controlled_by = ENG
                     }
-                set_compliance = 100
+                set_compliance = 70
             }
             IF = {
                 limit = {
@@ -492,7 +461,7 @@ AI_annex = {
                     is_core_of = NZL
                     is_controlled_by = ENG
                     }
-                set_compliance = 100
+                set_compliance = 80
             }
         }
     }
@@ -526,7 +495,7 @@ AI_annex = {
                     is_core_of = RAJ
                     is_controlled_by = ENG
                     }
-                set_compliance = 100
+                set_compliance = 80
             }
         }
     }

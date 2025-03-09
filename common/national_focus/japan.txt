@@ -2301,7 +2301,8 @@ add_extra_state_shared_building_slots = 2
 		y = 1
 		relative_position_id = JAP_national_defense_state
 
-		cost = 10
+		cost = 1.5
+
 
 		ai_will_do = {
 			factor = 1
@@ -2316,7 +2317,13 @@ add_extra_state_shared_building_slots = 2
 		}
 
 		available = {
-
+			any_owned_state = {
+				is_core_of = ROOT
+				#is_in_home_area = yes 	
+				NOT = {
+					is_controlled_by = ROOT
+				}
+			}
 		}
 
 		bypass = {
@@ -2328,6 +2335,10 @@ add_extra_state_shared_building_slots = 2
 		available_if_capitulated = no
 
 		completion_reward = {
+						add_timed_idea = {
+				idea = ENG_desperate_defense_of_the_homeland
+				days = 180
+			}	
 			hidden_effect = {
 				set_rule = {
 					can_use_kamikaze_pilots = yes

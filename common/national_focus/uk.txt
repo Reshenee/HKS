@@ -1320,6 +1320,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 50
+						add_ideas = ENG_expand_the_repair_yards
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
@@ -1924,7 +1925,7 @@ focus_tree = {
 				}
 				set_state_flag = ENG_expand_the_repair_yards_2dockyard
 			}
-			add_ideas = ENG_expand_the_repair_yards
+
 		}
 	}
 
@@ -6572,101 +6573,10 @@ focus_tree = {
 			has_completed_focus = uk_south_africa_focus
 			has_completed_focus = ENG_indian_autonomy
 
-			CAN = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			SAF = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			AST = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			NZL = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			# NOT = {
-			# 	any_state = {
-			# 		OR = {
-			# 			is_core_of = ENG
-			# 			is_core_of = CAN
-			# 			is_core_of = SAF
-			# 			is_core_of = AST
-			# 			is_core_of = NZL
-			# 		}
-			# 		NOT = { state = 331 }
-			# 		OWNER = {
-			# 			NOT = {
-			# 				OR = {
-			# 					tag = ENG
-			# 					tag = CAN
-			# 					tag = SAF
-			# 					tag = AST
-			# 					tag = NZL
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# }
-
 		}
 
 		bypass = {
-			CAN = {
-				exists = no
-			}
-			SAF = {
-				exists = no
-			}
-			RAJ = {
-				OR = {
-					exists = no
-					NOT = { is_subject_of = ENG }
-				}
-			}
-			AST = {
-				exists = no
-			}
-			NZL = {
-				exists = no
-			}
-			NOT = {
-				any_state = {
-					OR = {
-						is_core_of = ENG
-						is_core_of = CAN
-						is_core_of = SAF
-						is_core_of = AST
-						is_core_of = NZL
-					}
-					OWNER = {
-						NOT = { tag = ENG }
-					}
-				}
-			}
+
 		}
 
 		continue_if_invalid = no
@@ -6685,38 +6595,38 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_POLITICAL}	
 		completion_reward = {
-			add_political_power = 120
-			every_country = {
-				limit = {
-					OR = {
-						tag = ENG
-						AND = {
-							is_subject_of = ENG
-							tag = CAN
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-					}
-				}
-				country_event = { id = mtg_britain.82 hours = 6 }
+			ENG = {
+				add_timed_idea  = { idea = ENG_imperial_conference_defense_5 days = 365 } 
+				add_timed_idea  = { idea = ENG_imperial_conference_economy_5 days = 365 } 
+				add_political_power = -50			
 			}
+			
+			CAN = {
+				add_timed_idea  = { idea = ENG_imperial_conference_defense_dominion days = 365 } 
+				add_timed_idea  = { idea = ENG_imperial_conference_economy_dominion days = 365 } 
+				add_political_power = -55			
+			}
+			AST = {
+				add_timed_idea  = { idea = ENG_imperial_conference_defense_dominion days = 365 } 
+				add_timed_idea  = { idea = ENG_imperial_conference_economy_dominion days = 365 } 
+				add_political_power = -55			
+			}			
+			SAF = {
+				add_timed_idea  = { idea = ENG_imperial_conference_defense_dominion days = 365 } 
+				add_timed_idea  = { idea = ENG_imperial_conference_economy_dominion days = 365 } 
+				add_political_power = -55			
+			}			
+			RAJ = {
+				add_timed_idea  = { idea = ENG_imperial_conference_defense_dominion days = 365 } 
+				add_timed_idea  = { idea = ENG_imperial_conference_economy_dominion days = 365 } 
+				add_political_power = -55			
+			}
+			NZL = {
+				add_timed_idea  = { idea = ENG_imperial_conference_defense_dominion days = 365 } 
+				add_timed_idea  = { idea = ENG_imperial_conference_economy_dominion days = 365 } 
+				add_political_power = -55			
+			}			
 			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
-			custom_effect_tooltip = ENG_imperial_conference_tt
-			custom_effect_tooltip = ENG_indian_autonomy_tt
 		}
 	}
 
