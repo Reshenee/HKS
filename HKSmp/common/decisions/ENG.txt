@@ -9633,7 +9633,6 @@ military_operations = {
 		complete_effect = {
 			annex_country = { target = ICE } 
 			add_popularity = { ideology = democratic popularity = -0.05 }
-						transfer_state = 337
 									transfer_state = 914
 												transfer_state = 101
 			

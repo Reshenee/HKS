@@ -8709,6 +8709,7 @@ focus_tree = {
         }
 
         available = {
+            always = no
             compare_autonomy_state > autonomy_colony
         }
         
@@ -13768,7 +13769,7 @@ focus_tree = {
                 limit = {
                     is_ai = yes
                 }
-                date > 1947.8.15
+       
                OR = {
                     is_historical_focus_on = yes
                     has_game_rule = {
@@ -13896,7 +13897,7 @@ focus_tree = {
         }
 
         available = {
-
+        always = no
         }
         
         bypass = {
@@ -14564,7 +14565,9 @@ focus_tree = {
         }
         
         bypass = {
-
+               321 = {
+                    is_owned_by = RAJ
+                }
         }
 
         cancel_if_invalid = yes
