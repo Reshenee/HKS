@@ -14,13 +14,13 @@ on_actions = {
 	
 	
 			#Trade countries and their economy laws
-			TUR = { add_ideas = always_free_trade }
-			IRQ = { add_ideas = always_free_trade }
-			PER = { add_ideas = always_free_trade }
-			VEN = { add_ideas = always_free_trade }
-			SWE = { add_ideas = always_free_trade }	
-			POR = { add_ideas = always_free_trade }	
-			NEU = { add_ideas = always_free_trade } 
+			TUR = { add_ideas = {always_free_trade eco_AI} }
+			IRQ = { add_ideas = {always_free_trade eco_AI} }
+			PER = { add_ideas = {always_free_trade eco_AI} }
+			VEN = { add_ideas = {always_free_trade eco_AI} }
+			SWE = { add_ideas = {always_free_trade eco_AI} }	
+			POR = { add_ideas = {always_free_trade eco_AI} }	
+			NEU = { add_ideas = {always_free_trade eco_AI} } 
 
 			#China map
 			CHI = {
@@ -605,6 +605,72 @@ on_actions = {
 				}
 
 				SOV = { annex_country = { target = TAN transfer_troops = no } }
+			}
+		
+			# Удаление прома
+			TUR = {
+				every_controlled_state = {
+					remove_building = {
+						type = arms_factory
+						level = 10
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 10
+					}
+					remove_building = {
+						type = dockyard
+						level = 10
+					}
+				}
+			}
+			SWE = {
+				every_controlled_state = {
+					remove_building = {
+						type = arms_factory
+						level = 10
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 10
+					}
+					remove_building = {
+						type = dockyard
+						level = 10
+					}
+				}
+			}
+			POR = {
+				every_controlled_state = {
+					remove_building = {
+						type = arms_factory
+						level = 10
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 10
+					}
+					remove_building = {
+						type = dockyard
+						level = 10
+					}
+				}
+			}
+			NEU = {
+				every_controlled_state = {
+					remove_building = {
+						type = arms_factory
+						level = building_level@arms_factory
+					}
+					remove_building = {
+						type = industrial_complex
+						level = building_level@industrial_complex
+					}
+					remove_building = {
+						type = dockyard
+						level = building_level@dockyard
+					}
+				}
 			}
 		}
 	}
