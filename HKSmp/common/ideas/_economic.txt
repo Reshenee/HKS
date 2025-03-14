@@ -4,6 +4,37 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
+		eco_AI = {
+
+			picture = new_economic_policy
+
+			allowed = {
+				FROM = {is_ai = yes}
+			}
+			allowed_to_remove = {
+				FROM = {is_ai = no}
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				consumer_goods_expected_value = 1.0
+				monthly_population = -1
+				conscription_factor = -1
+				political_power_gain = -2
+				industrial_capacity_dockyard = -1.5
+				industrial_capacity_factory = -1.5
+				ai_get_ally_desire_factor = -300
+				ai_join_ally_desire_factor = -300
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
 		undisturbed_isolation = {
 
 
