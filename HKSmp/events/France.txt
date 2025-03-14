@@ -2281,7 +2281,7 @@ news_event = {
 country_event = {
 	id = france.35
 	hidden = yes
-
+	fire_only_once = yes
 	trigger = {
 		OR = {
 			GER = {casualties > 200000}
@@ -2302,7 +2302,7 @@ country_event = {
 country_event = {
 	id = france.36
 	hidden = yes
-
+	fire_only_once = yes
 	trigger = {
 		OR = {
 			GER = {casualties > 400000}

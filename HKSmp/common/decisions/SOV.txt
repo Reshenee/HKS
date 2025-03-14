@@ -11539,7 +11539,7 @@ SOV_great_patriotic_war = {
 				tooltip = SOV_raise_penal_units_days_tt
 				has_country_flag = {
 					flag = SOV_penal_units_raised_flag
-					days > 365
+					days > 14
 				}
 			}
 			any_enemy_country = { SOV_is_major_not_original_sov = yes }
@@ -11550,9 +11550,9 @@ SOV_great_patriotic_war = {
 			any_enemy_country = { SOV_is_major_not_original_sov = yes }
 		}
 
-		cost = 10
+		cost = 5
 
-		days_remove = 20
+		days_remove = 7
 
 		complete_effect = {
 		}
